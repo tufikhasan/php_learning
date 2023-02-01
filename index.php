@@ -1,33 +1,32 @@
 <?php
 /*
-Mixing a PHP variable with a string literals
+PHP variable mutable:
+In PHP, a variable is considered mutable if its value can be changed or altered after it has been initially assigned. This means that the value stored in the variable can be modified or reassigned at any point during the execution of a program. For example, the value of a mutable variable can be changed through assignment statements, increment/decrement operations, or by being passed as an argument to a function that modifies its value.
 */
 $firstName = "Tufik";
-$lastName = "Hasan";
-$age = 25;
-
-echo "My firstname is".$firstName;  //output = My firstname isTufik
+echo $firstName;
 echo "\n";
+$firstName = "Towfik hasan";
+echo $firstName,"\n";
 
-echo "My age is ".$age;  //output = My age is 25
-echo "\n";
 
-echo "My lastname is"." ".$lastName;  //output = My lastname is Hasan
-echo "\n";
 
-//Variable values are not shown in string when using single quotation
-echo 'My name is $firstName';  //output = My firstname is $firstName
-echo "\n";
+$a = 5;  // initial assignment
+$a = 10; // reassigning the value of $a
+echo $a,"\n";
 
-//Variables can be shown in strings using double quotation
-echo "My name is $firstName";  //output = My firstname is Tufik
-echo "\n";
+$b = 7;
+$b += 3; // changing the value of $b by incrementing it
+echo $b,"\n";
 
-//use curly brackets in php string literals
-$var = "way";
-echo "Two {$var} to define a variable in a string.";    //output = Two way to define a variable in a string.
-echo "\n";
-echo "Two {$var}s to define a variable in a string.";   //output = Two ways to define a variable in a string.
-echo "\n";
+$c = 20;
+$c--;    // changing the value of $c by decrementing it
+echo $c,"\n";
 
-echo "My full name is {$firstName} {$lastName}";    //output = My full name is Tufik Hasan
+$d = 15;
+$d = $d + 5; // changing the value of $d through an expression
+echo $d,"\n";
+
+$e = "hello";
+$e .= " world"; // changing the value of $e by concatenation
+echo $e,"\n";
