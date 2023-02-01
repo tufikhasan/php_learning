@@ -1,21 +1,66 @@
 <?php
 /*
-PHP variables:
-A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
-Rules for PHP variables:
-    
--> A variable starts with the $ sign, followed by the name of the variable
--> A variable name must start with a letter or the underscore character
--> A variable name cannot start with a number
--> A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
--> Variable names are case-sensitive ($age and $AGE are two different variables)
+What does $$ ($$variable) means in PHP ?
+The $x (single dollar) is the normal variable with the name x that stores any value like string, integer, float, etc. The $$x (double dollar) is a reference variable that stores the value which can be accessed by using the $ symbol before the $x value. These are called variable variables in PHP.
+
+Variable Variables:- Variable variables are simply variables whose names are dynamically created by another variable’s value.
+
+From the given figure below, it can be easily understood that:
+-> $x stores the value "PHP" of String type.
+-> Now reference variable $$x stores the value "For PHP"; in it of String type.
 */
 
-//variable define
-$name = "Towfik";
-//camelCase variable
-$firstName = "Nadim";
-//TitleCase variable
-$LastName = "Hassan";
-//variable with underscore
-$full_name = "Rakib Khan";
+// Declare variable and initialize it
+$x = "PHP";
+// Reference variable
+$$x = "For PHP";
+
+/*
+So, the value of “for PHP” can be accessed in two ways which are listed below:
+-> By using the Reference variable directly. Example: echo $$x;
+-> By using the value stored at variable $x as a variable name for accessing the “for PHP” value. Example: echo $PHP; which will give output as “for PHP” (without quote marks).
+Examples:
+*/
+
+// Display value of x
+echo $x;    //output = PHP
+echo "\n";
+
+// Display value of $$x ($PHP)
+echo $$x;   //output = For PHP
+echo "\n";
+
+// Display value of $PHP
+echo $PHP;  //output = For PHP
+echo "\n";
+
+
+//===================== example 02 ===================== :
+$name = "Tufik";
+$$name = "Bogura";
+echo "$name hasan lives in $Tufik"; //output = Tufik hasan lives in Bogura
+echo "\n";
+
+//===================== example 03 ===================== :
+$age = 25;
+$word = 'age';
+echo $$word;    //output = 25
+echo "\n";
+
+//===================== example 04 ===================== :
+// Declare variable and initialize it
+$var = "PHP";
+ 
+// Reference variable
+${$var}="PHPforPHP";
+ 
+// Use double reference variable
+${${$var}}="computer science";
+ 
+// Display the value of variable
+echo $var . "\n";     //output = PHP
+echo $PHP . "\n";    //output = PHPforPHP
+echo $PHPforPHP . "\n"; //output = computer science
+ 
+// Double reference
+echo ${${$var}}. "\n";   //output = computer science
