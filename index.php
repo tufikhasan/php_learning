@@ -8,19 +8,36 @@ $fName = "Tufik";
 $lName = "Hasan";
 $age = 25;
 
-printf("My firstname %s & lastname %s",$fName,$lName);
-echo("\n");
-
-//swapping arguments variables- using single quotation
+//swapping
 printf('My name is %2$s %1$s',$fName,$lName);
+echo("\n\n");
+
+//same argument print multiple time
+printf('Decimal = %1$d, Binary = %1$b',$age);
+echo("\n\n");
+
+
+// decimal print
+$n = 25.154;
+printf('%.2f',$n);
 echo("\n");
-printf('My %3$s name is %2$s %1$s',$fName,$lName,"full");
 
-/*
-//If use double quotation = Fatal error: Uncaught ValueError: Unknown format specifier " "
-printf("My name is %2$s %1$s",$fName,$lName);
-*/
+$n = 25.15664;
+printf('%.3f',$n);
+echo("\n\n");
 
+// padding 5
+$n = 123;
+$m = 78;
+printf("%05d \n",$n);
+printf("%05d \n",$m);
 
+echo("\n");
+
+//0 padding with decimal
+$n = 123.34;
+$m = 78.56;
+printf("%07.2f \n",$n);
+printf("%07.2f \n",$m);
 
 
