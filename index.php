@@ -1,43 +1,17 @@
 <?php
 /*
-====== A deep dive into printf() ===========
--> https://www.php.net/printf
--> https://www.w3schools.com/php/func_string_printf.asp
+====== sprintf() — Return a formatted string ===========
+-> https://www.php.net/manual/en/function.sprintf.php
+-> https://www.w3schools.com/php/func_string_sprintf.asp
+
+In PHP, sprintf is a built-in function that formats a string and returns it as a result. The function takes a format string as its first argument, followed by one or more arguments that provide values to be formatted according to the specified format. The result of the function is a formatted string.
 */
-$fName = "Tufik";
-$lName = "Hasan";
-$age = 25;
+$name = "John";
+$age = 30;
+$result = sprintf("My name is %s and I am %d years old.", $name, $age); 
+echo $result;   // Output: "My name is John and I am 30 years old."
 
-//swapping
-printf('My name is %2$s %1$s',$fName,$lName);
-echo("\n\n");
-
-//same argument print multiple time
-printf('Decimal = %1$d, Binary = %1$b',$age);
-echo("\n\n");
-
-
-// decimal print
-$n = 25.154;
-printf('%.2f',$n);
-echo("\n");
-
-$n = 25.15664;
-printf('%.3f',$n);
-echo("\n\n");
-
-// padding 5
-$n = 123;
-$m = 78;
-printf("%05d \n",$n);
-printf("%05d \n",$m);
-
-echo("\n");
-
-//0 padding with decimal
-$n = 123.34;
-$m = 78.56;
-printf("%07.2f \n",$n);
-printf("%07.2f \n",$m);
-
+/*
+In the above example, '%s' represents a string placeholder, and '%d' represents an integer placeholder. The values of '$name' and '$age' are inserted into the format string and the result is stored in the '$result' variable.
+*/
 
