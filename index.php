@@ -1,5 +1,5 @@
 <?php
-/******* Increment/Decrement Operators ******
+/******* Comparison Operators ******
  * https://www.w3schools.com/php/php_operators.asp
  * https://www.php.net/manual/en/language.operators.php 
  * 
@@ -14,37 +14,65 @@
  * * Conditional assignment operators: ?:, ??
 
 
-############### Increment/Decrement operators: ++, --
-(++) increment operators are used to increment a variable's value.
-(--) decrement operators are used to decrement a variable's value.
-NOTE REMIND THIS: ($num = 2 + 3; This is called an operation) Here 2 and 3 are operands, The (+) sign is the operator
+############### Comparison operators: ==, ===, !=, !==, <>, >, <, >=, <=, <=>
+The PHP comparison operators are used to compare two values (number or string):
 */
-//-> increment(++)
-$a = 5;
-$a++;  //a = a + 1, a += 1
-echo $a,"\n";
+//-> Equal(==)
+$x = 100;  
+$y = "100";
+var_dump($x == $y); // returns true because values are equal
 
-//-> decrement(--)
-$b = 5;
-$b--;  //b = b - 1, b -= 1
-echo $b,"\n";
+//-> Identical(===)
+$x = 100;  
+$y = "100";
+var_dump($x === $y); // returns false because types are not equal
 
+//-> Not equal(!=)
+$x = 100;  
+$y = "100";
+var_dump($x != $y); // returns false because values are equal
 
-//extra example
-$n = 2;
-$m = $n++;
-echo "m= $m and n = $n \n"; //m= 2 and n = 3 
-/*
-$m = $n++;
-$m = $n;  // 2
-$n = $n + 1;  //3
-*/
+//-> Not equal(<>)
+$x = 100;  
+$y = "100";
+var_dump($x <> $y); // returns false because values are equal
 
-$n = 2;
-$m = ++$n;
-echo "m= $m and n = $n \n";  //m= 3 and n = 3 
-/*
-$m = ++$n;
-$n = $n + 1;  //3
-$m = $n;  // 3
-*/
+//-> Not identical(!==)
+$x = 100;  
+$y = "100";
+var_dump($x !== $y); // returns true because types are not equal
+
+//-> Greater than(>)
+$x = 100;
+$y = 50;
+var_dump($x > $y); // returns true because $x is greater than $y
+
+//-> Less than(<)
+$x = 10;
+$y = 50;
+var_dump($x < $y); // returns true because $x is less than $y
+
+//-> Greater than or equal to(>=)
+$x = 50;
+$y = 50;
+var_dump($x >= $y); // returns true because $x is greater than or equal to $y
+
+//-> Less than or equal to(<=)
+$x = 50;
+$y = 50;
+var_dump($x <= $y); // returns true because $x is less than or equal to $y
+
+//-> Spaceship(<=>)
+$x = 5;  
+$y = 10;
+echo ($x <=> $y); // returns -1 because $x is less than $y
+echo "\n";
+
+$x = 10;  
+$y = 10;
+echo ($x <=> $y); // returns 0 because values are equal
+echo "\n";
+
+$x = 15;  
+$y = 10;
+echo ($x <=> $y); // returns +1 because $x is greater than $y

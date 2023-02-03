@@ -40,4 +40,6 @@
 
 17.2- [Assignment Operators](https://github.com/tufikhasan/php_learning/blob/d30b8cd9a467bf103f2959c49aa01c0cf77f775d/index.php)
 
-17.3- [Increment/Decrement Operators](https://github.com/tufikhasan/php_learning/blob/)
+17.3- [Increment/Decrement Operators](https://github.com/tufikhasan/php_learning/blob/1c1d946d6c02071847d140e1e4790c1b32c31ecd/index.php)
+
+17.4- [Comparison operators](https://github.com/tufikhasan/php_learning/blob/)
