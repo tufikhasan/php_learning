@@ -46,4 +46,6 @@
 
 17.5- [Logical Operators](https://github.com/tufikhasan/php_learning/blob/8bb48c1c510ad7ce71a854ce00b029810820e235/index.php)
 
-17.6- [String Operators](https://github.com/tufikhasan/php_learning/blob/)
+17.6- [String Operators](https://github.com/tufikhasan/php_learning/blob/658f3946d7dcdb17047c96512439d181cdc30aec/index.php)
+
+17.7- [Array Operators](https://github.com/tufikhasan/php_learning/blob/)

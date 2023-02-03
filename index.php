@@ -1,5 +1,5 @@
 <?php
-/******* String Operators ******
+/******* Array Operators ******
  * https://www.w3schools.com/php/php_operators.asp
  * https://www.php.net/manual/en/language.operators.php 
  * 
@@ -14,17 +14,36 @@
  * * Conditional assignment operators: ?:, ??
 
 
-############### String operators: ., .=
-PHP has two operators that are specially designed for strings.
+############### Array operators: +, ==, ===, !=, <>, !==
+The PHP array operators are used to compare arrays.
 */
-//-> Concatenation(.) - Concatenation of $txt1 and $txt2
-$txt1 = "Dot";
-$txt2 = " Concatenation";
-echo $txt1 . $txt2;
+//-> Union(+) - Union of $x and $y
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+print_r($x + $y); // union of $x and $y
 echo "\n";
 
-//-> Concatenation assignment(.=) - Appends $txt2 to $txt1
-$txt1 = "Concatenation";
-$txt2 = " assignment";
-$txt1 .= $txt2;
-echo $txt1;
+//-> Equality(==) - Returns true if $x and $y have the same key/value pairs
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+var_dump($x == $y);
+
+//-> Identity(===) - Returns true if $x and $y have the same key/value pairs in the same order and of the same types
+$x = array("a" => "red", "b" => "green");  
+$y = array("a" => "red", "b" => "green");  
+var_dump($x === $y);
+
+//-> Inequality(!=) - Returns true if $x is not equal to $y
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+var_dump($x != $y);
+
+//-> Inequality(<>) - Returns true if $x is not equal to $y
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+var_dump($x <> $y);
+
+//-> Non-identity(!==) - Returns true if $x is not identical to $y
+$x = array("a" => "red", "b" => "green");  
+$y = array("c" => "blue", "d" => "yellow");  
+var_dump($x !== $y);
