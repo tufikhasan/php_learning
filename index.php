@@ -1,5 +1,5 @@
 <?php
-/******* Array Operators ******
+/******* Conditional assignment Operators ******
  * https://www.w3schools.com/php/php_operators.asp
  * https://www.php.net/manual/en/language.operators.php 
  * 
@@ -14,36 +14,19 @@
  * * Conditional assignment operators: ?:, ??
 
 
-############### Array operators: +, ==, ===, !=, <>, !==
-The PHP array operators are used to compare arrays.
+############### Conditional assignment operators: ?:, ??
+The PHP conditional assignment operators are used to set a value depending on conditions:
 */
-//-> Union(+) - Union of $x and $y
-$x = array("a" => "red", "b" => "green");  
-$y = array("c" => "blue", "d" => "yellow");  
-print_r($x + $y); // union of $x and $y
+//-> Ternary(?:) - Returns the value of $x. The value of $x is expr2 if expr1 = TRUE. The value of $x is expr3 if expr1 = FALSE
+$num = 44;
+echo $num < 18 ? "Your are a child": "Your are adult";
+echo "\n";
+echo $num < 18 ? "Your are a child": ($num < 30? "Your are young":"Your age old");
 echo "\n";
 
-//-> Equality(==) - Returns true if $x and $y have the same key/value pairs
-$x = array("a" => "red", "b" => "green");  
-$y = array("c" => "blue", "d" => "yellow");  
-var_dump($x == $y);
+//-> Null coalescing(??) - Returns the value of $x. The value of $x is expr1 if expr1 exists, and is not NULL. If expr1 does not exist, or is NULL, the value of $x is expr2.
+$name = "Tufik Hasan";
+echo $name = $name ?? "Rakib";
+echo "\n";
 
-//-> Identity(===) - Returns true if $x and $y have the same key/value pairs in the same order and of the same types
-$x = array("a" => "red", "b" => "green");  
-$y = array("a" => "red", "b" => "green");  
-var_dump($x === $y);
-
-//-> Inequality(!=) - Returns true if $x is not equal to $y
-$x = array("a" => "red", "b" => "green");  
-$y = array("c" => "blue", "d" => "yellow");  
-var_dump($x != $y);
-
-//-> Inequality(<>) - Returns true if $x is not equal to $y
-$x = array("a" => "red", "b" => "green");  
-$y = array("c" => "blue", "d" => "yellow");  
-var_dump($x <> $y);
-
-//-> Non-identity(!==) - Returns true if $x is not identical to $y
-$x = array("a" => "red", "b" => "green");  
-$y = array("c" => "blue", "d" => "yellow");  
-var_dump($x !== $y);
+echo $color = $color ?? "red";
