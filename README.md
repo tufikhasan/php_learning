@@ -34,4 +34,6 @@
 
 16- [PHP Math Functions](https://github.com/tufikhasan/php_learning/blob/09901a9372eb220f2b22aec7d8b4f50e60d7bd56/index.php)
 
-17- [PHP Operators Overview](https://github.com/tufikhasan/php_learning/blob/)
+17.0- [PHP Operators Overview](https://github.com/tufikhasan/php_learning/blob/25e7fa53ea315400e9fbced249e8a8c99f456b91/index.php)
+
+17.1- [Arithmetic Operators](https://github.com/tufikhasan/php_learning/blob/)
