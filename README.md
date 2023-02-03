@@ -24,4 +24,6 @@
 
 11- [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
 
-12- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/)
+12- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
+
+13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/)

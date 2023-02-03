@@ -1,75 +1,94 @@
 <?php
 /*
-====== PHP String functions ===========
-The PHP string functions are part of the PHP core. No installation is required to use these functions.
+====== Decimal,Binary Octal, & Hexadecimal Numbers System ===========
+Decimal,Binary Octal, and Hexadecimal are number systems used to represent numbers in computing and mathematics.
 
--> https://www.w3schools.com/php/php_ref_string.asp
--> https://www.php.net/manual/en/ref.strings.php
 */
 
-//01: The PHP strlen() function returns the length of a string.
-echo strlen("String length"),"\n";      //output = 11
-
-//02: Converts a string to uppercase letters
-echo strtoupper("string upper"),"\n";   //output = STRING UPPER
-
-//03: Converts a string to lowercase letters
-echo strtolower("STRING LOWER"),"\n";   //output = string lower
-
-//04: strrev() function reverses a string.
-echo strrev("String reverse"),"\n";     //output = esrever gnirtS
-
-//05: str_word_count() function counts the number of words in a string.
-echo str_word_count("String word count"),"\n";  //output = 3
-
-/*06:
-strpos() function searches for a specific text within a string. If a match is found, the function returns the character position of the first match. If no match is found, it will return FALSE.
--> strpos(subject,)
-*/
-echo strpos("Tufik Hasan","Hasan"),"\n";    //output = 6
-echo strpos("ABC","C"),"\n";    //output = 2
-
-/*07:
-str_replace() function replaces some characters with some other characters in a string.
--> str_replace(search,replace,subject)
-*/
-echo str_replace("Rakib","Tufik","Rakib Hasan"),"\n";    //output = Tufik Hasan
-echo str_replace("B","R","ABCDB Bb"),"\n";    //output = ARCDEFGHRIJKLR
-
-$challenge = '-aaa----b-c-----d--e---f';
-echo str_replace('--', '-', $challenge)."\n";   //output = -aaa--b-c---d-e--f
-echo preg_replace('/--+/', '-', $challenge)."\n";   //output = -aaa-b-c-d-e-f
-
-/*08:
-trim() function in PHP is used to remove whitespace or other specified characters from the beginning and end of a string.
-*/
-$hello = "    Hello World      ";
-echo trim($hello),"\n";     // Output: "Hello, World"
-//You can also specify which characters you want to remove by passing them as a second argument to the trim() function
-$str = "Hello World!";
-echo trim($str,"Hed!")."\n";  //output = llo Worl
-
-
-//09: wordwrap() - Wrap a string into new lines when it reaches a specific length
-echo wordwrap("Hello World",5)."\n"; 
-/*output = 
-Hello
-World
+/************ 01: Decimal *************
+ * Decimal number system, also known as base-10, is the most commonly used number system in our daily lives. It uses 10 digits (0-9) to represent numbers.
+ * Base = 10
+ * Digit = 0,1,2,3,4,5,6,7,8,9
 */
 
-//10: join() - Join array elements with a string:
-$arr = array('Hello','World!','Beautiful','Day!');
-echo join(" ",$arr)."\n";   //output = Hello World! Beautiful Day!
+/************ 02: Binary *************
+ * Binary number system, also known as base-2, uses only two digits (0 and 1) to represent numbers. Binary is the foundation of all digital technology, including computers and digital devices, and is used to store, process, and transmit data.
+ * Base = 2
+ * Digit = 0,1 (0 means on & 1 means off)
+*/
 
-//11: md5() - Calculate the MD5 hash of the string "Tufik"
-echo md5("Tufik")."\n";     //output = 31006770c0afba01db5a7410cb306f7e
+/************ 03: Octal *************
+ * Octal number system, also known as base-8, uses 8 digits (0-7) to represent numbers. Octal is commonly used in computing to represent binary data in a more compact form.
+ * Base = 8
+ * Digit = 0,1,2,3,4,5,6,7
+*/
 
-//12: md5() - Calculate the MD5 hash of the file "index.php"
-echo md5_file("index.php")."\n";     //output = 38f5cafba953f4feb2bf6ee27e01abb6
+/************ 04: Hexadecimal *************
+ * Hexadecimal number system, also known as base-16, uses 16 digits (0-9, A-F) to represent numbers. It is commonly used in computing for representation of binary data in a human-readable form.
+ * Base = 16
+ * Digit = 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F   (A=11,B=12,C=13,D=14,E=15,F=16)
+*/
 
-//13: str_split() function splits a string into an array.
-//syntax; str_split(string,length)
-print_r(str_split("Tufik"));  //output = Array( [0] => T[1] => u[2] => f[3] => i[4] => k)
-print_r(str_split("Tufik",3)); //output = Array([0] => Tuf[1] => ik)
 
-//NOTE: print_r() is a PHP function used to print human-readable information about a variable. It can be useful for debugging and inspecting the contents of arrays and objects.
+/*  =============== Decimal to binary ==================   
+* decimal(50) = binary(11011)
+* The decimal number 50 can be converted to binary as follows:
+* Divide the decimal number by 2 and write down the remainder:
+
+50 ÷ 2 = 25 with a remainder of 0
+25 ÷ 2 = 12 with a remainder of 1
+12 ÷ 2 = 6 with a remainder of 0
+6 ÷ 2 = 3 with a remainder of 0
+3 ÷ 2 = 1 with a remainder of 1
+1 ÷ 2 = 0 with a remainder of 1
+
+* Read the remainders from bottom to top:
+The binary equivalent of decimal number '50' is '110010'
+* So, the decimal number '50' is equal to binary number '110010'.
+*/
+
+
+/*  =============== Decimal to octal ==================   
+* decimal(50) = octal(62)
+* The decimal number 50 can be converted to octal as follows:
+* Divide the decimal number by 8 and write down the remainder:
+
+50 ÷ 8 = 6 with a remainder of 2
+6 ÷ 8 = 0 with a remainder of 6
+
+* Read the remainders from bottom to top:
+The octal equivalent of decimal number '50' is '62'
+* So, the decimal number '50' is equal to octal number '62'.
+*/
+
+
+/*  =============== Decimal to Hexadecimal ==================   
+* decimal(50) = Hexadecimal(32)
+* The decimal number 50 can be converted to hexadecimal as follows:
+* Divide the decimal number by 16 and write down the remainder:
+
+50 ÷ 16 = 3 with a remainder of 2
+3 ÷ 16 = 0 with a remainder of 3
+
+* Replace the remainders with their hexadecimal equivalent:
+    0 = 0
+    1 = 1
+    2 = 2
+    3 = 3
+    4 = 4
+    5 = 5
+    6 = 6
+    7 = 7
+    8 = 8
+    9 = 9
+    10 = A
+    11 = B
+    12 = C
+    13 = D
+    14 = E
+    15 = F
+
+* Read the remainders (hexadecimal equivalent) from bottom to top:
+The hexadecimal equivalent of decimal number '50' is '32'
+* So, the decimal number '50' is equal to hexadecimal number '32'.
+*/
