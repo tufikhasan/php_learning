@@ -36,4 +36,6 @@
 
 17.0- [PHP Operators Overview](https://github.com/tufikhasan/php_learning/blob/25e7fa53ea315400e9fbced249e8a8c99f456b91/index.php)
 
-17.1- [Arithmetic Operators](https://github.com/tufikhasan/php_learning/blob/)
+17.1- [Arithmetic Operators](https://github.com/tufikhasan/php_learning/blob/0ce09a851dff3cbf72b2c4f4bc1811c51cf3deed/index.php)
+
+17.2- [Assignment Operators](https://github.com/tufikhasan/php_learning/blob/)
