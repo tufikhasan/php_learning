@@ -1,4 +1,5 @@
 # php_learning
+
 01- [PHP variables](https://github.com/tufikhasan/php_learning/blob/a912fa9d94098e980f2a1e5e9741ffff0c6d65b0/index.php).
 
 02- [$$ Variable Variables](https://github.com/tufikhasan/php_learning/blob/19a8eb8ff31df0b3787be40a7e34a9ce2087eef0/index.php).
@@ -22,3 +23,5 @@
 10.2- [printf some magic](https://github.com/tufikhasan/php_learning/blob/9c6c978e37e1df24196553949b7d2aaa17f5479b/index.php).
 
 11- [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
+
+12- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/)
