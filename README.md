@@ -42,4 +42,6 @@
 
 17.3- [Increment/Decrement Operators](https://github.com/tufikhasan/php_learning/blob/1c1d946d6c02071847d140e1e4790c1b32c31ecd/index.php)
 
-17.4- [Comparison operators](https://github.com/tufikhasan/php_learning/blob/)
+17.4- [Comparison Operators](https://github.com/tufikhasan/php_learning/blob/5b1cb67651d3d8d3aefd9aa861de11ae36e84357/index.php)
+
+17.5- [Logical Operators](https://github.com/tufikhasan/php_learning/blob/)

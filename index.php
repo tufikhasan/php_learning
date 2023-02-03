@@ -1,5 +1,5 @@
 <?php
-/******* Comparison Operators ******
+/******* Logical Operators ******
  * https://www.w3schools.com/php/php_operators.asp
  * https://www.php.net/manual/en/language.operators.php 
  * 
@@ -14,65 +14,47 @@
  * * Conditional assignment operators: ?:, ??
 
 
-############### Comparison operators: ==, ===, !=, !==, <>, >, <, >=, <=, <=>
-The PHP comparison operators are used to compare two values (number or string):
+############### Logical operators: &&, ||, !, and, or, xor
+The PHP logical operators are used to combine conditional statements.
 */
-//-> Equal(==)
+//-> And(&&) - True if both $x and $y are true
 $x = 100;  
-$y = "100";
-var_dump($x == $y); // returns true because values are equal
-
-//-> Identical(===)
-$x = 100;  
-$y = "100";
-var_dump($x === $y); // returns false because types are not equal
-
-//-> Not equal(!=)
-$x = 100;  
-$y = "100";
-var_dump($x != $y); // returns false because values are equal
-
-//-> Not equal(<>)
-$x = 100;  
-$y = "100";
-var_dump($x <> $y); // returns false because values are equal
-
-//-> Not identical(!==)
-$x = 100;  
-$y = "100";
-var_dump($x !== $y); // returns true because types are not equal
-
-//-> Greater than(>)
-$x = 100;
 $y = 50;
-var_dump($x > $y); // returns true because $x is greater than $y
+if ($x == 100 && $y == 50) {
+    echo "Hello I am from (&&) operator!\n";
+}
 
-//-> Less than(<)
-$x = 10;
+//-> Or(||) - True if either $x or $y is true
+$x = 100;  
 $y = 50;
-var_dump($x < $y); // returns true because $x is less than $y
+if ($x == 100 || $y == 50) {
+    echo "Hello I am from (||) operator!\n";
+}
 
-//-> Greater than or equal to(>=)
-$x = 50;
+//-> Not(!) - True if $x is not true
+$x = 100;  
+if ($x !== 90) {
+    echo "Hello I am from (!) operator!\n";
+}
+
+//-> And(and) - True if both $x and $y are true
+$x = 100;  
 $y = 50;
-var_dump($x >= $y); // returns true because $x is greater than or equal to $y
+if ($x == 100 and $y == 50) {
+    echo "Hello I am from (and) operator!\n";
+}
 
-//-> Less than or equal to(<=)
-$x = 50;
+//-> Or(or) - True if either $x or $y is true
+$x = 100;  
 $y = 50;
-var_dump($x <= $y); // returns true because $x is less than or equal to $y
+if ($x == 100 or $y == 50) {
+    echo "Hello I am from (rr) operator!\n";
+}
 
-//-> Spaceship(<=>)
-$x = 5;  
-$y = 10;
-echo ($x <=> $y); // returns -1 because $x is less than $y
-echo "\n";
+//-> Xor(xor) - True if either $x or $y is true, but not both
+$x = 100;  
+$y = 50;
+if ($x == 100 xor $y == 80) {
+    echo "Hello I am from (xor) operator!\n";
+}
 
-$x = 10;  
-$y = 10;
-echo ($x <=> $y); // returns 0 because values are equal
-echo "\n";
-
-$x = 15;  
-$y = 10;
-echo ($x <=> $y); // returns +1 because $x is greater than $y
