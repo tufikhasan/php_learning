@@ -26,4 +26,6 @@
 
 12- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
 
-13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/)
+13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
+
+14- [PHP Numbers - integers](https://github.com/tufikhasan/php_learning/blob/)
