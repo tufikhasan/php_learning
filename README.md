@@ -30,4 +30,6 @@
 
 14- [PHP Numbers - integers](https://github.com/tufikhasan/php_learning/blob/ab18ae29d1248f3c7105433f603302d145e5e523/index.php)
 
-15- [PHP Numbers - Float](https://github.com/tufikhasan/php_learning/blob/)
+15- [PHP Numbers - Float](https://github.com/tufikhasan/php_learning/blob/010ce21d0a0c6e0bf453c690cf63a4a6f1992b4e/index.php)
+
+16- [PHP Math Functions](https://github.com/tufikhasan/php_learning/blob/)
