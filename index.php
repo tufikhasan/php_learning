@@ -1,5 +1,5 @@
 <?php
-/******* Logical Operators ******
+/******* String Operators ******
  * https://www.w3schools.com/php/php_operators.asp
  * https://www.php.net/manual/en/language.operators.php 
  * 
@@ -14,47 +14,17 @@
  * * Conditional assignment operators: ?:, ??
 
 
-############### Logical operators: &&, ||, !, and, or, xor
-The PHP logical operators are used to combine conditional statements.
+############### String operators: ., .=
+PHP has two operators that are specially designed for strings.
 */
-//-> And(&&) - True if both $x and $y are true
-$x = 100;  
-$y = 50;
-if ($x == 100 && $y == 50) {
-    echo "Hello I am from (&&) operator!\n";
-}
+//-> Concatenation(.) - Concatenation of $txt1 and $txt2
+$txt1 = "Dot";
+$txt2 = " Concatenation";
+echo $txt1 . $txt2;
+echo "\n";
 
-//-> Or(||) - True if either $x or $y is true
-$x = 100;  
-$y = 50;
-if ($x == 100 || $y == 50) {
-    echo "Hello I am from (||) operator!\n";
-}
-
-//-> Not(!) - True if $x is not true
-$x = 100;  
-if ($x !== 90) {
-    echo "Hello I am from (!) operator!\n";
-}
-
-//-> And(and) - True if both $x and $y are true
-$x = 100;  
-$y = 50;
-if ($x == 100 and $y == 50) {
-    echo "Hello I am from (and) operator!\n";
-}
-
-//-> Or(or) - True if either $x or $y is true
-$x = 100;  
-$y = 50;
-if ($x == 100 or $y == 50) {
-    echo "Hello I am from (rr) operator!\n";
-}
-
-//-> Xor(xor) - True if either $x or $y is true, but not both
-$x = 100;  
-$y = 50;
-if ($x == 100 xor $y == 80) {
-    echo "Hello I am from (xor) operator!\n";
-}
-
+//-> Concatenation assignment(.=) - Appends $txt2 to $txt1
+$txt1 = "Concatenation";
+$txt2 = " assignment";
+$txt1 .= $txt2;
+echo $txt1;

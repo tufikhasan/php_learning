@@ -44,4 +44,6 @@
 
 17.4- [Comparison Operators](https://github.com/tufikhasan/php_learning/blob/5b1cb67651d3d8d3aefd9aa861de11ae36e84357/index.php)
 
-17.5- [Logical Operators](https://github.com/tufikhasan/php_learning/blob/)
+17.5- [Logical Operators](https://github.com/tufikhasan/php_learning/blob/8bb48c1c510ad7ce71a854ce00b029810820e235/index.php)
+
+17.6- [String Operators](https://github.com/tufikhasan/php_learning/blob/)
