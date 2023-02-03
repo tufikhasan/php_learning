@@ -38,4 +38,6 @@
 
 17.1- [Arithmetic Operators](https://github.com/tufikhasan/php_learning/blob/0ce09a851dff3cbf72b2c4f4bc1811c51cf3deed/index.php)
 
-17.2- [Assignment Operators](https://github.com/tufikhasan/php_learning/blob/)
+17.2- [Assignment Operators](https://github.com/tufikhasan/php_learning/blob/d30b8cd9a467bf103f2959c49aa01c0cf77f775d/index.php)
+
+17.3- [Increment/Decrement Operators](https://github.com/tufikhasan/php_learning/blob/)

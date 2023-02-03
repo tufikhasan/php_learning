@@ -1,5 +1,5 @@
 <?php
-/******* Assignment Operators ******
+/******* Increment/Decrement Operators ******
  * https://www.w3schools.com/php/php_operators.asp
  * https://www.php.net/manual/en/language.operators.php 
  * 
@@ -14,62 +14,37 @@
  * * Conditional assignment operators: ?:, ??
 
 
-############### Assignment operators: =, +=, -=, *=, /=, %=
-The PHP assignment operators are used with numeric values to write a value to a variable.
-The basic assignment operator in PHP is "=". It means that the left operand gets set to the value of the assignment expression on the right.
+############### Increment/Decrement operators: ++, --
+(++) increment operators are used to increment a variable's value.
+(--) decrement operators are used to decrement a variable's value.
+NOTE REMIND THIS: ($num = 2 + 3; This is called an operation) Here 2 and 3 are operands, The (+) sign is the operator
 */
-//-> Assign(=)
-$a = $b = 2;
-echo "Variable a=$a & b=$b\n";  // Variable a=2 & b=2
+//-> increment(++)
+$a = 5;
+$a++;  //a = a + 1, a += 1
+echo $a,"\n";
 
-$c = 5;
-$a = $b = $c;
-echo "Variable a=$a & b=$b\n";  //Variable a=5 & b=5
-
-$x = 3;
-$y = 2;
-//-> Addition(+=)
-echo $x += $y;   // x = x + y (output = 5)
-echo("\n");
-
-//-> Subtraction(-=)
-$x = 3;
-echo $x -= $y;   // x = x - y (output = 1)
-echo("\n");
-
-//-> Multiplication(*=)
-$x = 3;
-echo $x *= $y;   // x = x * y (output = 6)
-echo("\n");
-
-//-> Division(/=)
-$x = 3;
-echo $x /= $y;   // x = x / y (output = 1.5)
-echo("\n");
-
-//-> Modulus(%=)
-$x = 3;
-echo $x %= $y;   // x = x % y (output = 1)
-echo("\n");
+//-> decrement(--)
+$b = 5;
+$b--;  //b = b - 1, b -= 1
+echo $b,"\n";
 
 
 //extra example
-$num = 10;
-$num + 5;
-echo $num."\n";  // 10
+$n = 2;
+$m = $n++;
+echo "m= $m and n = $n \n"; //m= 2 and n = 3 
+/*
+$m = $n++;
+$m = $n;  // 2
+$n = $n + 1;  //3
+*/
 
-$num2 = $num + 5;
-echo $num2."\n";  // 15
-
-$ex = 5-2 * 2;
-echo $ex."\n";  // 1
-
-$ex =(5-2) * 2;
-echo $ex."\n";  // 6
-
-$ex = 32-8 / 11-5;
-echo $ex."\n";  // 26.272727272727
-
-$ex = (32-8) / (11-5);
-echo $ex."\n";  // 4
-
+$n = 2;
+$m = ++$n;
+echo "m= $m and n = $n \n";  //m= 3 and n = 3 
+/*
+$m = ++$n;
+$n = $n + 1;  //3
+$m = $n;  // 3
+*/
