@@ -1,29 +1,56 @@
 <?php
 
-/******* PHP Ternary Operators & Nested Ternary Operators
- *  The PHP ternary operator is a shorthand way of writing a simple if-else statement. It takes an expression and returns one of two values based on whether the expression is true or false. This allows for concise and readable coding, especially when used in conjunction with expressions that evaluate to simple values.
+/******* PHP switch Statement
+ *  The switch statement is similar to a series of IF statements on the same expression. In many occasions, you may want to compare the same variable (or expression) with many different values, and execute a different piece of code depending on which value it equals to. This is exactly what the switch statement is for.
  * 
- *  https://www.php.net/manual/en/language.operators.comparison.php
- *  https://www.phptutorial.net/php-tutorial/php-ternary-operator/
+ *  https://www.php.net/manual/en/control-structures.switch.php
+ *  https://www.w3schools.com/php/php_switch.asp
  * 
 ********/
 $num = rand(1,30);
 
-//check number or not
-$result = (is_integer($num)? "number":"Invalid number");
-echo $result."\n";
-
 //even or odd number
-$result = (($num % 2 == 0)? "Even number":"Odd number");
-echo $result."\n";
+$r = $num % 2;
+switch($r){
+    case 0:
+        echo "Even number\n";
+    break;
+    default:
+    echo "Odd number\n";
+}
+//Multiple case in the same output 
+$fruits = "apple";
+switch($fruits){
+    case "apple":
+    case "mango":
+    echo "Mango and apple both are fruits\n";
+    break;
+    case "orange":
+        echo "Orange is good for health\n";
+    break;
+    default:
+    echo "Please type apple,mango or orange\n";     
+}
+//check number or not
+switch($num){
+    case is_integer($num):
+        echo "Number\n";
+    break;
+    default:
+    echo "Not a number\n";
+}
 
-//nested ternary   -- Try using the nested ternary operator wrap parentheses ().
-$result = (is_integer($num)? (($num > 12)? "$num is Greater then 12": "$num is less then 12"):"Invalid number");
-echo $result."\n";
-
-//bigger number   -- Try using the nested ternary operator wrap parentheses ().   
+//bigger number  
 $num1 = 45;
 $num2 = 65;
-$num3 = 70;
-$result = (($num1 > $num2 && $num1 > $num3)? "Larger number is {$num1}":(($num2 > $num3)? "Larger number is {$num2}":"Larger number is {$num3}"));
-echo $result."\n";
+$num3 = 30;
+switch(true){
+    case ($num1 > $num2 && $num1 > $num3):
+        echo "Larger number is {$num1}\n";
+    break;
+    case ($num2 > $num3):
+        echo "Larger number is {$num2}\n";
+    break;
+    default:
+    echo "Larger number is {$num3}\n";
+}

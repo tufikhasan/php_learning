@@ -62,4 +62,6 @@
 
 18.5 - [Alternative Syntax - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/16876b01bde3521247c5e6881f7178231d2453ed/index.php)
 
-19 - [Ternary Operators and Nested Ternary Operators](https://github.com/tufikhasan/php_learning/blob/)
+19 - [Ternary Operators and Nested Ternary Operators](https://github.com/tufikhasan/php_learning/blob/5eaad55bc1dfda7dd7a07735683fd876bf8b4263/index.php)
+
+20 - [PHP switch Statement - simple](https://github.com/tufikhasan/php_learning/blob/)
