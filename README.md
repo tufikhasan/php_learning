@@ -58,4 +58,6 @@
 
 18.3 - [Important - if...else..(leap year)](https://github.com/tufikhasan/php_learning/blob/)
 
-18.3 - [Nested - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/)
+18.4 - [Nested - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/)
+
+18.5 - [Alternative Syntax - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/)
