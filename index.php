@@ -1,5 +1,5 @@
 <?php
-/******* Important - if...else..(leap year) ******
+/******* Nested - If...else...elseif ******
  * https://www.w3schools.com/php/php_if_else.asp
  * https://www.php.net/manual/en/control-structures.elseif.php
  * 
@@ -14,58 +14,31 @@ In PHP we have the following conditional statements:
  * switch statement - selects one of many blocks of code to be executed
 */
 
-/*==================== Leap Year  ===================
- * year is divisible / 4
- * year is divisible / 100
- * year is divisible / 400
-*/
-$year = 1900;
-//01
-if($year % 4 == 0 && $year % 100 == 0 && $year % 400 == 0){
-    echo "{$year} is a leap year\n";
-}elseif($year % 4 == 0 && $year % 100 == 0){
-    echo "{$year} is not a leap year\n";
-}elseif($year % 4 == 0){
-    echo "{$year} is a leap year\n";
+$condition1 = true;
+$condition2 = true;
+$condition3 = true;
+//Nested - If...else
+if($condition1){
+    if($condition2){
+        if($condition3){
+            echo "All condition true\n";
+        }else{
+            echo "Condition 3 not found \n";
+        }
+    }else{
+        echo "Condition 2 not found \n";
+    }
 }else{
-    echo "{$year} is not a leap year\n";
+    echo "Condition 1 not found \n";
 }
 
-// ========= Important part
-echo "\n";
-if(false && false){
-    echo "false\n";
+//If...else...elseif
+if($condition1 && $condition2 && $condition3){
+    echo "All condition true\n";
+}elseif($condition1 && $condition2){
+    echo "Condition 3 not found \n";
+}elseif($condition1){
+    echo "Condition 2 not found \n";
 }else{
-    echo "False && false return false\n";
-} 
-//
-if(true && false){
-    echo "true\n";
-}else{
-    echo "true && false return false\n";
-}
-//
-if(true && true){
-    echo "true && true return true\n";
-}else{
-    echo "false\n";
-}
-//
-if(true || false){
-    echo "true || false return true\n";
-}else{
-    echo "false\n";
-}
-echo "\n";
-//pseudo code for leap year
-// 1900 = if(true && (false || false)) -> if(true && false) return false
-// 2000 = if(true && (false || true))  -> if(true && true) return true
-// 2012 = if(true && (true || false))  -> if(true && true) return true
-// 2013 = if(false && (true || false))  -> if(false && true) return false
-
-//02
-if($year % 4 == 0 && ($year % 100 != 0 || $year % 400 == 0)){
-    echo "{$year} is a leap year\n";
-}else{
-    echo "{$year} is not a leap year\n";
+    echo "Condition 1 not found \n";
 }
