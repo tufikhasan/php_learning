@@ -1,5 +1,5 @@
 <?php
-/******* Important - if...else condition practice ******
+/******* Important - if...else..(leap year) ******
  * https://www.w3schools.com/php/php_if_else.asp
  * https://www.php.net/manual/en/control-structures.elseif.php
  * 
@@ -14,43 +14,58 @@ In PHP we have the following conditional statements:
  * switch statement - selects one of many blocks of code to be executed
 */
 
-//==================== Important steps ===================
-//01
-$food = "tuna";
-if($food == "tuna"){
-    echo "It has vitamins D\n";
-}else{
-    echo "We don't know if {$food} contains Vitamin D\n";
-}
-//02
-$food = "apple";
-if($food = "tuna"){ //this is return true. Assigns a value to the variable $food as tuna
-    echo "It has vitamins D\n";
-}else{
-    echo "We don't know if {$food} contains Vitamin D\n";
-}
-//03
-$food = "apple";
-if("tuna" == $food){ //Always use static values on the left side of the condition
-    echo "It has vitamins D\n";
-}else{
-    echo "We don't know if {$food} contains Vitamin D\n";
-}
-
-/* 
-04: Best practice to Always use static values on the left side of the condition. An handle error
-$food = "apple";
-if("tuna" = $food){ //it's return syntax error.
-    echo "It has vitamins D\n";
-}else{
-    echo "We don't know if {$food} contains Vitamin D\n";
-}
+/*==================== Leap Year  ===================
+ * year is divisible / 4
+ * year is divisible / 100
+ * year is divisible / 400
 */
-
-//03
-$food = "salmon";
-if("tuna" == $food || "salmon" == $food){
-    echo "It has vitamins D\n";
+$year = 1900;
+//01
+if($year % 4 == 0 && $year % 100 == 0 && $year % 400 == 0){
+    echo "{$year} is a leap year\n";
+}elseif($year % 4 == 0 && $year % 100 == 0){
+    echo "{$year} is not a leap year\n";
+}elseif($year % 4 == 0){
+    echo "{$year} is a leap year\n";
 }else{
-    echo "We don't know if {$food} contains Vitamin D\n";
+    echo "{$year} is not a leap year\n";
+}
+
+// ========= Important part
+echo "\n";
+if(false && false){
+    echo "false\n";
+}else{
+    echo "False && false return false\n";
+} 
+//
+if(true && false){
+    echo "true\n";
+}else{
+    echo "true && false return false\n";
+}
+//
+if(true && true){
+    echo "true && true return true\n";
+}else{
+    echo "false\n";
+}
+//
+if(true || false){
+    echo "true || false return true\n";
+}else{
+    echo "false\n";
+}
+echo "\n";
+//pseudo code for leap year
+// 1900 = if(true && (false || false)) -> if(true && false) return false
+// 2000 = if(true && (false || true))  -> if(true && true) return true
+// 2012 = if(true && (true || false))  -> if(true && true) return true
+// 2013 = if(false && (true || false))  -> if(false && true) return false
+
+//02
+if($year % 4 == 0 && ($year % 100 != 0 || $year % 400 == 0)){
+    echo "{$year} is a leap year\n";
+}else{
+    echo "{$year} is not a leap year\n";
 }
