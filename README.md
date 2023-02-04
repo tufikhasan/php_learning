@@ -64,4 +64,6 @@
 
 19 - [Ternary Operators and Nested Ternary Operators](https://github.com/tufikhasan/php_learning/blob/5eaad55bc1dfda7dd7a07735683fd876bf8b4263/index.php)
 
-20 - [PHP switch Statement - simple](https://github.com/tufikhasan/php_learning/blob/)
+20.1 - [PHP switch Statement - simple](https://github.com/tufikhasan/php_learning/blob/)
+
+20.2 - [Nested switch Statement](https://github.com/tufikhasan/php_learning/blob/)

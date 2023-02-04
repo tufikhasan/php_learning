@@ -6,51 +6,83 @@
  *  https://www.php.net/manual/en/control-structures.switch.php
  *  https://www.w3schools.com/php/php_switch.asp
  * 
-********/
-$num = rand(1,30);
+ ********/
+$num = rand(1, 30);
+//nested switch case
+switch ($num) {
+    case (is_integer($num)):
+        switch ($num) {
+            case ($num > 12):
+                echo "$num is Greater then 12\n";
+                break;
+            case ($num < 12):
+                echo "$num is Less then 12\n";
+                break;
+        }
+        break;
+    default:
+        echo "Invalid number\n";
+}
 
-//even or odd number
+//nested even or odd number - (both negative or positive)
+$num = -23;
 $r = $num % 2;
-switch($r){
+switch ($r) {
     case 0:
-        echo "Even number\n";
-    break;
+        switch ($num) {
+            case $num > 0:
+                echo "{$num} Positive Even number\n";
+                break;
+            case $num<0:
+                echo "{$num} Negative Even number\n";
+            break;
+        }
+        break;
     default:
-    echo "Odd number\n";
-}
-//Multiple case in the same output 
-$fruits = "apple";
-switch($fruits){
-    case "apple":
-    case "mango":
-    echo "Mango and apple both are fruits\n";
-    break;
-    case "orange":
-        echo "Orange is good for health\n";
-    break;
-    default:
-    echo "Please type apple,mango or orange\n";     
-}
-//check number or not
-switch($num){
-    case is_integer($num):
-        echo "Number\n";
-    break;
-    default:
-    echo "Not a number\n";
+        switch ($num) {
+            case $num > 0:
+                echo "{$num} Positive Odd number\n";
+                break;
+            case $num < 0:
+                echo "{$num} Negative Odd number\n";
+            break;
+        }
 }
 
-//bigger number  
-$num1 = 45;
-$num2 = 65;
-$num3 = 30;
-switch(true){
-    case ($num1 > $num2 && $num1 > $num3):
-        echo "Larger number is {$num1}\n";
+//even or odd number - (both negative or positive)
+$num = -3;
+$r = $num % 2;
+switch (true) {
+    case (0 == $r && $num>0):
+        echo "$num is a positive even number";
     break;
-    case ($num2 > $num3):
-        echo "Larger number is {$num2}\n";
+    case (1 == $r && $num>0):
+        echo "$num is a positive odd number";
     break;
-    default:
-    echo "Larger number is {$num3}\n";
+    case (0 == $r && $num<0):
+        echo "$num is a negative even number";
+    break;
+    case (-1 == $r && $num<0):
+        echo "$num is a negative odd number";
+    break;
+}
+
+echo "\n";
+
+//even or odd number - (both negative or positive)
+$num = -3;
+$r = abs($num) % 2;
+switch (true) {
+    case (0 == $r && $num>0):
+        echo "$num is a positive even number";
+    break;
+    case (1 == $r && $num>0):
+        echo "$num is a positive odd number";
+    break;
+    case (0 == $r && $num<0):
+        echo "$num is a negative even number";
+    break;
+    case (1 == $r && $num<0):
+        echo "$num is a negative odd number";
+    break;
 }
