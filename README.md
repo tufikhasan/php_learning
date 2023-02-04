@@ -52,12 +52,14 @@
 
 17.8- [Conditional assignment Operators](https://github.com/tufikhasan/php_learning/blob/facf3a7f25c0f3a220bdffa96a9331eec45daccd/index.php)
 
-18.1 - [if...else...elseif Statements](https://github.com/tufikhasan/php_learning/blob/)
+18.1 - [if...else...elseif Statements](https://github.com/tufikhasan/php_learning/blob/4143e0fd964ddd873dfbf90f18a33b4e21cb9912/index.php)
 
-18.2 - [Important - if...else condition practice](https://github.com/tufikhasan/php_learning/blob/)
+18.2 - [Important - if...else condition practice](https://github.com/tufikhasan/php_learning/blob/3774272e75ba1d7f8cb92b153e3da33dba81d507/index.php)
 
-18.3 - [Important - if...else..(leap year)](https://github.com/tufikhasan/php_learning/blob/)
+18.3 - [Important - if...else..(leap year)](https://github.com/tufikhasan/php_learning/blob/ea9d16c4ef68ff2ea6971b58057232541529689f/index.php)
 
-18.4 - [Nested - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/)
+18.4 - [Nested - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/d54394e4e47a88e47c46562afdea4e558c8facdf/index.php)
 
-18.5 - [Alternative Syntax - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/)
+18.5 - [Alternative Syntax - If...else...elseif](https://github.com/tufikhasan/php_learning/blob/16876b01bde3521247c5e6881f7178231d2453ed/index.php)
+
+19 - [Ternary Operators and Nested Ternary Operators](https://github.com/tufikhasan/php_learning/blob/)
