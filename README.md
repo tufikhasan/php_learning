@@ -67,3 +67,5 @@
 20.1 - [PHP switch Statement - simple](https://github.com/tufikhasan/php_learning/blob/)
 
 20.2 - [Nested switch Statement](https://github.com/tufikhasan/php_learning/blob/)
+
+20.3 - [PHP version-8 & below version-8 issue with switch case](https://github.com/tufikhasan/php_learning/blob/)
