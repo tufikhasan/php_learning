@@ -53,3 +53,5 @@
 17.8- [Conditional assignment Operators](https://github.com/tufikhasan/php_learning/blob/facf3a7f25c0f3a220bdffa96a9331eec45daccd/index.php)
 
 18.1 - [if...else...elseif Statements](https://github.com/tufikhasan/php_learning/blob/)
+
+18.2 - [Important - if...else condition practice](https://github.com/tufikhasan/php_learning/blob/)

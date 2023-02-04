@@ -1,5 +1,5 @@
 <?php
-/******* if...else...elseif Statements ******
+/******* Important - if...else condition practice ******
  * https://www.w3schools.com/php/php_if_else.asp
  * https://www.php.net/manual/en/control-structures.elseif.php
  * 
@@ -14,45 +14,43 @@ In PHP we have the following conditional statements:
  * switch statement - selects one of many blocks of code to be executed
 */
 
-//even odd number
-$number = rand(1,50);   //get a random number between 1 to 50
-if($number % 2 === 0){
-    echo "$number is even number\n";
+//==================== Important steps ===================
+//01
+$food = "tuna";
+if($food == "tuna"){
+    echo "It has vitamins D\n";
 }else{
-    echo "$number is odd number\n";
+    echo "We don't know if {$food} contains Vitamin D\n";
+}
+//02
+$food = "apple";
+if($food = "tuna"){ //this is return true. Assigns a value to the variable $food as tuna
+    echo "It has vitamins D\n";
+}else{
+    echo "We don't know if {$food} contains Vitamin D\n";
+}
+//03
+$food = "apple";
+if("tuna" == $food){ //Always use static values on the left side of the condition
+    echo "It has vitamins D\n";
+}else{
+    echo "We don't know if {$food} contains Vitamin D\n";
 }
 
-//example 01
-$a = 30;
-$b = 20;
-if($a == $b){
-    echo "$a is equal to $b\n";
-}elseif($a > $b){
-    echo "$a is greater then $b\n";
-}elseif($a < $b){
-    echo "$a is less then $b\n";
-}
-//If the check first statement matches then don't check the conditions below
-$a = 20;
-$b = 20;
-if($a >= $b){
-    echo "$a is a same or greater then $b\n";
-}elseif($a > $b){
-    echo "$a is greater then $b\n";
-}elseif($a < $b){
-    echo "$a is less then $b\n";
-}elseif($a == $b){
-    echo "$a is equal to $b\n";
-}
-
-//age check
-$age = rand(1,70);
-if($age >= 13 && $age <=19){
-    echo "Your age is $age years old, You are a teenager\n";
-}elseif($age < 13){
-    echo "Your age is $age years old, You are a child\n";
-}elseif($age > 19 && $age <= 45){
-    echo "Your age is $age years old, You are a young man\n";
+/* 
+04: Best practice to Always use static values on the left side of the condition. An handle error
+$food = "apple";
+if("tuna" = $food){ //it's return syntax error.
+    echo "It has vitamins D\n";
 }else{
-    echo "Your age is $age years old, You are an old man\n";
+    echo "We don't know if {$food} contains Vitamin D\n";
+}
+*/
+
+//03
+$food = "salmon";
+if("tuna" == $food || "salmon" == $food){
+    echo "It has vitamins D\n";
+}else{
+    echo "We don't know if {$food} contains Vitamin D\n";
 }
