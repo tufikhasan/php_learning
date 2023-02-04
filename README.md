@@ -64,8 +64,10 @@
 
 19 - [Ternary Operators and Nested Ternary Operators](https://github.com/tufikhasan/php_learning/blob/5eaad55bc1dfda7dd7a07735683fd876bf8b4263/index.php)
 
-20.1 - [PHP switch Statement - simple](https://github.com/tufikhasan/php_learning/blob/)
+20.1 - [PHP switch Statement - simple](https://github.com/tufikhasan/php_learning/blob/ce9410d9e12b29feebf512692c9af6b777294fc1/index.php)
 
-20.2 - [Nested switch Statement](https://github.com/tufikhasan/php_learning/blob/)
+20.2 - [Nested switch Statement](https://github.com/tufikhasan/php_learning/blob/7c4a0229cacda354dc11493b4936301aaefd29b4/index.php)
 
-20.3 - [PHP version-8 & below version-8 issue with switch case](https://github.com/tufikhasan/php_learning/blob/)
+20.3 - [PHP version-8 & below version-8 issue with switch case](https://github.com/tufikhasan/php_learning/blob/886e6135d875a4ee427e81aeaab3eb4772d9e2f0/index.php)
+
+20.4 - [Alternative Syntax of switch Statement](https://github.com/tufikhasan/php_learning/blob/)

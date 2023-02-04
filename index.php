@@ -1,37 +1,41 @@
 <?php
 
-/******* PHP version-8 & below version-8 Interesting issue with switch case
- * If PHP version 8 this example -- {RETURN: 8balls}
- * If PHP version below 8 this example -- {RETURN: 8}
- ********/
+/******* Alternative Syntax of switch Statement ********/
 
-//PHP version 8 - (RETURN: 8balls) 
-//Below PHP 8 version - (RETURN: 8)
- $string = "8balls";
- switch($string){
-    case "9balls";
-    echo "9balls";
-    break;
-    case 8;
-    echo "8";
-    break;
-    case "8balls";
-    echo "8balls";
-    break;
- }
+$string = "8balls";
+switch ($string):
+   case (string)"9balls";
+      echo "9balls";
+      break;
+   case (string)8;
+      echo "8";
+      break;
+   case (string)"8balls";
+      echo "8balls";
+      break;
+endswitch;
+
 echo "\n";
 
-//PHP version 8 - (RETURN: 8balls)
-//Solve: Below PHP 8 version - (RETURN: 8balls)
- $string = "8balls";
- switch($string){
-    case (string)"9balls";
-    echo "9balls";
-    break;
-    case (string)8;
-    echo "8";
-    break;
-    case (string)"8balls";
-    echo "8balls";
-    break;
- }
+switch (date('D')):
+   case "Sun":
+      echo "Sunday";
+      break;
+   case "Mon":
+      echo "Monday";
+      break;
+   case "Tue":
+      echo "Tuesday";
+      break;
+   case "Wed":
+      echo "Wednesday";
+      break;
+   case "Thu":
+      echo "Thursday";
+      break;
+   case "Fri":
+      echo "Friday";
+      break;
+   case "Sat":
+      echo "Saturday";
+endswitch;
