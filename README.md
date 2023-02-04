@@ -70,4 +70,8 @@
 
 20.3 - [PHP version-8 & below version-8 issue with switch case](https://github.com/tufikhasan/php_learning/blob/886e6135d875a4ee427e81aeaab3eb4772d9e2f0/index.php)
 
-20.4 - [Alternative Syntax of switch Statement](https://github.com/tufikhasan/php_learning/blob/)
+20.4 - [Alternative Syntax of switch Statement](https://github.com/tufikhasan/php_learning/blob/daa91387ed3f36324fd36f3c54f089f73690d40c/index.php)
+
+21 - [Alternative Syntax of switch Statement](https://github.com/tufikhasan/php_learning/blob/daa91387ed3f36324fd36f3c54f089f73690d40c/index.php)
+
+22 - [Operator Precedence in PHP](https://github.com/tufikhasan/php_learning/blob/)
