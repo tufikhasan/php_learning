@@ -24,7 +24,9 @@
 
 11- [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
 
-12- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
+12.1- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
+
+12.2- [String functions](https://github.com/tufikhasan/php_learning/blob)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
@@ -74,4 +76,4 @@
 
 21 - [Alternative Syntax of switch Statement](https://github.com/tufikhasan/php_learning/blob/daa91387ed3f36324fd36f3c54f089f73690d40c/index.php)
 
-22 - [Operator Precedence in PHP](https://github.com/tufikhasan/php_learning/blob/)
+22 - [Operator Precedence in PHP](https://github.com/tufikhasan/php_learning/blob/8b6dc7809baf69a23087e7a59cc90fc192298d36/index.php)
