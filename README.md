@@ -83,3 +83,5 @@
 23.1.1 - [for loop - understanding](https://github.com/tufikhasan/php_learning/blob/)
 
 23.1.2 - [for loop Multiple Stepping](https://github.com/tufikhasan/php_learning/blob/)
+
+23.2 - [While loop](https://github.com/tufikhasan/php_learning/blob/)
