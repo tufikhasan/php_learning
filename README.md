@@ -77,3 +77,7 @@
 21 - [Alternative Syntax of switch Statement](https://github.com/tufikhasan/php_learning/blob/daa91387ed3f36324fd36f3c54f089f73690d40c/index.php)
 
 22 - [Operator Precedence in PHP](https://github.com/tufikhasan/php_learning/blob/8b6dc7809baf69a23087e7a59cc90fc192298d36/index.php)
+
+23 - [Introduction PHP all loops](https://github.com/tufikhasan/php_learning/blob/d33436dd95963f71ff2c6e43020a552f7767ea0c/index.php)
+
+23.1.1 - [for loop - understanding](https://github.com/tufikhasan/php_learning/blob/)

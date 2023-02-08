@@ -1,53 +1,50 @@
 <?php
-/* PHP Loops
- * Often when you write code, you want the same block of code to run over and over again a certain number of times. So, instead of adding several almost equal code-lines in a script, we can use loops.
+/* PHP For loop
+ * A for loop in PHP is a type of loop that allows you to execute a block of code a specified number of times. It consists of the following parts:
+-> Initialization: Initializing a counter variable with a starting value.
+-> Conditional Expression: Checking the counter variable against a value to see if the loop should continue to execute.
+-> Increment/Decrement: Updating the counter variable after each iteration of the loop.
 
- * Loops are used to execute the same block of code again and again, as long as a certain condition is true.
-
- * In PHP, there are four types of loops:
-01: for loop - used to repeat a block of code a specified number of times.
-02: while loop - used to repeat a block of code while a certain condition is true.
-03: do...while loop - similar to while loop, but the code block is executed at least once and then the condition is checked.
-04: foreach loop - used to loop through arrays and objects and access their values.
-
-Each of these loops has its own syntax and usage, and you can choose the appropriate loop for your needs based on the type of iteration you want to perform.
+ * https://www.w3schools.com/php/php_looping_for.asp
+ * https://www.php.net/manual/en/control-structures.for.php
 
  */
-//01: for loop
+//01:
 for ( $i = 0; $i < 5; $i += 1 ) {
-    echo $i . " For loop\n";
+    echo $i . "\n";
 }
 
-echo PHP_EOL;
-
-//02: while loop
-$i = 0;
-while ( $i < 5 ) {
-    echo $i . " While loop\n";
-    $i += 1;
+//02:
+echo "\nLoop reverse 5 to 1";
+for ( $i = 5; $i > 0; $i -= 1 ) {
+    echo $i . "\n";
 }
 
-echo PHP_EOL;
+//03: nested loop
+echo "\nNested loop";
+for ( $i = 1; $i < 5; $i++ ) {
+    echo "\n";
+    for ( $j = 0; $j < $i; $j++ ) {
+        echo "*";
+    }
+}
 
-//03: while loop
-$i = 1;
-do {
-    echo $i . " do loop\n";
-    $i += 1;
-} while ( $i < 5 );
+//04: Break - when i value is equal 2 break ends execution of the current structure
+echo "\n\nBreak loop if number is 2\n";
+for ( $i = 0; $i < 5; $i++ ) {
+    if ( 2 == $i ) {
+        break;
+    }
+    echo $i . "\n";
 
-echo PHP_EOL;
+}
 
-$i = 10;
-do {
-    echo $i . " do loop\n";
-    $i += 1;
-} while ( $i < 10 );
+//05: Continue - skip the current iteration of the loop and continue with the next iteration
+echo "\nSkip even number and continue loop\n";
+for ( $i = 1; $i < 10; $i++ ) {
+    if ( !( $i % 2 ) ) {
+        continue;
+    }
+    echo $i . "\n";
 
-echo PHP_EOL;
-
-//04: foreach loop
-$countries = array( "Bangladesh", "India", "China", "Japan" );
-foreach ( $countries as $country ) {
-    echo $country . "\n";
 }
