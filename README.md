@@ -87,3 +87,5 @@
 23.2 - [While loop](https://github.com/tufikhasan/php_learning/blob/)
 
 23.3 - [Do While loop](https://github.com/tufikhasan/php_learning/blob/)
+
+23.4 - [foreach loop](https://github.com/tufikhasan/php_learning/blob/)
