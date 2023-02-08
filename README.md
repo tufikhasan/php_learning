@@ -81,3 +81,5 @@
 23 - [Introduction PHP all loops](https://github.com/tufikhasan/php_learning/blob/d33436dd95963f71ff2c6e43020a552f7767ea0c/index.php)
 
 23.1.1 - [for loop - understanding](https://github.com/tufikhasan/php_learning/blob/)
+
+23.1.2 - [for loop Multiple Stepping](https://github.com/tufikhasan/php_learning/blob/)
