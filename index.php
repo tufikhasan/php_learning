@@ -1,62 +1,31 @@
 <?php
-/* PHP While loop
- * The "while" loop in PHP is used to execute a block of code repeatedly as long as a certain condition is met.
- * The condition in the parentheses is evaluated before each iteration of the loop. If the condition is true, the code inside the loop is executed. Once the condition becomes false, the loop will terminate and the program will continue with the next line of code after the loop.
+/* PHP Do While loop
+ * The do...while loop in PHP is a control structure that allows you to execute a block of code repeatedly, as long as the specified condition is true. Unlike the while loop, the do...while loop is guaranteed to execute at least once, since the condition is only checked at the end of each iteration.
+ * Where condition is a boolean expression that determines whether to continue or end the loop. The code inside the loop will be executed, and then the condition will be evaluated. If the condition is true, the loop will repeat; if the condition is false, the loop will terminate.
 
- * https://www.php.net/manual/en/control-structures.while.php
- * https://www.w3schools.com/php/php_looping_while.asp
+ * https://www.php.net/manual/en/control-structures.do.while.php
+ * https://www.w3schools.com/php/php_looping_do_while.asp
 
  */
 //01:
 $i = 0;
-while ( $i < 5 ) {
+do {
     echo $i . "\n";
     $i++;
-}
+} while ( $i < 5 );
 
 //02:
 echo "\nLoop reverse 5 to 1\n";
 $i = 5;
-while ( $i > 0 ) {
+do {
     echo $i . "\n";
     $i--;
-}
+} while ( $i > 0 );
 
 //03:
 echo "\n==============\n";
-$i = 0;
-while ( $i++ < 5 ) {
-    echo $i . "\n";
-}
-
-//03:
-echo "\n==============\n";
-$i = 0;
-while ( ++$i < 5 ) {
-    echo $i . "\n";
-}
-
-//03: Break - when i value is equal 2 break ends execution of the current structure
-echo "\n\nBreak loop if number is 2\n";
-$i = 0;
-while ( $i < 5 ) {
-    if ( 2 == $i ) {
-        break;
-    }
+$i = 10;
+do {
     echo $i . "\n";
     $i++;
-
-}
-
-//05: Continue - skip the current iteration of the loop and continue with the next iteration
-echo "\nSkip even number and continue loop\n";
-$i = 1;
-while ( $i < 10 ) {
-    if ( $i % 2 == 0 ) {
-        $i++;
-        continue;
-    }
-    echo $i . "\n";
-    $i++;
-
-}
+} while ( $i < 5 );
