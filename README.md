@@ -80,12 +80,14 @@
 
 23 - [Introduction PHP all loops](https://github.com/tufikhasan/php_learning/blob/d33436dd95963f71ff2c6e43020a552f7767ea0c/index.php)
 
-23.1.1 - [for loop - understanding](https://github.com/tufikhasan/php_learning/blob/)
+23.1.1 - [for loop - understanding](https://github.com/tufikhasan/php_learning/tree/229d16ce4796e540578e99d94f26ccea3310f3d3)
 
-23.1.2 - [for loop Multiple Stepping](https://github.com/tufikhasan/php_learning/blob/)
+23.1.2 - [for loop Multiple Stepping](https://github.com/tufikhasan/php_learning/blob/8b11b719a11329a9ee5f9365cd89f27df539937e/index.php)
 
-23.2 - [While loop](https://github.com/tufikhasan/php_learning/blob/)
+23.2 - [While loop](https://github.com/tufikhasan/php_learning/blob/6e848fa195e69fa24dda0ae7a5b7fdc41ae04ea0/index.php)
 
-23.3 - [Do While loop](https://github.com/tufikhasan/php_learning/blob/)
+23.3 - [Do While loop](https://github.com/tufikhasan/php_learning/blob/e6eb57e5718ecb57eb30710c34411b28be5a3231/index.php)
 
-23.4 - [foreach loop](https://github.com/tufikhasan/php_learning/blob/)
+23.4 - [foreach loop](https://github.com/tufikhasan/php_learning/blob/6a743bb1114b03861afd937fcdca15cc2e275506/index.php)
+
+24 - [PHP Break and Continue](https://github.com/tufikhasan/php_learning)
