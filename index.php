@@ -1,57 +1,52 @@
 <?php
-/* Fibonacci Series using for Loops */
-
-/* 01:pseudo code
-
-initial value:
--> veryOld = 0
--> oldest = 1
--> newest = 1
-
-first loop:
--> veryOld = 1
--> oldest = 1
--> newest = 1 (0 + 1 = 1)
-
-second loop:
--> veryOld = 1
--> oldest = 1
--> newest = 2 (1 + 1 = 2)
-
-third loop:
--> veryOld = 2
--> oldest = 2
--> newest = 3 (1 + 2 = 3)
-
-forth loop:
--> veryOld = 3
--> oldest = 3
--> newest = 5 (2 + 3 = 5)
-
-fifth loop:
--> veryOld = 5
--> oldest = 5
--> newest = 8 (3 + 5 = 8)
-
+/* What are functions and how to write them
+ * In PHP, a function is a block of code that can be reused multiple times in a program. Functions are defined using the "function" keyword, followed by a function name and a set of parentheses that may include parameters. Functions can optionally return a value to the calling code using the "return" statement.
+ *
+ * https://www.w3schools.com/php/php_functions.asp
+ * https://www.php.net/manual/en/functions.user-defined.php
  */
-$veryOld = 0;
-$oldest = 1;
-$newest = 1;
-for ( $i = 0; $i < 10; $i++ ) {
-    echo $veryOld . ", ";
-    $oldest = $newest;
-    $newest = $veryOld + $oldest;
-    $veryOld = $oldest;
+
+//************** even number check function **************
+
+//01: simple function
+function isEvenOrOdd( $num ) {
+    if ( $num % 2 == 0 ) {
+        echo "$num is an Even";
+    } else {
+        echo "$num is an Odd";
+    }
+}
+isEvenOrOdd( 3 );
+
+echo PHP_EOL;
+
+//02: Reuseable function
+function EvenOrOdd( $n ) {
+    if ( $n % 2 == 0 ) {
+        return true;
+    } else {
+        return false;
+    }
+}
+$x = 5;
+if ( EvenOrOdd( $x ) ) {
+    echo "{$x} is an Even number";
+} else {
+    echo "{$x} is an Odd number";
 }
 
 echo PHP_EOL;
 
-//02:
-$starting = 0;
-$old = 1;
-for ( $i = 0; $i < 10; $i++ ) {
-    echo $starting . ", ";
-    $new = $starting + $old;
-    $old = $starting;
-    $starting = $new;
+//03: Reuseable function - WHEN return don't need to use else statement
+function isEven( $n ) {
+    if ( $n % 2 == 0 ) {
+        return true;
+    }
+    return false;
+}
+$x = 8;
+if ( isEven( $x ) ) {
+    echo "{$x} is an Even number";
+} else {
+    echo "{$x} is an Odd number";
 }

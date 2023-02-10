@@ -95,3 +95,5 @@
 25 - [Pattern php using for loop](https://github.com/tufikhasan/php_learning)
 
 26 - [Fibonacci Series using for Loops](https://github.com/tufikhasan/php_learning)
+
+27 - [functions and how to write them](https://github.com/tufikhasan/php_learning)
