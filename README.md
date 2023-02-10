@@ -93,3 +93,5 @@
 24 - [PHP Break and Continue](https://github.com/tufikhasan/php_learning/blob/114d67179067c87b1380248b95f67b49e089fee2/index.php)
 
 25 - [Pattern php using for loop](https://github.com/tufikhasan/php_learning)
+
+26 - [Fibonacci Series using for Loops](https://github.com/tufikhasan/php_learning)
