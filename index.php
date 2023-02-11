@@ -1,28 +1,42 @@
 <?php
-/* ********************* Fixing function return type ************
+/* ********************* Accepting Unlimited Arguments in Functions ************
  *
-In PHP, the return type of a function specifies the type of value that the function returns. It can be used to enforce type safety and improve code readability.
+The spread operator (also known as the splat operator) in PHP is denoted by '...', and is used to unpack arrays and Traversable objects into individual elements as function arguments.
 
-The return type of a function is specified using the ':' operator, followed by the type name, before the opening brace '{' of the function body.
+The spread operator allows you to pass an array or a Traversable object as separate arguments to a function, instead of passing the entire array or object as a single argument.
  *
- * https://www.php.net/manual/en/functions.returning-values.php
+ * https://www.php.net/manual/en/migration56.new-features.php
  *
  */
 
 //01:
-function sum( $x, $y ): int {
-    return $x + $y;
+function addNumbers( int...$numbers ) {
+    $sum = 0;
+    foreach ( $numbers as $number ) {
+        $sum += $number;
+    }
+    return $sum;
 }
-echo sum( 2, 3 ) . "\n";
 
-//03:
-function gamePlay( $name, $game ): string {
-    return "{$name} is playing {$game}\n";
-}
-echo gamePlay( "Karim", "football" ); // Karim is playing football
+$result = addNumbers( 1, 2, 3, 4, 5 );
+var_dump( $result ); // Output: int(15)
 
-//02: Fatal error-> Uncaught TypeError: sub(): Return value must be of type int
-function sub( $x, $y ): int {
-    return "ABC";
+//02:
+function sum( int...$num ): int {
+    $result = 0;
+    for ( $i = 0; $i < count( $num ); $i++ ) {
+        $result += $num[$i];
+    }
+    return $result;
 }
-echo sub( 2, 3 ) . "\n";
+echo sum( 1, 2, 3, 4 ) . "\n";
+
+//02:
+function sum2( $a, $b, int...$num ): int {
+    $result = 0;
+    for ( $i = 0; $i < count( $num ); $i++ ) {
+        $result += $num[$i];
+    }
+    return $result;
+}
+echo sum2( 5, 6, 1, 2, 3, 4 ) . "\n";

@@ -107,3 +107,5 @@
 31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning)
 
 32 - [Fixing function return type](https://github.com/tufikhasan/php_learning)
+
+33 - [Accepting Unlimited Arguments in Functions](https://github.com/tufikhasan/php_learning)
