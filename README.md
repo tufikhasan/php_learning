@@ -105,3 +105,5 @@
 30 - [Type hinting or type checking of function parameters](https://github.com/tufikhasan/php_learning)
 
 31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning)
+
+32 - [Fixing function return type](https://github.com/tufikhasan/php_learning)
