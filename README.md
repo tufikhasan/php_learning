@@ -110,4 +110,6 @@
 
 33 - [Accepting Unlimited Arguments in Functions](https://github.com/tufikhasan/php_learning/blob/0c8f53a2e19884312d7db7e1239fc098daf2c82c/index.php)
 
-34 - [Dividing a large function into smaller functions](https://github.com/tufikhasan/php_learning)
+34 - [Dividing a large function into smaller functions](https://github.com/tufikhasan/php_learning/blob/da7e93e45b5051440645daac239e101eefe63063/index.php)
+
+35 - [Recursion and Recursive Functions](https://github.com/tufikhasan/php_learning)
