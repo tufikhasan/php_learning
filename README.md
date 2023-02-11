@@ -114,4 +114,6 @@
 
 35 - [Recursion and Recursive Functions](https://github.com/tufikhasan/php_learning/blob/2b67fa494f24c2ff77fc05c79f7ac37a9abdeeff/index.php)
 
-36 - [Printing Fibonacci Series Using Recursive Functions](https://github.com/tufikhasan/php_learning)
+36 - [Printing Fibonacci Series Using Recursive Functions](https://github.com/tufikhasan/php_learning/blob/45b019931de3b5bc806fcf2e1e727dc77f93e256/index.php)
+
+37 - [Variable Scope in PHP Function](https://github.com/tufikhasan/php_learning)
