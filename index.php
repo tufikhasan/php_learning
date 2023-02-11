@@ -1,42 +1,35 @@
 <?php
-/* ********************* Accepting Unlimited Arguments in Functions ************
- *
-The spread operator (also known as the splat operator) in PHP is denoted by '...', and is used to unpack arrays and Traversable objects into individual elements as function arguments.
+/* ********************* Dividing a large function into smaller functions */
 
-The spread operator allows you to pass an array or a Traversable object as separate arguments to a function, instead of passing the entire array or object as a single argument.
- *
- * https://www.php.net/manual/en/migration56.new-features.php
- *
- */
+//01: larger function
+function largeFunction() {
+    echo ( 2 + 3 ) . "\n";
+    echo ( 6 - 3 ) . "\n";
+    echo ( 2 * 3 ) . "\n";
+    echo ( 6 / 3 ) . "\n";
+}
+largeFunction();
 
-//01:
-function addNumbers( int...$numbers ) {
-    $sum = 0;
-    foreach ( $numbers as $number ) {
-        $sum += $number;
-    }
-    return $sum;
+echo PHP_EOL;
+
+//02: divided large function into smaller function
+function sum() {
+    echo ( 2 + 3 ) . "\n";
+}
+function sub() {
+    echo ( 6 - 3 ) . "\n";
+}
+function multiplication() {
+    echo ( 2 * 3 ) . "\n";
+}
+function division() {
+    echo ( 6 / 3 ) . "\n";
 }
 
-$result = addNumbers( 1, 2, 3, 4, 5 );
-var_dump( $result ); // Output: int(15)
-
-//02:
-function sum( int...$num ): int {
-    $result = 0;
-    for ( $i = 0; $i < count( $num ); $i++ ) {
-        $result += $num[$i];
-    }
-    return $result;
+function dividedLargeFun() {
+    sum();
+    sub();
+    multiplication();
+    division();
 }
-echo sum( 1, 2, 3, 4 ) . "\n";
-
-//02:
-function sum2( $a, $b, int...$num ): int {
-    $result = 0;
-    for ( $i = 0; $i < count( $num ); $i++ ) {
-        $result += $num[$i];
-    }
-    return $result;
-}
-echo sum2( 5, 6, 1, 2, 3, 4 ) . "\n";
+dividedLargeFun();

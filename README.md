@@ -92,20 +92,22 @@
 
 24 - [PHP Break and Continue](https://github.com/tufikhasan/php_learning/blob/114d67179067c87b1380248b95f67b49e089fee2/index.php)
 
-25 - [Pattern php using for loop](https://github.com/tufikhasan/php_learning)
+25 - [Pattern php using for loop](https://github.com/tufikhasan/php_learning/blob/6a62ca2bf6842ec3b049d0dcc35018d386dd8271/index.php)
 
-26 - [Fibonacci Series using for Loops](https://github.com/tufikhasan/php_learning)
+26 - [Fibonacci Series using for Loops](https://github.com/tufikhasan/php_learning/blob/e896e38f3bcd3423fc29fa7a7ea9885d6c0f751f/index.php)
 
-27 - [Functions and how to write them](https://github.com/tufikhasan/php_learning)
+27 - [Functions and how to write them](https://github.com/tufikhasan/php_learning/blob/28e4672cf72bb24d67ceb44561594e8557a42b7e/index.php)
 
-28 - [include_once - embed PHP code from another file](https://github.com/tufikhasan/php_learning)
+28 - [include_once - embed PHP code from another file](https://github.com/tufikhasan/php_learning/tree/6d5de27d5b5072455a135a1179761fcdc264ca1b)
 
-29 - [DocBlock - php](https://github.com/tufikhasan/php_learning)
+29 - [DocBlock - php](https://github.com/tufikhasan/php_learning/tree/39df27e9b6f62353a23a26e3996e1c9c98247f7b)
 
-30 - [Type hinting or type checking of function parameters](https://github.com/tufikhasan/php_learning)
+30 - [Type hinting or type checking of function parameters](https://github.com/tufikhasan/php_learning/blob/5ddb3c761b382e55d329efc483062fc79e2324d9/index.php)
 
-31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning)
+31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning/blob/622e887c936392a7131649b0b846628ad25a5b2c/index.php)
 
-32 - [Fixing function return type](https://github.com/tufikhasan/php_learning)
+32 - [Fixing function return type](https://github.com/tufikhasan/php_learning/blob/b2ef9bc4a8e74222cf361b2459f5c64538d424ea/index.php)
 
-33 - [Accepting Unlimited Arguments in Functions](https://github.com/tufikhasan/php_learning)
+33 - [Accepting Unlimited Arguments in Functions](https://github.com/tufikhasan/php_learning/blob/0c8f53a2e19884312d7db7e1239fc098daf2c82c/index.php)
+
+34 - [Dividing a large function into smaller functions](https://github.com/tufikhasan/php_learning)
