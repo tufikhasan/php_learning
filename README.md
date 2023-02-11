@@ -112,4 +112,6 @@
 
 34 - [Dividing a large function into smaller functions](https://github.com/tufikhasan/php_learning/blob/da7e93e45b5051440645daac239e101eefe63063/index.php)
 
-35 - [Recursion and Recursive Functions](https://github.com/tufikhasan/php_learning)
+35 - [Recursion and Recursive Functions](https://github.com/tufikhasan/php_learning/blob/2b67fa494f24c2ff77fc05c79f7ac37a9abdeeff/index.php)
+
+36 - [Printing Fibonacci Series Using Recursive Functions](https://github.com/tufikhasan/php_learning)
