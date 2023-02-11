@@ -103,3 +103,5 @@
 29 - [DocBlock - php](https://github.com/tufikhasan/php_learning)
 
 30 - [Type hinting or type checking of function parameters](https://github.com/tufikhasan/php_learning)
+
+31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning)
