@@ -101,3 +101,5 @@
 28 - [include_once - embed PHP code from another file](https://github.com/tufikhasan/php_learning)
 
 29 - [DocBlock - php](https://github.com/tufikhasan/php_learning)
+
+30 - [Type hinting or type checking of function parameters](https://github.com/tufikhasan/php_learning)
