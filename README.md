@@ -120,4 +120,6 @@
 
 38 - [Variable Scope in PHP Function](https://github.com/tufikhasan/php_learning/blob/2975200db3d1413ac51c10c40ac79adc6f58d2e6/index.php)
 
-39 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning)
+39 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning/blob/ca6e769ba2ce454df96ce3fafd237a6cc33fbd89/index.php)
+
+40 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning)
