@@ -123,3 +123,5 @@
 39 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning/blob/ca6e769ba2ce454df96ce3fafd237a6cc33fbd89/index.php)
 
 40 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning)
+
+41 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning)
