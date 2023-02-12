@@ -116,4 +116,8 @@
 
 36 - [Printing Fibonacci Series Using Recursive Functions](https://github.com/tufikhasan/php_learning/blob/45b019931de3b5bc806fcf2e1e727dc77f93e256/index.php)
 
-37 - [Variable Scope in PHP Function](https://github.com/tufikhasan/php_learning)
+37 - [Factorial functions](https://github.com/tufikhasan/php_learning/blob/5ddb3c761b382e55d329efc483062fc79e2324d9/index.php)
+
+38 - [Variable Scope in PHP Function](https://github.com/tufikhasan/php_learning/blob/2975200db3d1413ac51c10c40ac79adc6f58d2e6/index.php)
+
+39 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning)
