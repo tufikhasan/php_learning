@@ -108,7 +108,9 @@
 
 31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning/blob/622e887c936392a7131649b0b846628ad25a5b2c/index.php)
 
-32 - [PHP 8: named arguments](https://github.com/tufikhasan/php_learning)
+32 - [PHP 8: named arguments](https://github.com/tufikhasan/php_learning/blob/f58569f775a1d9d3bbf1b315905f09333c2b98e0/index.php)
+
+33 - ["func_get_args" & "func_num_args"](https://github.com/tufikhasan/php_learning)
 
 34 - [Fixing function return type](https://github.com/tufikhasan/php_learning/blob/b2ef9bc4a8e74222cf361b2459f5c64538d424ea/index.php)
 

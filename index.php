@@ -1,33 +1,29 @@
 <?php
-/* PHP 8: named arguments
+/* PHP: "func_get_args" & "func_num_args"
  *
- * Named arguments is a feature that was introduced in PHP 8, which allows you to specify the arguments in a function call by name, rather than relying on the order in which they are defined in the function signature.
- *
+ * In PHP, "func_get_args" and "func_num_args" are both functions that provide information about the arguments passed to a function.
+ * In summary, "func_get_args" returns an array of all the arguments passed to a function, while "func_num_args" returns the number of arguments passed to a function. Both of these functions can be useful for writing functions that can handle a varying number of arguments.
  *
  * https://www.php.net/manual/en/functions.arguments.php
  * https://www.w3schools.com/php/php_looping_foreach.asp
  */
 
-//01:
-function printName( $firstName, $lastName ) {
-    echo "Hello ! {$firstName} {$lastName}\n";
+//------------------------------ "func_get_args" ---------------------------
+// "func_get_args" is a function that returns an array of all the arguments passed to a function. This array can be accessed and manipulated like any other array in PHP.
+function example() {
+    $arguments = func_get_args();
+    print_r( $arguments );
 }
-printName( lastName:"Sabbir", firstName:"Ahammed" );
+
+example( "apple", "banana", "cherry" );
 
 echo "\n";
 
-//02:
-function printName2( $firstName = "Rakib", $lastName = "khan" ) {
-    echo "Hello ! {$firstName} {$lastName}\n";
+//------------------------------ "func_num_args" ---------------------------
+// "func_num_args" is a function that returns the number of arguments passed to a function. This can be useful when you want to check how many arguments were passed to a function and take different actions based on that number.
+function example2() {
+    $num_args = func_num_args();
+    echo "Number of arguments: $num_args";
 }
-printName2( lastName:"Sheikh", );
-printName2( lastName:"Hasan", firstName:"Tufik" );
 
-echo "\n";
-
-//03:
-function printName3( $firstName = "Rakib", $lastName = "khan" ) {
-    echo "Hello ! {$firstName} {$lastName}\n";
-}
-printName2( $lastName = "Sheikh", );
-printName2( $lastName = "Hasan", $firstName = "Tufik" );
+example2( "apple", "banana", "cherry" );
