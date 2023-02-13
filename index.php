@@ -1,29 +1,52 @@
 <?php
-/* PHP: "func_get_args" & "func_num_args"
+/* PHP String functions:
  *
- * In PHP, "func_get_args" and "func_num_args" are both functions that provide information about the arguments passed to a function.
- * In summary, "func_get_args" returns an array of all the arguments passed to a function, while "func_num_args" returns the number of arguments passed to a function. Both of these functions can be useful for writing functions that can handle a varying number of arguments.
+ * The PHP string functions are part of the PHP core. No installation is required to use these functions.
  *
- * https://www.php.net/manual/en/functions.arguments.php
- * https://www.w3schools.com/php/php_looping_foreach.asp
+ * https://www.w3schools.com/php/php_ref_string.asp
+ * https://www.php.net/manual/en/ref.strings.php
  */
 
-//------------------------------ "func_get_args" ---------------------------
-// "func_get_args" is a function that returns an array of all the arguments passed to a function. This array can be accessed and manipulated like any other array in PHP.
-function example() {
-    $arguments = func_get_args();
-    print_r( $arguments );
-}
+//------------------------------ explode(separator,string,limit) ---------------------------
+//Break a string into an array:
+//01:
+$name = "Tufik Hasan";
+$part = explode( " ", $name );
 
-example( "apple", "banana", "cherry" );
+print_r( $part );
 
+echo "{$part[0]}\n";
+echo "{$part[1]}\n";
+
+//02:
+echo "\nUsing the limit parameter to return a number of array elements:\n";
+
+$str = 'one,two,three,four';
+// zero limit
+print_r( explode( ',', $str, 0 ) );
 echo "\n";
+// positive limit
+print_r( explode( ',', $str, 2 ) );
+echo "\n";
+// negative limit
+print_r( explode( ',', $str, -1 ) );
 
-//------------------------------ "func_num_args" ---------------------------
-// "func_num_args" is a function that returns the number of arguments passed to a function. This can be useful when you want to check how many arguments were passed to a function and take different actions based on that number.
-function example2() {
-    $num_args = func_num_args();
-    echo "Number of arguments: $num_args";
-}
+//------------------------------ implode(separator,array) ---------------------------
+//Join array elements with a string:
+echo "\n\n";
 
-example2( "apple", "banana", "cherry" );
+$arr = array( 'Hello', 'World!', 'Beautiful', 'Day!' );
+echo implode( " ", $arr );
+
+//------------------------------ join(separator,array) ---------------------------
+//Join array elements with a string:
+echo "\n\n";
+
+$arr = array( 'Hello', 'World!', 'Beautiful', 'Day!' );
+echo join( "+", $arr );
+
+//------------------------------ str_split(string,length) ---------------------------
+//The str_split() function splits a string into an array.
+echo "\n\n";
+print_r( str_split( "Hello" ) );
+print_r( str_split( "Hello", 3 ) );
