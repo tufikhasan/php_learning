@@ -1,35 +1,33 @@
 <?php
-/* PHP Foreach loop
- * The foreach loop in PHP is a control structure that allows you to iterate over arrays and objects, and execute a block of code for each element in the array or object.
- * Where condition is a boolean expression that determines whether to continue or end the loop. The code inside the loop will be executed, and then the condition will be evaluated. If the condition is true, the loop will repeat; if the condition is false, the loop will terminate.
- * https://www.php.net/manual/en/control-structures.foreach.php
+/* PHP 8: named arguments
+ *
+ * Named arguments is a feature that was introduced in PHP 8, which allows you to specify the arguments in a function call by name, rather than relying on the order in which they are defined in the function signature.
+ *
+ *
+ * https://www.php.net/manual/en/functions.arguments.php
  * https://www.w3schools.com/php/php_looping_foreach.asp
  */
 
-//01: In PHP, you can use the foreach loop to iterate over arrays and objects and access both the key and the value of each element.
-$students = [
-    "name"    => "Tufik",
-    "age"     => 25,
-    "address" => "Bogura",
-];
-foreach ( $students as $key => $value ) {
-    echo "$key = $value\n";
+//01:
+function printName( $firstName, $lastName ) {
+    echo "Hello ! {$firstName} {$lastName}\n";
 }
+printName( lastName:"Sabbir", firstName:"Ahammed" );
 
-echo PHP_EOL;
+echo "\n";
+
 //02:
-$students = array(
-    ["name"   => "Tufik",
-        "age"     => 25,
-        "address" => "Bogura",
-    ],
-    ["name"   => "Rakib",
-        "age"     => 32,
-        "address" => "Dhaka",
-    ],
-);
-foreach ( $students as $student ) {
-    static $count;
-    $count++;
-    echo "{$count}:{$student['name']} age is {$student['age']} lives in {$student['address']}\n";
+function printName2( $firstName = "Rakib", $lastName = "khan" ) {
+    echo "Hello ! {$firstName} {$lastName}\n";
 }
+printName2( lastName:"Sheikh", );
+printName2( lastName:"Hasan", firstName:"Tufik" );
+
+echo "\n";
+
+//03:
+function printName3( $firstName = "Rakib", $lastName = "khan" ) {
+    echo "Hello ! {$firstName} {$lastName}\n";
+}
+printName2( $lastName = "Sheikh", );
+printName2( $lastName = "Hasan", $firstName = "Tufik" );

@@ -90,7 +90,7 @@
 
 23.4.1 - [foreach loop](https://github.com/tufikhasan/php_learning/blob/6a743bb1114b03861afd937fcdca15cc2e275506/index.php)
 
-23.4.2 - [foreach loop access both the key and the value](https://github.com/tufikhasan/php_learning)
+23.4.2 - [foreach loop access both the key and the value](https://github.com/tufikhasan/php_learning/blob/d85133d5d0e9c931bd4cb4939001f92f61051625/index.php)
 
 24 - [PHP Break and Continue](https://github.com/tufikhasan/php_learning/blob/114d67179067c87b1380248b95f67b49e089fee2/index.php)
 
@@ -108,22 +108,24 @@
 
 31 - [Default value of function parameter or optional parameter](https://github.com/tufikhasan/php_learning/blob/622e887c936392a7131649b0b846628ad25a5b2c/index.php)
 
-32 - [Fixing function return type](https://github.com/tufikhasan/php_learning/blob/b2ef9bc4a8e74222cf361b2459f5c64538d424ea/index.php)
+32 - [PHP 8: named arguments](https://github.com/tufikhasan/php_learning)
 
-33 - [Accepting Unlimited Arguments in Functions](https://github.com/tufikhasan/php_learning/blob/0c8f53a2e19884312d7db7e1239fc098daf2c82c/index.php)
+34 - [Fixing function return type](https://github.com/tufikhasan/php_learning/blob/b2ef9bc4a8e74222cf361b2459f5c64538d424ea/index.php)
 
-34 - [Dividing a large function into smaller functions](https://github.com/tufikhasan/php_learning/blob/da7e93e45b5051440645daac239e101eefe63063/index.php)
+35 - [Accepting Unlimited Arguments in Functions](https://github.com/tufikhasan/php_learning/blob/0c8f53a2e19884312d7db7e1239fc098daf2c82c/index.php)
 
-35 - [Recursion and Recursive Functions](https://github.com/tufikhasan/php_learning/blob/2b67fa494f24c2ff77fc05c79f7ac37a9abdeeff/index.php)
+36 - [Dividing a large function into smaller functions](https://github.com/tufikhasan/php_learning/blob/da7e93e45b5051440645daac239e101eefe63063/index.php)
 
-36 - [Printing Fibonacci Series Using Recursive Functions](https://github.com/tufikhasan/php_learning/blob/45b019931de3b5bc806fcf2e1e727dc77f93e256/index.php)
+37 - [Recursion and Recursive Functions](https://github.com/tufikhasan/php_learning/blob/2b67fa494f24c2ff77fc05c79f7ac37a9abdeeff/index.php)
 
-37 - [Factorial functions](https://github.com/tufikhasan/php_learning/blob/5ddb3c761b382e55d329efc483062fc79e2324d9/index.php)
+38 - [Printing Fibonacci Series Using Recursive Functions](https://github.com/tufikhasan/php_learning/blob/45b019931de3b5bc806fcf2e1e727dc77f93e256/index.php)
 
-38 - [Variable Scope in PHP Function](https://github.com/tufikhasan/php_learning/blob/2975200db3d1413ac51c10c40ac79adc6f58d2e6/index.php)
+39 - [Factorial functions](https://github.com/tufikhasan/php_learning/blob/5ddb3c761b382e55d329efc483062fc79e2324d9/index.php)
 
-39 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning/blob/ca6e769ba2ce454df96ce3fafd237a6cc33fbd89/index.php)
+40 - [Variable Scope in PHP Function](https://github.com/tufikhasan/php_learning/blob/2975200db3d1413ac51c10c40ac79adc6f58d2e6/index.php)
 
-40 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning/blob/59bf819d831a69f36b5acef5294a72b1fd5d9350/index.php)
+41 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning/blob/ca6e769ba2ce454df96ce3fafd237a6cc33fbd89/index.php)
 
-41 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
+42 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning/blob/59bf819d831a69f36b5acef5294a72b1fd5d9350/index.php)
+
+43 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
