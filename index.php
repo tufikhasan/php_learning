@@ -1,36 +1,35 @@
 <?php
-/* ****** Arrow Functions In PHP *******
- *
- * The "fn" keyword is used to create arrow functions. Arrow functions are only available in PHP versions 7.4 and up.
- * Arrow functions have access to all variables from the scope in which they were created.
- * Arrow functions, also known as "short closure" syntax, is a shorthand way to define anonymous functions in PHP. Arrow functions were introduced in PHP 7.4, and provide a concise and more readable syntax for defining anonymous functions.
- * Arrow function syntax specially use for a inline callback function
- *
- * https://www.php.net/manual/en/functions.arrow.php
- * https://www.w3schools.com/php/keyword_fn.asp
+/* PHP Foreach loop
+ * The foreach loop in PHP is a control structure that allows you to iterate over arrays and objects, and execute a block of code for each element in the array or object.
+ * Where condition is a boolean expression that determines whether to continue or end the loop. The code inside the loop will be executed, and then the condition will be evaluated. If the condition is true, the loop will repeat; if the condition is false, the loop will terminate.
+ * https://www.php.net/manual/en/control-structures.foreach.php
+ * https://www.w3schools.com/php/php_looping_foreach.asp
  */
 
-//----------------- Arrow function syntax ----------
-// fn(arguments) => expression to be returned;
-fn( $element ) => $element;
+//01: In PHP, you can use the foreach loop to iterate over arrays and objects and access both the key and the value of each element.
+$students = [
+    "name"    => "Tufik",
+    "age"     => 25,
+    "address" => "Bogura",
+];
+foreach ( $students as $key => $value ) {
+    echo "$key = $value\n";
+}
 
-//----------------- Arrow function examples -----------------
-//01
-$name = 'John Doe';
-$greet = fn() => "Hello, $name";
-echo $greet() . PHP_EOL; // Outputs Hello, John Doe
-
+echo PHP_EOL;
 //02:
-$myName = fn( $x ) => $x;
-echo $myName( "Tufik Hasan" ) . PHP_EOL;
-
-//03:
-$array = array( 1, 2, 3, 4 );
-$array2 = array_map( fn( $num ) => $num * 2, $array );
-print_r( $array2 );
-
-//04:
-$x = 2;
-$arr = array( 1, 2, 3, 4 );
-$arr2 = array_map( fn( $num ) => $num + $x, $arr );
-print_r( $arr2 );
+$students = array(
+    ["name"   => "Tufik",
+        "age"     => 25,
+        "address" => "Bogura",
+    ],
+    ["name"   => "Rakib",
+        "age"     => 32,
+        "address" => "Dhaka",
+    ],
+);
+foreach ( $students as $student ) {
+    static $count;
+    $count++;
+    echo "{$count}:{$student['name']} age is {$student['age']} lives in {$student['address']}\n";
+}

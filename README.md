@@ -88,7 +88,9 @@
 
 23.3 - [Do While loop](https://github.com/tufikhasan/php_learning/blob/e6eb57e5718ecb57eb30710c34411b28be5a3231/index.php)
 
-23.4 - [foreach loop](https://github.com/tufikhasan/php_learning/blob/6a743bb1114b03861afd937fcdca15cc2e275506/index.php)
+23.4.1 - [foreach loop](https://github.com/tufikhasan/php_learning/blob/6a743bb1114b03861afd937fcdca15cc2e275506/index.php)
+
+23.4.2 - [foreach loop access both the key and the value](https://github.com/tufikhasan/php_learning)
 
 24 - [PHP Break and Continue](https://github.com/tufikhasan/php_learning/blob/114d67179067c87b1380248b95f67b49e089fee2/index.php)
 
@@ -122,6 +124,6 @@
 
 39 - [Variable function - function name to be stored in a variable](https://github.com/tufikhasan/php_learning/blob/ca6e769ba2ce454df96ce3fafd237a6cc33fbd89/index.php)
 
-40 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning)
+40 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning/blob/59bf819d831a69f36b5acef5294a72b1fd5d9350/index.php)
 
-41 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning)
+41 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
