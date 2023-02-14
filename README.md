@@ -28,7 +28,7 @@
 
 12.2- [String functions](https://github.com/tufikhasan/php_learning/blob/872054aeda03ebdfe89f8833416e8468efb8de81/index.php)
 
-12.3- [String functions - explode,implode,join,str_split](https://github.com/tufikhasan/)
+12.3- [String functions - explode,implode,join,str_split](https://github.com/tufikhasan/php_learning/blob/1e79f116e56ce2cab3356a75d058b548dba1b578/index.php)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
@@ -133,3 +133,5 @@
 42 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning/blob/59bf819d831a69f36b5acef5294a72b1fd5d9350/index.php)
 
 43 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
+
+44 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning)
