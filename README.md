@@ -138,4 +138,6 @@
 
 45 - [PHP Array](https://github.com/tufikhasan)
 
-45.1 - [Indexed Array](https://github.com/tufikhasan)
+45.1 - [Indexed Arrays](https://github.com/tufikhasan)
+
+45.2 - [Associative Arrays](https://github.com/tufikhasan)

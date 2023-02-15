@@ -1,57 +1,51 @@
 <?php
 /*
- *************  Indexed Array *************
+ *************  Associative Arrays *************
 
-PHP indexed array is an array which is represented by an index number by default. All elements of array are represented by an index number which starts from 0.
+PHP allows you to associate name/label with each array elements in PHP using => symbol. Such way, you can easily remember the element because each element is represented by label than an incremented number.
 
-PHP indexed array can store numbers, strings or any object. PHP indexed array is also known as numeric array.
+ * This a key value pair array
+ * There are two ways to define associative array:
 
- * There are two ways to create indexed arrays:
-
- * https://www.javatpoint.com/php-indexed-array
- * https://www.w3schools.com/php/php_arrays_indexed.asp
+ * https://www.javatpoint.com/php-associative-array
+ * https://www.php.net/manual/en/language.types.array.php
+ * https://www.w3schools.com/php/php_arrays_associative.asp
+ * https://www.geeksforgeeks.org/associative-arrays-in-php/
 
  */
 
-// To create an indexed array in PHP, you can use the square bracket notation with a list of values separated by commas, like this:
-// 01:
-$braArray = ["mango", "orange", "apple", "pine-apple", "banana"];
+//--------------------- You can assign associative like this: --------------
+$salary["tufik"] = 20000;
+$salary["rakib"] = 20000;
+$salary["sabbir"] = 20000;
+print_r( $salary );
 
-for ( $i = 0; $i < count( $braArray ); $i++ ) {
-    echo $braArray[$i] . PHP_EOL;
+//--------------------- You can assign associative like this: --------------
+//01:
+$person = array(
+    "name"    => "John",
+    "address" => "USA",
+);
+//02:
+// $person = [
+//     "name"    => "John",
+//     "address" => "USA",
+// ];
+
+$person["age"] = 32; //add new item in a array
+
+print_r( $person );
+echo "Myself {$person['name']}, {$person['age']} years old, lives in {$person["address"]}\n\n";
+
+// --------------- iteration ------------
+$name = array_keys( $person );
+
+for ( $i = 0; $i < count( $name ); $i++ ) {
+    echo "key = {$name[$i]}, value = {$person[$name[$i]]}" . PHP_EOL;
 }
 
-echo "\n";
+echo "\n\n";
 
-foreach ( $braArray as $fruit ) {
-    echo $fruit . PHP_EOL;
+foreach ( $person as $key => $value ) {
+    echo "key = {$key}, value = {$value}" . PHP_EOL;
 }
-
-// 02:
-// the index can be assigned manually
-// $cars[0] = "Volvo";
-// $cars[1] = "BMW";
-// $cars[2] = "Toyota";
-
-echo "\n";
-
-// This creates an array with four elements, each with an integer value. You can also use the array() function to create an indexed array, like this:
-// 01:
-$arr = array( "Dhaka", "Bogura", "Rajshahi", "Sylhet" );
-
-for ( $i = 0; $i < count( $arr ); $i++ ) {
-    echo $arr[$i] . PHP_EOL;
-}
-
-echo "\n";
-
-foreach ( $arr as $city ) {
-    echo $city . PHP_EOL;
-}
-
-// 02:
-// the index can be assigned manually
-// $students[0] = "Tufik";
-// $students[1] = "Rakib";
-// $students[2] = "Tarif";
-// print_r( $students );
