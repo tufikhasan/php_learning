@@ -1,52 +1,57 @@
 <?php
 /*
- *************  PHP Array *************
+ *************  Indexed Array *************
 
-In PHP, an array is a data structure that allows you to store multiple values in a single variable. It is a collection of key-value pairs, where each key corresponds to a specific value.
+PHP indexed array is an array which is represented by an index number by default. All elements of array are represented by an index number which starts from 0.
 
-PHP arrays can be created using different syntaxes, but the most common way is to use square brackets to define an array with one or more key-value pairs.
+PHP indexed array can store numbers, strings or any object. PHP indexed array is also known as numeric array.
 
- * PHP Advantages
- * -> Less Code
- * -> Easy to traverse
- * -> Sorting
- * -> Random Access
+ * There are two ways to create indexed arrays:
 
- * https://www.javatpoint.com/php-array
- * https://www.php.net/manual/en/language.types.array.php
- * https://www.w3schools.com/php/php_arrays.asp
+ * https://www.javatpoint.com/php-indexed-array
+ * https://www.w3schools.com/php/php_arrays_indexed.asp
 
  */
 
-// ---------- create array using square brackets -------
-//01:
+// To create an indexed array in PHP, you can use the square bracket notation with a list of values separated by commas, like this:
+// 01:
 $braArray = ["mango", "orange", "apple", "pine-apple", "banana"];
-echo $braArray[1] . PHP_EOL;
 
-$braArray[] = "grape"; //add item
-$braArray[count( $braArray )] = "Water melons"; //add item
-print_r( $braArray );
-
-//02:
-$students[0] = "Tufik";
-$students[1] = "Rakib";
-$students[2] = "Tarif";
-print_r( $students );
+for ( $i = 0; $i < count( $braArray ); $i++ ) {
+    echo $braArray[$i] . PHP_EOL;
+}
 
 echo "\n";
 
-// ---------- create array using array() function -------
-//01:
+foreach ( $braArray as $fruit ) {
+    echo $fruit . PHP_EOL;
+}
+
+// 02:
+// the index can be assigned manually
+// $cars[0] = "Volvo";
+// $cars[1] = "BMW";
+// $cars[2] = "Toyota";
+
+echo "\n";
+
+// This creates an array with four elements, each with an integer value. You can also use the array() function to create an indexed array, like this:
+// 01:
 $arr = array( "Dhaka", "Bogura", "Rajshahi", "Sylhet" );
-echo $arr[2] . PHP_EOL;
 
-$arr[] = "Pabna"; //add item
-$arr[count( $arr )] = "Bhola"; //add item
-print_r( $arr );
+for ( $i = 0; $i < count( $arr ); $i++ ) {
+    echo $arr[$i] . PHP_EOL;
+}
 
-//02:
-$cars[0] = "Volvo";
-$cars[1] = "BMW";
-$cars[2] = "Toyota";
+echo "\n";
 
-print_r( $cars );
+foreach ( $arr as $city ) {
+    echo $city . PHP_EOL;
+}
+
+// 02:
+// the index can be assigned manually
+// $students[0] = "Tufik";
+// $students[1] = "Rakib";
+// $students[2] = "Tarif";
+// print_r( $students );

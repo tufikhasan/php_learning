@@ -137,3 +137,5 @@
 44 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
 
 45 - [PHP Array](https://github.com/tufikhasan)
+
+45.1 - [Indexed Array](https://github.com/tufikhasan)
