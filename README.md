@@ -144,8 +144,10 @@
 
 45.2.2 - [Associative Arrays - Importance](https://github.com/tufikhasan/php_learning/blob/33814018cf10f17770ed62f216da20b6680d322f/index.php)
 
-45.3 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan/php_learning/blob/ee9f65340fda5009326b47441de595cfc5bd9bde/index.php)
+45.3 - [Multidimensional or nested arrays](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
 
-45.4 - [Multidimensional or nested arrays](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
+46 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan/php_learning/blob/ee9f65340fda5009326b47441de595cfc5bd9bde/index.php)
 
-45.4 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
+47 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
+
+48 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning)
