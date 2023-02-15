@@ -134,4 +134,6 @@
 
 43 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
 
-44 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning)
+44 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
+
+45 - [PHP Array](https://github.com/tufikhasan)

@@ -1,64 +1,52 @@
 <?php
 /*
- ***** Heredoc PHP
-Heredoc syntax is used in PHP to define a block of text that can contain any combination of letters, numbers, symbols, and even variables. It allows you to define a large block of text in a single statement, making your code more concise and easier to read.
+ *************  PHP Array *************
 
- * https://www.php.net/manual/en/language.types.string.php
+In PHP, an array is a data structure that allows you to store multiple values in a single variable. It is a collection of key-value pairs, where each key corresponds to a specific value.
 
-Some common use cases for heredoc syntax in PHP include:
+PHP arrays can be created using different syntaxes, but the most common way is to use square brackets to define an array with one or more key-value pairs.
 
--> Embedding HTML or other markup languages in your code
--> Writing SQL queries or other database-related statements
--> Embedding multiline text strings that would otherwise require cumbersome concatenation with the dot operator
--> Embedding a large block of text in a program or script that will be output to the user or displayed in some other way.
+ * PHP Advantages
+ * -> Less Code
+ * -> Easy to traverse
+ * -> Sorting
+ * -> Random Access
 
-Overall, heredoc syntax can make your PHP code more efficient and easier to read, especially when you need to include large blocks of text.
+ * https://www.javatpoint.com/php-array
+ * https://www.php.net/manual/en/language.types.array.php
+ * https://www.w3schools.com/php/php_arrays.asp
+
  */
 
-// ---------- SYNTAX -------
-<<<YOUGIVEANYNAME
-
-YOUGIVEANYNAME;
-
-// ============ Started PHP Development Server - OPEN TERMINAL RUN [php -S localhost:8080] COMMAND
+// ---------- create array using square brackets -------
 //01:
-$passion = "laravel developer";
-echo <<<EOD
-    <h1>Example 01:</h1>
-    <p>I am a $passion</p>
-    <br/>
-    EOD;
+$braArray = ["mango", "orange", "apple", "pine-apple", "banana"];
+echo $braArray[1] . PHP_EOL;
+
+$braArray[] = "grape"; //add item
+$braArray[count( $braArray )] = "Water melons"; //add item
+print_r( $braArray );
 
 //02:
-$fullName = <<<HH
-    <h1>Example 02:</h1>
-    <p>Tufik Hasan</p>
-    <br/>
-    HH;
+$students[0] = "Tufik";
+$students[1] = "Rakib";
+$students[2] = "Tarif";
+print_r( $students );
 
-echo $fullName;
+echo "\n";
 
-//03:
-$values = [<<<END
-a
-  b
-    c
-END,'d e f'];
-var_dump( $values );
+// ---------- create array using array() function -------
+//01:
+$arr = array( "Dhaka", "Bogura", "Rajshahi", "Sylhet" );
+echo $arr[2] . PHP_EOL;
 
-//04:
-echo <<<END
-      a
-     b
-    c
-<br/>
-END;
+$arr[] = "Pabna"; //add item
+$arr[count( $arr )] = "Bhola"; //add item
+print_r( $arr );
 
-//05: Parse error: Invalid body indentation level
-// different indentation for body (spaces) ending marker (tabs)
+//02:
+$cars[0] = "Volvo";
+$cars[1] = "BMW";
+$cars[2] = "Toyota";
 
-// echo <<<END
-//     a
-//  b
-// c
-//     END;
+print_r( $cars );
