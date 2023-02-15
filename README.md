@@ -143,3 +143,5 @@
 45.2 - [Associative Arrays](https://github.com/tufikhasan)
 
 45.2.2 - [Associative Arrays - Importance](https://github.com/tufikhasan)
+
+45.3 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan)
