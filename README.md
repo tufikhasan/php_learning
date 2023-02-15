@@ -151,3 +151,5 @@
 47 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
 
 48 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning)
+
+49 - [Removing data from associative arrays](https://github.com/tufikhasan/php_learning)

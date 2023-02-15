@@ -1,55 +1,30 @@
 <?php
-/**************  Copy by Value & Copy by Reference **************/
+/**************  Removing data from associative arrays *************
+In PHP, you can remove data from an associative array using the unset() function. The unset() function removes a specified key and its corresponding value from the array.
 
-/* ------------------ copy by value /deep copy --------------
--> When a variable is copied by value, a new copy of the variable is created with its own memory space. Changes made to the copy do not affect the original variable.
+ * https://www.php.net/manual/en/function.unset.php
+ * https://www.w3schools.com/php/func_var_unset.asp
+ * https://www.javatpoint.com/php-unset-function
+
  */
-echo "\n------- copy by value /deep copy --------\n";
+
 //01:
 $arr = [
     "name"    => "Tufik",
     "address" => "Bogura",
 ];
-
-$newArr = $arr;
-$newArr['name'] = "Tufik Updated";
-print_r( $newArr );
-
-//02:
-// function updateAddress( $arr ) {
-//     $arr["address"] .= ", Bangladesh";
-//     print_r( $updateAdd );
-// }
-// updateAddress( $arr );
-
+unset( $arr['name'] );
 print_r( $arr );
 
-echo "\n\n";
-
-/* ------------------ Copy by Reference / shallow cop --------------
--> When a variable is copied by reference, a new variable is created that points to the same memory location as the original variable. Changes made to the new variable also affect the original variable.
- */
-echo "\n----- Copy by Reference / shallow copy -----\n";
-//01:
-$fruit = [
-    "name"   => "Apple",
-    "weight" => "200g",
-];
-
-$newFruit = &$fruit;
-$newFruit['name'] = "Orange";
-print_r( $newFruit );
-
-print_r( $fruit );
-
 //02:
-// $person = [
-//     "name"    => "Rakib",
-//     "address" => "Dhaka",
-// ];
-// function updatePerson( &$person ) {
-//     $person["address"] .= ", Bangladesh";
-//     print_r( $person );
-// }
-// updatePerson( $person );
-// print_r( $person );
+$student = array(
+    "name"   => "John",
+    "age"    => 20,
+    "course" => "Computer Science",
+);
+
+// Remove the "age" key and its value from the $student array
+unset( $student["age"] );
+
+// Output the updated $student array
+print_r( $student );
