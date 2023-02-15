@@ -1,86 +1,53 @@
 <?php
-/*
- *************  Multidimensional or nested arrays *************
-In PHP, you can create multidimensional or nested arrays, which are arrays that contain other arrays as elements. You can use them to represent complex data structures such as tables, matrices, or trees.
+/**************  Associative Array to String Conversion - Serialize, json *************
+Two popular ways of serializing associative arrays into strings are through the use of the 'serialize()' function or the 'JSON' (JavaScript Object Notation) format.
+ */
+$arr = [
+    "name" => "Tufik Hasan",
+    "age"  => 25,
+    "roll" => 3,
+];
+/*------------------- 01: serialize() -------------------
+ * The 'serialize()' function is a built-in PHP function that can convert an associative array into a string. It works by converting the array into a serialized string, which can be stored or transmitted as a string.
 
- * This a key value pair array
- * There are two ways to define associative array:
+ * As you can see, the output of the serialize() function is a string that represents the original associative array. Note that this format is specific to PHP and may not be compatible with other languages.
 
- * https://www.javatpoint.com/php-multidimensional-array
- * https://www.w3schools.com/php/php_arrays_multidimensional.asp
- * https://www.geeksforgeeks.org/multidimensional-arrays-in-php/
+ * https://www.javatpoint.com/how-to-use-php-serialize-and-unserialize-function
+ * https://www.geeksforgeeks.org/how-to-use-php-serialize-and-unserialize-function/
 
  */
 
-//01:
-// $foods = [
-//     "fruits"     => explode( ', ', "Mango, Apple, Guava" ),
-//     "vegetables" => explode( ', ', "Tomato, Capsicum" ),
-//     "drinks"     => explode( ', ', "Water, Milk" ),
-// ];
-// print_r( $foods );
-// array_push( $foods['drinks'], "Orange juice" ); //add new item drinks array
-// print_r( $foods );
+//------ serialize - (Associative Array to String Conversion) ---------
+$serialize = serialize( $arr );
+echo $serialize; // serialize string
+echo "\n\n";
 
-//02:
-$arr = [
-    "test" => [
-        "test-again" => [
-            "a", "b", "c",
-        ],
-    ],
-];
-echo $arr["test"]["test-again"][1]; // output = b
+//------ unserialize - (Serialize to Associative Array) ---------
+$unserialize = unserialize( $serialize );
+print_r( $unserialize ); // associative array
 echo "\n";
 
-//03:
-$arr2 = [
-    [1, 2, 3, 4],
-    [11, 22, 33, 44],
-    [111, 222, 333, 444],
-    [1111, 2222, [
-        "a", "b", "c",
-    ], 4444],
-];
-// print_r( $arr2 );
-echo $arr2[3][2][2]; // output = c
+/*--------------------- 02: json_encode() -------------------
+ * JSON is a lightweight data interchange format that is widely used for transmitting data between a client and a server. It is a text-based format that is easy to read and write, and can be easily parsed by most programming languages.
+
+ * To convert an associative array into a JSON string, we can use the built-in json_encode()
+
+ * http://php.adamharvey.name/manual/en/function.json-encode.php
+ * https://www.php.net/manual/en/function.json-decode.php
+ * https://www.javatpoint.com/how-to-convert-array-into-string-in-php
+
+ */
+
+// 'json_encode()' - (Associative Array to JSON)
+$jsonEncode = json_encode( $arr );
+echo $jsonEncode; //JSON
+echo "\n\n";
+
+// 'json_decode()' - (JSON to stdClass Object)
+$stdClassObject = json_decode( $jsonEncode );
+print_r( $stdClassObject ); //stdClass Object
 echo "\n";
 
-//04:
-// PHP program to creating two - dimensional associative array
-$marks = array(
-
-    // Ankit will act as key
-    "Ankit" => array(
-
-        // Subject and marks are
-        // the key value pair
-        "C"   => 95,
-        "DCO" => 85,
-        "FOL" => 74,
-    ),
-
-    // Ram will act as key
-    "Ram"   => array(
-
-        // Subject and marks are
-        // the key value pair
-        "C"   => 78,
-        "DCO" => 98,
-        "FOL" => 46,
-    ),
-
-    // Anoop will act as key
-    "Anoop" => array(
-
-        // Subject and marks are
-        // the key value pair
-        "C"   => 88,
-        "DCO" => 46,
-        "FOL" => 99,
-    ),
-);
-
-echo "\n";
-print_r( $marks );
-echo $marks["Anoop"]["DCO"];
+// 'json_decode()' - (JSON to Associative Array)
+$jsonDecode = json_decode( $jsonEncode, true );
+print_r( $jsonDecode ); // associative array

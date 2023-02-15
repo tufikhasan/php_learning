@@ -136,14 +136,16 @@
 
 44 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
 
-45 - [PHP Array](https://github.com/tufikhasan)
+45 - [PHP Array](https://github.com/tufikhasan/php_learning/blob/abcd460f8021c89a679e92a067154c3e8a2958c3/index.php)
 
-45.1 - [Indexed Arrays](https://github.com/tufikhasan)
+45.1 - [Indexed Arrays](https://github.com/tufikhasan/php_learning/blob/6984555dabd4ef6e5bed6b557802f1970c9a7343/index.php)
 
-45.2 - [Associative Arrays](https://github.com/tufikhasan)
+45.2 - [Associative Arrays](https://github.com/tufikhasan/php_learning/blob/52538f75902ec67174e98446fdeda50c9bc61b65/index.php)
 
-45.2.2 - [Associative Arrays - Importance](https://github.com/tufikhasan)
+45.2.2 - [Associative Arrays - Importance](https://github.com/tufikhasan/php_learning/blob/33814018cf10f17770ed62f216da20b6680d322f/index.php)
 
-45.3 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan)
+45.3 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan/php_learning/blob/ee9f65340fda5009326b47441de595cfc5bd9bde/index.php)
 
-45.4 - [Multidimensional or nested arrays](https://github.com/tufikhasan)
+45.4 - [Multidimensional or nested arrays](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
+
+45.4 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
