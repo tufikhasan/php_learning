@@ -163,3 +163,5 @@
 53 - [array_merge() - Concatenating several arrays](https://github.com/tufikhasan/php_learning/)
 
 54 - [Sorting Arrays - Array function/method](https://github.com/tufikhasan/php_learning/)
+
+55 - [array_reverse - Array function/method](https://github.com/tufikhasan/php_learning/)
