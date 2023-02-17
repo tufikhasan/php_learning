@@ -165,3 +165,5 @@
 54 - [Sorting Arrays - Array function/method](https://github.com/tufikhasan/php_learning/)
 
 55 - [array_reverse - Array function/method](https://github.com/tufikhasan/php_learning/)
+
+56 - [Searching in Indexed & Associated Arrays](https://github.com/tufikhasan/php_learning/)
