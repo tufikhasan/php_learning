@@ -1,51 +1,48 @@
 <?php
-/* array_slice() - Array function/method
+/* array_splice() - Array function/method
  *
-The array_slice() function is an inbuilt function of PHP. The array_slice() function is used to extract a slice of an array. This function was introduced in 4.0.
+The array_splice() function removes selected elements from an array and replaces it with new elements. The function also returns an array with the removed elements.
 
-The array_slice() function returns the slice of the array as a new array, leaving the original array unchanged.
- * ------------------------ array_slice(array, start, length, preserve): ------------------------
+Tip: If the function does not remove any elements (length=0), the replaced array will be inserted from the position of the start parameter (See Example 2).
+
+Note: The keys in the replaced array are not preserved.
+
+ * ----------- array_splice(array, start, length, array): -----------------
 
 01-ARRAY: Required. Specifies an array
 
-02-START: Required. Numeric value. Specifies where the function will start the slice. 0 = the first element. If this value is set to a negative number, the function will start slicing that far from the last element. -2 means start at the second last element of the array.
+02-START: Required. Numeric value. Specifies where the function will start removing elements. 0 = the first element. If this value is set to a negative number, the function will start that far from the last element. -2 means start at the second last element of the array.
 
-03-LENGTH: Optional. Numeric value. Specifies the length of the returned array. If this value is set to a negative number, the function will stop slicing that far from the last element. If this value is not set, the function will return all elements, starting from the position set by the start-parameter.
+03-LENGTH: Optional. Numeric value. Specifies how many elements will be removed, and also length of the returned array. If this value is set to a negative number, the function will stop that far from the last element. If this value is not set, the function will remove all elements, starting from the position set by the start-parameter.
 
-04-PRESERVE : Optional. Specifies if the function should preserve or reset the keys. Possible values:
--> true - Preserve keys
--> false - Default. Reset keys
+04-ARRAY : Optional. Specifies an array with the elements that will be inserted to the original array. If it's only one element, it can be a string, and does not have to be an array.
 
  *
- * https://www.w3schools.com/php/func_array_slice.asp
- * https://www.geeksforgeeks.org/php-array_slice-function/
- * https://www.php.net/manual/en/function.array-slice.php
- * https://www.javatpoint.com/post/php-array_slice-function
+ * https://www.w3schools.com/php/func_array_splice.asp
+ * https://www.php.net/manual/en/function.array-splice.php
+ * https://www.geeksforgeeks.org/php-array_splice-function/
+ * https://www.javatpoint.com/post/php-array_splice-function
+ *
+ * NOTE: array_splice() modify original array
  */
 
 $arr = ["apple", "orange", "mango", "lemon", "grape", "melons"];
+echo "\n------ main array -------\n";
+print_r( $arr );
 
-// $sliceArr = array_slice( $arr, 2 ); //slice start position (2)
+// $spliceArr = array_splice( $arr, 3, 2 ); // removes 2 elements starting at index 3
 
-// $sliceArr = array_slice( $arr, 3, 2 ); //slice start position (3) & count 2 element
+// $spliceArr = array_splice( $arr, 1, -1 ); // removes all elements before end of last 1 element elements starting at index 1
 
-// $sliceArr = array_slice( $arr, 1, -2 ); //slice start position (2) & ends before 2 elements
+// $spliceArr = array_splice( $arr, -4, 2 ); // removes 2 elements starting at index -4
 
-// $sliceArr = array_slice( $arr, -4, -1 ); //slice start position (-5) & ends before 1 elements
+// $spliceArr = array_splice( $arr, -4, -1 ); // removes all elements before end of last 1 element elements starting at index -4
 
-// $sliceArr = array_slice( $arr, -3, 2 ); //slice start position (-3) & count 2 element
+$newArr = ["jackfruit", "pineapple"];
+$spliceArr = array_splice( $arr, 1, 4, $newArr ); // removes 4 elements starting at index 1, inserted array items
 
-$sliceArr = array_slice( $arr, 3, 2, true ); //slice start position (3) & count 2 element with default keys
-
-print_r( $sliceArr );
-
-//Associative array slice example:
-$associativeArr = ["a" => 12, "b" => 34, "c" => 53, "10" => 94, "d" => 64];
-
-// $sliAsAr = array_slice( $associativeArr, 2 ); //it's not show proper key
-
-// $sliAsAr = array_slice( $associativeArr, 2, -1, true ); //With the preserve parameter set to true
-
-$sliAsAr = array_slice( $associativeArr, 2, null, true ); //With the preserve parameter set to true
-
-print_r( $sliAsAr );
+//
+echo "---------- remove item ----------\n";
+print_r( $spliceArr );
+echo "\n------ main array after remove item -------\n";
+print_r( $arr );

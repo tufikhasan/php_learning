@@ -157,3 +157,5 @@
 50 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
 
 51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/)
+
+52 - [array_splice() - Array function/method](https://github.com/tufikhasan/php_learning/)
