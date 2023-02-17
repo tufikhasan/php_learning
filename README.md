@@ -153,3 +153,5 @@
 48 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning)
 
 49 - [Removing data from associative arrays](https://github.com/tufikhasan/php_learning)
+
+50 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning)
