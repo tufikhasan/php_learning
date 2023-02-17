@@ -25,6 +25,11 @@ The following values evaluates to empty:
 -> array()
 
  *
+ * https://www.geeksforgeeks.org/why-to-check-both-isset-and-empty-function-in-php/
+ * https://www.w3schools.com/php/func_var_isset.asp
+ * https://www.w3schools.com/php/func_var_empty.asp
+ * https://www.php.net/manual/en/function.isset.php
+ * https://www.javatpoint.com/php-isset-function
  */
 
 //example 01:
@@ -66,7 +71,7 @@ if ( isset( $c ) && ( is_numeric( $c ) && $c != "" ) ) {
     echo "Variable \$c is set & it's empty\n";
 }
 
-//example 03:
+//example 04:
 $d = 0;
 //check if the variable $b is set or not
 if ( isset( $d ) && ( is_numeric( $d ) && $d > 0 ) ) {
