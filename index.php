@@ -1,81 +1,51 @@
 <?php
-/* * Discussion of Empty Values - isset(),empty()
+/* array_slice() - Array function/method
  *
- * ------------------------ isset(): ------------------------
-The isset() function checks whether a variable is set, which means that it has to be declared and is not NULL.
+The array_slice() function is an inbuilt function of PHP. The array_slice() function is used to extract a slice of an array. This function was introduced in 4.0.
 
-This function returns true if the variable exists and is not NULL, otherwise it returns false.
+The array_slice() function returns the slice of the array as a new array, leaving the original array unchanged.
+ * ------------------------ array_slice(array, start, length, preserve): ------------------------
 
-Note: If multiple variables are supplied, then this function will return true only if all of the variables are set.
+01-ARRAY: Required. Specifies an array
 
-Tip: A variable can be unset with the unset() function.
+02-START: Required. Numeric value. Specifies where the function will start the slice. 0 = the first element. If this value is set to a negative number, the function will start slicing that far from the last element. -2 means start at the second last element of the array.
 
- *
- * ------------------------ empty(): ------------------------
-The empty() function checks whether a variable is empty or not.
-This function returns false if the variable exists and is not empty, otherwise it returns true.
+03-LENGTH: Optional. Numeric value. Specifies the length of the returned array. If this value is set to a negative number, the function will stop slicing that far from the last element. If this value is not set, the function will return all elements, starting from the position set by the start-parameter.
 
-The following values evaluates to empty:
--> 0
--> 0.0
--> "0"
--> ""
--> NULL
--> FALSE
--> array()
+04-PRESERVE : Optional. Specifies if the function should preserve or reset the keys. Possible values:
+-> true - Preserve keys
+-> false - Default. Reset keys
 
  *
- * https://www.geeksforgeeks.org/why-to-check-both-isset-and-empty-function-in-php/
- * https://www.w3schools.com/php/func_var_isset.asp
- * https://www.w3schools.com/php/func_var_empty.asp
- * https://www.php.net/manual/en/function.isset.php
- * https://www.javatpoint.com/php-isset-function
+ * https://www.w3schools.com/php/func_array_slice.asp
+ * https://www.geeksforgeeks.org/php-array_slice-function/
+ * https://www.php.net/manual/en/function.array-slice.php
+ * https://www.javatpoint.com/post/php-array_slice-function
  */
 
-//example 01:
-$a = "";
-//check if the variable $a is set or not
-if ( isset( $a ) ) {
-    echo "Variable \$a is set\n";
-} else {
-    echo "Variable \$a is not set\n";
-}
-//Check the variable $a is empty or not
-if ( empty( $a ) ) {
-    echo "Variable \$a is empty\n";
-} else {
-    echo "Variable \$a is not empty\n";
-}
+$arr = ["apple", "orange", "mango", "lemon", "grape", "melons"];
 
-//example 02:
-$b = 0;
-//check if the variable $b is set or not
-if ( isset( $b ) ) {
-    echo "Variable \$b is set\n";
-} else {
-    echo "Variable \$b is not set\n";
-}
-//Check the variable $b is empty or not
-if ( empty( $b ) ) {
-    echo "Variable \$b is empty\n";
-} else {
-    echo "Variable \$b is not empty\n";
-}
+// $sliceArr = array_slice( $arr, 2 ); //slice start position (2)
 
-//example 03:
-$c = 0;
-//check if the variable $b is set or not
-if ( isset( $c ) && ( is_numeric( $c ) && $c != "" ) ) {
-    echo "Variable \$c is set & it's not empty\n";
-} else {
-    echo "Variable \$c is set & it's empty\n";
-}
+// $sliceArr = array_slice( $arr, 3, 2 ); //slice start position (3) & count 2 element
 
-//example 04:
-$d = 0;
-//check if the variable $b is set or not
-if ( isset( $d ) && ( is_numeric( $d ) && $d > 0 ) ) {
-    echo "Variable \$d is set with valid value\n";
-} else {
-    echo "Variable \$d is set but it's not valid\n";
-}
+// $sliceArr = array_slice( $arr, 1, -2 ); //slice start position (2) & ends before 2 elements
+
+// $sliceArr = array_slice( $arr, -4, -1 ); //slice start position (-5) & ends before 1 elements
+
+// $sliceArr = array_slice( $arr, -3, 2 ); //slice start position (-3) & count 2 element
+
+$sliceArr = array_slice( $arr, 3, 2, true ); //slice start position (3) & count 2 element with default keys
+
+print_r( $sliceArr );
+
+//Associative array slice example:
+$associativeArr = ["a" => 12, "b" => 34, "c" => 53, "10" => 94, "d" => 64];
+
+// $sliAsAr = array_slice( $associativeArr, 2 ); //it's not show proper key
+
+// $sliAsAr = array_slice( $associativeArr, 2, -1, true ); //With the preserve parameter set to true
+
+$sliAsAr = array_slice( $associativeArr, 2, null, true ); //With the preserve parameter set to true
+
+print_r( $sliAsAr );

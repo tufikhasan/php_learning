@@ -150,8 +150,10 @@
 
 47 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
 
-48 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning)
+48 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning/blob/64aaee958b34db00bd31312f21f71d4c121f5907/index.php)
 
-49 - [Removing data from associative arrays](https://github.com/tufikhasan/php_learning)
+49 - [Removing data from associative arrays](https://github.com/tufikhasan/php_learning/blob/8bf4f7cb4cf555ba308d35ef08380cd64a3da9aa/index.php)
 
-50 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning)
+50 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
+
+51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/)
