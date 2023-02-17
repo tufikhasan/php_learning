@@ -1,48 +1,66 @@
 <?php
-/* array_splice() - Array function/method
+/* array_merge() - Concatenating several arrays
  *
-The array_splice() function removes selected elements from an array and replaces it with new elements. The function also returns an array with the removed elements.
+The array_merge() function merges one or more arrays into one array.
 
-Tip: If the function does not remove any elements (length=0), the replaced array will be inserted from the position of the start parameter (See Example 2).
+Tip: You can assign one array to the function, or as many as you like.
 
-Note: The keys in the replaced array are not preserved.
+Note: If two or more array elements have the same key, the last one overrides the others.
 
- * ----------- array_splice(array, start, length, array): -----------------
+Note: If you assign only one array to the array_merge() function, and the keys are integers, the function returns a new array with integer keys starting at 0 and increases by 1 for each value (See example below).
 
-01-ARRAY: Required. Specifies an array
+Tip: The difference between this function and the array_merge_recursive() function is when two or more array elements have the same key. Instead of override the keys, the array_merge_recursive() function makes the value as an array.
 
-02-START: Required. Numeric value. Specifies where the function will start removing elements. 0 = the first element. If this value is set to a negative number, the function will start that far from the last element. -2 means start at the second last element of the array.
+ * ----------- array_merge(array1, array2, array3, ...): -----------------
 
-03-LENGTH: Optional. Numeric value. Specifies how many elements will be removed, and also length of the returned array. If this value is set to a negative number, the function will stop that far from the last element. If this value is not set, the function will remove all elements, starting from the position set by the start-parameter.
-
-04-ARRAY : Optional. Specifies an array with the elements that will be inserted to the original array. If it's only one element, it can be a string, and does not have to be an array.
+-> array1    Required. Specifies an array
+-> array2    Optional. Specifies an array
+-> array3,...Optional. Specifies an array
 
  *
- * https://www.w3schools.com/php/func_array_splice.asp
- * https://www.php.net/manual/en/function.array-splice.php
- * https://www.geeksforgeeks.org/php-array_splice-function/
+ * https://www.w3schools.com/php/func_array_merge.asp
+ * https://www.php.net/manual/en/function.array-merge.php
+ * https://www.geeksforgeeks.org/php-merging-two-arrays-using-array_merge/
  * https://www.javatpoint.com/post/php-array_splice-function
- *
- * NOTE: array_splice() modify original array
  */
 
 $arr = ["apple", "orange", "mango", "lemon", "grape", "melons"];
-echo "\n------ main array -------\n";
-print_r( $arr );
 
-// $spliceArr = array_splice( $arr, 3, 2 ); // removes 2 elements starting at index 3
+// 01:
+// $arr1 = array_slice( $arr, 0, 2 );
+// $arr2 = array_slice( $arr, -4, 2 );
+// print_r( $arr1 );
+// print_r( $arr2 );
 
-// $spliceArr = array_splice( $arr, 1, -1 ); // removes all elements before end of last 1 element elements starting at index 1
+// $arrMerge = array_merge( $arr1, $arr2 );
+// print_r( $arrMerge );
 
-// $spliceArr = array_splice( $arr, -4, 2 ); // removes 2 elements starting at index -4
+// 02:
+// $arr1 = array_slice( $arr, 0, 2 );
+// $arr2 = array_slice( $arr, -4, 2 );
+// print_r( $arr1 );
+// print_r( $arr2 );
 
-// $spliceArr = array_splice( $arr, -4, -1 ); // removes all elements before end of last 1 element elements starting at index -4
+// $arrPlus = $arr1 + $arr2; //this will not work because $arr1 & $arr2 has same key
+// print_r( $arrPlus );
 
-$newArr = ["jackfruit", "pineapple"];
-$spliceArr = array_splice( $arr, 1, 4, $newArr ); // removes 4 elements starting at index 1, inserted array items
+//03:
+// $ar1 = array_slice( $arr, 4, 2 );
+// $ar2 = array_slice( $arr, -3, 1, true );
+// print_r( $ar1 );
+// print_r( $ar2 );
 
-//
-echo "---------- remove item ----------\n";
-print_r( $spliceArr );
-echo "\n------ main array after remove item -------\n";
-print_r( $arr );
+// $arrPlus2 = $ar1 + $ar2; //this will  work because $ar1 & $ar2 keys not same
+// print_r( $arrPlus2 );
+
+//04:
+$associativeArr = ["a" => 12, "b" => 34, "c" => 53, "10" => 94, "d" => 64];
+$ar1 = array_slice( $associativeArr, 3, 2, true );
+$ar2 = array_slice( $associativeArr, -3, 1, true );
+$ar3 = ["j" => 64, "k" => 76];
+print_r( $ar1 );
+print_r( $ar2 );
+print_r( $ar3 );
+
+$arrPlus = $ar1 + $ar2 + $ar3; //this will  work because $ar1 & $ar2 keys not same
+print_r( $arrPlus );

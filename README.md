@@ -159,3 +159,5 @@
 51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/)
 
 52 - [array_splice() - Array function/method](https://github.com/tufikhasan/php_learning/)
+
+53 - [array_merge() - Concatenating several arrays](https://github.com/tufikhasan/php_learning/)
