@@ -1,57 +1,83 @@
 <?php
-/* array_filter() - Array Utility Functions - Very Important */
+/* array_map() - Array Utility Functions - Very Important */
 
-/* ************** array_filter($array, $callback_function, $flag) ************
+/* ************** array_map($callback, $array, ...$arrays) ************
 
-This built-in function in PHP is used to filter the elements of an array using a user-defined function which is also called a callback function. The array_filter() function iterates over each value in the array, passing them to the user-defined function or the callback function. If the callback function returns true then the current value of the array is returned into the result array otherwise not. This way the keys of the array gets preserved, i.e. the key of element in the original array and output array are same.
+The array_map() is an inbuilt function in PHP and it helps to modify all elements one or more arrays according to some user-defined condition in an easy manner. It basically, sends each of the elements of an array to a user-defined function and returns an array with new values as modified by that function.
 
-01: $array (mandatory): This refers to the input array on which the filter operation is to be performed.
+Parameters used:
+This function takes 2 compulsory parameter functionName and arr1 and the rest are optional.
 
-02: $callback_function (optional): Refers to the user-defined function. If the function is not supplied then all entries of the array equal to FALSE , will be removed.
+01: functionName(mandatory): This parameter defines the name of the user-defined function according to which the values in the array will be modified.
+02: arr1(mandatory): This parameter specifies the array to be modified.
+03: arr2(mandatory): This parameter specifies the array to be modified.
 
-03: $flag (optional): Refers to the arguments passed to the callback function.
-    -> "ARRAY_FILTER_USE_KEY" – passes key as the only argument to a callback function, instead of the value of the array.
-    -> "ARRAY_FILTER_USE_BOTH" – passes both value and key as arguments to callback instead of the value.
+The functionName parameter is compulsory and we can pass any number of arrays to this function named arr1, arr2.. arrn and so on.
 
- * https://www.geeksforgeeks.org/php-array_filter-function/
- * https://www.javatpoint.com/post/php-array_filter-function
- * https://www.php.net/manual/en/function.array-filter.php
- * https://www.w3schools.com/php/func_array_filter.asp
+ * https://www.php.net/manual/en/function.array-map.php
+ * https://www.geeksforgeeks.org/php-array_map-function/
+ * https://www.w3schools.com/php/func_array_map.asp
+ * https://www.javatpoint.com/post/php-array_map-function
  */
 
-$num = [1, 2, 3, 4, 5];
-//01:
-function even($n)
-{
-    return $n % 2 == 0;
-}
-$evenNum = array_filter($num, 'even');
-print_r($evenNum);
+// 01:
+$names = array( "Alice", "Bob", "Charlie" );
+$upper_names = array_map( "strtoupper", $names );
+print_r( $upper_names );
 
-echo PHP_EOL;
+// //02:
+// $arr = array( 1, 2, 3, 4, 5 );
+// function fun1( $v ) {
+//     return ( $v + 7 ); // add 7
+// }
+// print_r( array_map( "fun1", $arr ) );
 
-//02:
-$oddNum = array_filter($num, fn ($n) => $n % 2 != 0);
-print_r($oddNum);
+// // 03:
+// $arr1 = array(1, 2, 3, 4, 5);
+// $arr2 = array(1, 3, 3, 4, 8);
+// function fun2($v1, $v2)
+// {
+//     if ($v1 == $v2) return 1;
+//     else return 0;
+// }
+// print_r(array_map("fun2", $arr1, $arr2));
 
-echo PHP_EOL;
+// // 04
+// function userfunction($a1, $a2)
+// {
+//     if ($a1 === $a2) {
+//         return "like";
+//     }
+//     return "unlike";
+// }
+// $x1 = array("sachin", "virat", "rahul");
+// $x2 = array("pujara", "virat", "hardik");
+// print_r(array_map("userfunction", $x1, $x2));
 
+// // 05
+// function show_Spanish( int $n, string $m ): string {
+//     return "The number {$n} is called {$m} in Spanish";
+// }
+// $a = [1, 2, 3, 4, 5];
+// $b = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
 
-$arr = ['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4];
-//03:
-print_r(array_filter($arr, function ($k) {
-    return $k == 'b';
-}, ARRAY_FILTER_USE_KEY));
+// $c = array_map( 'show_Spanish', $a, $b );
+// print_r( $c );
 
-echo PHP_EOL;
+// // 06
+// $x = [1, 2, 3, 4, 5];
+// $y = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
+// function map_Spanish( int $n, string $m ): array
+// {
+//     return [$n => $m];
+// }
+// $d = array_map( 'map_Spanish', $x, $y );
+// print_r( $d );
 
-//04:
-print_r(array_filter($arr, function ($v, $k) {
-    return $k == 'b' || $v == 4;
-}, ARRAY_FILTER_USE_BOTH));
+//07
+// $a = [1, 2, 3, 4, 5];
+// $b = ['one', 'two', 'three', 'four', 'five'];
+// $c = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
 
-echo PHP_EOL;
-
-//05:
-$allNum = [0 => 'foo', 1 => false, 2 => -1, 3 => null, 4 => '', 5 => '0', 6 => 0,];
-print_r(array_filter($allNum));
+// $d = array_map( null, $a, $b, $c );
+// print_r( $d );

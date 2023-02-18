@@ -156,20 +156,22 @@
 
 50 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
 
-51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/)
+51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/blob/cdcec33e2c68f8ebac8d0328982868cc1b7bc8d2/index.php)
 
-52 - [array_splice() - Array function/method](https://github.com/tufikhasan/php_learning/)
+52 - [array_splice() - Array function/method](https://github.com/tufikhasan/php_learning/blob/df775056548066958ee301949f079bd9d75c7002/index.php)
 
-53 - [array_merge() - Concatenating several arrays](https://github.com/tufikhasan/php_learning/)
+53 - [array_merge() - Concatenating several arrays](https://github.com/tufikhasan/php_learning/blob/b514367e6213f56fb48216d77fefbe0d33c4af2a/index.php)
 
-54 - [Sorting Arrays - Array function/method](https://github.com/tufikhasan/php_learning/)
+54 - [Sorting Arrays - Array function/method](https://github.com/tufikhasan/php_learning/blob/7aec140d98df57d4626e6bdbea724da66af0ac0a/index.php)
 
-55 - [array_reverse - Array function/method](https://github.com/tufikhasan/php_learning/)
+55 - [array_reverse - Array function/method](https://github.com/tufikhasan/php_learning/blob/9bf99f65fae9c1444fbdceaa855db4d286a2357b/index.php)
 
-56 - [Searching in Indexed & Associated Arrays](https://github.com/tufikhasan/php_learning/)
+56 - [Searching in Indexed & Associated Arrays](https://github.com/tufikhasan/php_learning/blob/ad41300a3681171e0ddb9b20cf64ad3496b36275/index.php)
 
-57 - [array_intersect(), array_intersect(), array_diff(), array_diff_assoc()](https://github.com/tufikhasan/php_learning/)
+57 - [array_intersect(), array_intersect(), array_diff(), array_diff_assoc()](https://github.com/tufikhasan/php_learning/blob/2f845baece11bcbef4f2af4615e487db1df20e9b/index.php)
 
-58 - [array_walk() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+58 - [array_walk() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/blob/c744a9e8783adf82894f743e0ae9e7a84e44f1d8/index.php)
 
-59 - [array_filter() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+59 - [array_filter() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/blob/32331ce704fd8086f37a8a7ae56065570f554f2f/index.php)
+
+60 - [array_map() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
