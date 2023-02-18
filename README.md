@@ -171,3 +171,5 @@
 57 - [array_intersect(), array_intersect(), array_diff(), array_diff_assoc()](https://github.com/tufikhasan/php_learning/)
 
 58 - [array_walk() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+
+59 - [array_filter() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
