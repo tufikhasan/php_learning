@@ -1,114 +1,92 @@
 <?php
-/* Searching in Indexed & Associated Arrays */
+/* Difference & intersection of two indexed & associated arrays */
 
 
-/* ******************* in_array() ************
-The in_array() function is a built-in PHP function that checks if a given value exists in an array. The function takes three arguments:
+/* ************** array_intersect(multipleArray...) & array_intersect_assoc(multipleArray...) ************
+This builtin function of PHP is used to compute the intersection of two or more arrays. The function is used to compare the values of two or more arrays and returns the matches. The function prints only those elements of the first array that are present in all other arrays.
 
--> The first argument is the value you want to search for.
--> The second argument is the array you want to search in.
--> The third argument is optional and is a boolean flag that specifies whether the function should use strict type checking. If this parameter is set to true, the function will also check the types of the values in the array, and return true only if the types match as well as the values.
+Note: The keys of elements are preserved. That is, the keys of elements in output array will be same as that of keys of those elements in the first array.
 
- * https://www.php.net/manual/en/function.in-array.php
- * https://www.w3schools.com/php/func_array_in_array.asp
+ * https://www.php.net/manual/en/function.array-intersect.php
+ * https://www.php.net/manual/en/function.array-intersect-assoc.php
+ * https://www.w3schools.com/php/func_array_intersect.asp
+ * https://www.w3schools.com/php/func_array_intersect_assoc.asp
+ * https://www.geeksforgeeks.org/php-array_intersect-function/
  */
-$number = [5, 2, 5, "9", 1, 6];
+$num1 = [8, 7, 5, 4,  3, "9"];
+$num2 = [2, 7, 9, 1, 4];
 
-if (in_array(9, $number)) {
-    echo "9 is exist\n";
-} else {
-    echo "9 is not exist\n";
-}
-//strict type checking
-if (in_array(9, $number, true)) {
-    echo "9 is exist\n";
-} else {
-    echo "9 is not exist\n";
-}
+$common = array_intersect($num1, $num2); //return $num1 all common number
+
+// $common = array_intersect($num2, $num1); //return $num2 all common number
+
+// $common = array_intersect($num1, $num2, [4, 5, 3, 7]); //return common number
+
+// $common = array_intersect_assoc($num1, $num2); //return $num1 all common number if key matches
+
+// $common = array_intersect_key($num2, $num1); //return all matches key value
+
+print_r($common);
+
+$arr1 = ["a" => "water-melon", "b" => "apple", "h" => "orange"];
+$arr2 = ["a" => "mango", "b" => "apple", "c" => "orange", "d" => "lemon"];
+
+$commonArr = array_intersect($arr1, $arr2); //return $arr1 all common value
+
+// $commonArr = array_intersect($arr2, $arr1); //return $arr2 all common value
+
+// $commonArr = array_intersect_assoc($arr1, $arr2); //return $arr1 all common number if key matches
+
+// $commonArr = array_intersect_key($arr1, $arr2); //return all  matches key value
+
+print_r($commonArr);
 
 
 
 
-/* ******************* array_search(value, array, strict) ************
-The in_array() function is a built-in PHP function that checks if a given value exists in an array. The function takes three arguments:
 
-01- value: Required. Specifies the value to search for
-02- array: Required. Specifies the array to search in
-03- strict: Optional. If this parameter is set to TRUE, then this function will search for identical elements in the array. Possible values:
--> true
--> false - Default
 
- * https://www.php.net/manual/en/function.array-search.php
- * https://www.w3schools.com/php/func_array_search.asp
- * https://www.geeksforgeeks.org/php-array_search-function/
- *
+/* ************** array_diff(multipleArray...) & array_diff_assoc(multipleArray...) ************
+
+The array_diff() is an inbuilt function in PHP ans is used to calculate the difference between two or more arrays. This function computes difference according to the values of the elements, between one or more array and return differences in the form of a new array. This function basically returns all the entries that are present in the first array which are not present in any other arrays.
+
+RETURN TYPE: This function compares the first array in parameters with rest of the arrays and returns an array containing all the entries from $array1 that are not present in any of the other arrays.
+
+ * https://www.php.net/manual/en/function.array-diff.php
+ * https://www.php.net/manual/en/function.array-diff-assoc.php
+ * https://www.w3schools.com/php/func_array_diff.asp
+ * https://www.w3schools.com/php/func_array_diff_assoc.asp
+ * https://www.geeksforgeeks.org/php-array_diff-function/
  */
-$number2 = [9, 2, 5, 1, 6, 5];
+$n1 = [7, 5, 4, "9"];
+$n2 = [2, 1, 9, 4];
 
-$findIndex = array_search("1", $number2);
-echo "key = $findIndex\n";
+$diff = array_diff($n1, $n2); //return $n1 all difference number
 
-//return only first item index
-$findIndex = array_search(5, $number2, true);
-echo "key = $findIndex\n";
+// $diff = array_diff($n2, $n1); //return $n2 all difference number
 
-//strict type checking
-$findIndex = array_search("1", $number2, true);
-echo "key = $findIndex\n";
+// $diff = array_diff($n1, $n2, [4, 3, 7]); //return $n1 all difference number
 
+$d1 = [1, 2, 9, 4, 3];
+$d2 = [1, 2, 3, 4];
 
+// $diff = array_diff_assoc($d1, $d2); //return $d1 all difference number if key doesn't matches
 
-/* ******************* "array_key_exists(key, array)" / "key_exists(key, array)"  ************
+// $diff = array_diff_assoc($d2, $d1); //return $d2 all difference number if key doesn't matches
 
-In PHP, both "array_key_exists()" and "key_exists()" are functions that check whether a specified key exists in an array.
+print_r($diff);
 
-"array_key_exists()" is a built-in PHP function that checks if a given key or index exists in an array.
+$ar1 = ["a" => "water-melon", "b" => "apple", "h" => "orange"];
+$ar2 = ["a" => "mango", "b" => "apple", "c" => "orange", "d" => "lemon"];
 
-"key_exists()" is an alias of "array_key_exists()", which means that it is simply another name for the same function. The syntax for "key_exists()" is identical to that of "array_key_exists()"
+$diffAr = array_diff($ar1, $ar2); //return $ar1 all difference value
 
-01- key: Required. Specifies the key
-02- array: Required. Specifies the array
+// $diffAr = array_diff($ar2, $ar1); //return $ar2 all difference value
 
- * https://www.php.net/manual/en/function.array-key-exists.php
- * https://www.w3schools.com/php/func_array_key_exists.asp
- *
- */
+// $diffAr = array_diff_assoc($ar1, $ar2); //return $ar1 all difference value based on key
 
-$arr = ["a" => 12, "b" => 3, "b" => 64, "d" => 94];
-if (array_key_exists("b", $arr)) {
-    echo "key B is exist\n";
-} else {
-    echo "key B is not exist\n";
-}
-//strict type checking
-if (key_exists("e", $arr)) {
-    echo "key E is exist\n";
-} else {
-    echo "key E is not exist\n";
-}
+// $diffAr = array_diff_key($ar1, $ar2); //return $ar1 all difference key
 
+// $commonArr = array_intersect_key($arr1, $ar2); //return all difference value matches key value
 
-
-/* ******************* array_values(array)  ************
-
- * https://www.php.net/manual/en/function.array-values.php
- * https://www.w3schools.com/php/func_array_values.asp
- * https://www.geeksforgeeks.org/php-array_values-function/
- *
- */
-
-$a = array("Name" => "Peter", "Age" => "41", "Country" => "USA");
-print_r(array_values($a));
-
-
-
-/* ******************* array_keys(array, value, strict)  ************
-
- * https://www.w3schools.com/php/func_array_keys.asp
- * https://www.php.net/manual/en/function.array-keys.php
- * https://www.geeksforgeeks.org/php-array_keys-function/
- *
- */
-
-$a = array("Name" => "Peter", "Age" => "41", "Country" => "USA");
-print_r(array_keys($a));
+print_r($diffAr);

@@ -167,3 +167,5 @@
 55 - [array_reverse - Array function/method](https://github.com/tufikhasan/php_learning/)
 
 56 - [Searching in Indexed & Associated Arrays](https://github.com/tufikhasan/php_learning/)
+
+57 - [array_intersect(), array_intersect(), array_diff(), array_diff_assoc()](https://github.com/tufikhasan/php_learning/)
