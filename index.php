@@ -1,5 +1,5 @@
 <?php
-/* array_walk() - Array Utility Functions - Very Important */
+/* array_filter() - Array Utility Functions - Very Important */
 
 /* ************** array_filter($array, $callback_function, $flag) ************
 
