@@ -1,92 +1,52 @@
 <?php
-/* Difference & intersection of two indexed & associated arrays */
+/* array_walk() - Array Utility Functions - Very Important */
 
+/* ************** array_walk($array, myFunction, $extraParam) ************
 
-/* ************** array_intersect(multipleArray...) & array_intersect_assoc(multipleArray...) ************
-This builtin function of PHP is used to compute the intersection of two or more arrays. The function is used to compare the values of two or more arrays and returns the matches. The function prints only those elements of the first array that are present in all other arrays.
+The array_walk() function is an inbuilt function in PHP. The array_walk() function walks through the entire array regardless of pointer position and applies a callback function or user-defined function to every element of the array. The array element’s keys and values are parameters in the callback function.
 
-Note: The keys of elements are preserved. That is, the keys of elements in output array will be same as that of keys of those elements in the first array.
+01: $array: This is a mandatory parameter and specifies the input array.
 
- * https://www.php.net/manual/en/function.array-intersect.php
- * https://www.php.net/manual/en/function.array-intersect-assoc.php
- * https://www.w3schools.com/php/func_array_intersect.asp
- * https://www.w3schools.com/php/func_array_intersect_assoc.asp
- * https://www.geeksforgeeks.org/php-array_intersect-function/
+02: callbackFunction(): This parameter specifies the name of the user-defined function and is also mandatory. The user-defined function generally excepts two parameters of which the first parameter represent the array’s values and the second parameter represents the corresponding keys.
+
+03: $extraparam: This is an optional parameter. It specifies an extra parameter to the user-defined function in addition to the two parameters, array keys and values.
+
+RETURN VALUE: This function returns a boolean value. It returns TRUE on success or FALSE on failure.
+
+ * https://www.geeksforgeeks.org/php-array_walk-function/
+ * https://www.w3schools.com/php/func_array_walk.asp
+ * https://www.php.net/manual/en/function.array-walk.php
+ * https://www.javatpoint.com/post/php-array_walk-function
  */
-$num1 = [8, 7, 5, 4,  3, "9"];
-$num2 = [2, 7, 9, 1, 4];
 
-$common = array_intersect($num1, $num2); //return $num1 all common number
+$num = [1, 2, 3, 4, 5];
+//01:
+function square( $n ) {
+    echo "$n Squre = " . $n * $n . PHP_EOL;
+}
+array_walk( $num, 'square' );
 
-// $common = array_intersect($num2, $num1); //return $num2 all common number
+echo PHP_EOL;
 
-// $common = array_intersect($num1, $num2, [4, 5, 3, 7]); //return common number
+//02:
+array_walk( $num, function ( $n ) {
+    echo "$n Power = " . $n * $n * $n . PHP_EOL;
+} );
 
-// $common = array_intersect_assoc($num1, $num2); //return $num1 all common number if key matches
+echo PHP_EOL;
 
-// $common = array_intersect_key($num2, $num1); //return all matches key value
+$fruits = array( "d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple" );
 
-print_r($common);
+//03:
+function myfunction( $value, $key ) {
+    echo "$key = $value\n";
+}
+array_walk( $fruits, 'myfunction', );
 
-$arr1 = ["a" => "water-melon", "b" => "apple", "h" => "orange"];
-$arr2 = ["a" => "mango", "b" => "apple", "c" => "orange", "d" => "lemon"];
+echo PHP_EOL;
 
-$commonArr = array_intersect($arr1, $arr2); //return $arr1 all common value
-
-// $commonArr = array_intersect($arr2, $arr1); //return $arr2 all common value
-
-// $commonArr = array_intersect_assoc($arr1, $arr2); //return $arr1 all common number if key matches
-
-// $commonArr = array_intersect_key($arr1, $arr2); //return all  matches key value
-
-print_r($commonArr);
-
-
-
-
-
-
-/* ************** array_diff(multipleArray...) & array_diff_assoc(multipleArray...) ************
-
-The array_diff() is an inbuilt function in PHP ans is used to calculate the difference between two or more arrays. This function computes difference according to the values of the elements, between one or more array and return differences in the form of a new array. This function basically returns all the entries that are present in the first array which are not present in any other arrays.
-
-RETURN TYPE: This function compares the first array in parameters with rest of the arrays and returns an array containing all the entries from $array1 that are not present in any of the other arrays.
-
- * https://www.php.net/manual/en/function.array-diff.php
- * https://www.php.net/manual/en/function.array-diff-assoc.php
- * https://www.w3schools.com/php/func_array_diff.asp
- * https://www.w3schools.com/php/func_array_diff_assoc.asp
- * https://www.geeksforgeeks.org/php-array_diff-function/
- */
-$n1 = [7, 5, 4, "9"];
-$n2 = [2, 1, 9, 4];
-
-$diff = array_diff($n1, $n2); //return $n1 all difference number
-
-// $diff = array_diff($n2, $n1); //return $n2 all difference number
-
-// $diff = array_diff($n1, $n2, [4, 3, 7]); //return $n1 all difference number
-
-$d1 = [1, 2, 9, 4, 3];
-$d2 = [1, 2, 3, 4];
-
-// $diff = array_diff_assoc($d1, $d2); //return $d1 all difference number if key doesn't matches
-
-// $diff = array_diff_assoc($d2, $d1); //return $d2 all difference number if key doesn't matches
-
-print_r($diff);
-
-$ar1 = ["a" => "water-melon", "b" => "apple", "h" => "orange"];
-$ar2 = ["a" => "mango", "b" => "apple", "c" => "orange", "d" => "lemon"];
-
-$diffAr = array_diff($ar1, $ar2); //return $ar1 all difference value
-
-// $diffAr = array_diff($ar2, $ar1); //return $ar2 all difference value
-
-// $diffAr = array_diff_assoc($ar1, $ar2); //return $ar1 all difference value based on key
-
-// $diffAr = array_diff_key($ar1, $ar2); //return $ar1 all difference key
-
-// $commonArr = array_intersect_key($arr1, $ar2); //return all difference value matches key value
-
-print_r($diffAr);
+//04:
+function myfunction2( $value, $key, $p ) {
+    echo "$key $p $value\n";
+}
+array_walk( $fruits, 'myfunction2', "has the value" );
