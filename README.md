@@ -177,3 +177,5 @@
 60 - [array_map() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
 
 61 - [array_reduce() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+
+61 - [count() - sizeof() - array_count_values() - array_unique()](https://github.com/tufikhasan/php_learning/)
