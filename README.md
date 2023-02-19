@@ -183,3 +183,5 @@
 62 - [list() - Array function](https://github.com/tufikhasan/php_learning/)
 
 63 - [range(start, end, step) - Array function](https://github.com/tufikhasan/php_learning/)
+
+64 - [mt_rand(min,max) , rand(min,max) - Array function](https://github.com/tufikhasan/php_learning/)
