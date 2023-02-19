@@ -1,36 +1,36 @@
 <?php
-/* list() - Array function
+/* range(start, end, step) - Array function
 
-In PHP, list() is a language construct that allows you to assign variables in a single statement based on the values of an array or iterable. It is often used as a destructuring feature to extract individual values from an array or iterable and assign them to variables.
+In PHP, the range() function is used to create an array containing a range of elements between a specified starting and ending point. The function takes two or three arguments:
 
- * https://www.w3schools.com/php/func_array_list.asp
- * https://www.php.net/manual/en/function.list.php
- * https://www.geeksforgeeks.org/php-list-function/
- * https://www.javatpoint.com/post/php-array-list-function
+ * https://www.php.net/manual/en/function.range.php
+ * https://www.w3schools.com/Php/func_array_range.asp
+ * https://www.geeksforgeeks.org/php-range-function/
+ * https://www.javatpoint.com/post/php-array-range-function
  */
 
 //01:
-$fruits = array('apple', 'banana', 'orange', 'kiwi');
-list($a, $b, $c, $d) = $fruits;
-echo "$a, $b, $c, $d \n\n";
+$numbers = range(1, 5);
+print_r($numbers);
 
 //02:
-$person = ["Tufik", "Hasan", 25, "Bogura"];
-list($fName, $lName) = $person;
-echo "My name is $fName $lName\n\n";
+$oddNumber = range(1, 10, 2);
+print_r($oddNumber);
+
+echo "\n\n";
 
 //03:
-list($x, $y, $z) = ["Bogura", "Dhaka", "Rajshahi"];
-echo "$x, $y, $z \n\n";
+$nums = range(0, 5);
+foreach ($nums as $num) {
+    echo "$num, ";
+}
 
-//04: list() function can also be used with associative arrays, but with some limitations. Since associative arrays do not have a predictable order of keys, you cannot use list() to assign the values of the array to variables based on the key names.
-$people = array(
-    'name' => 'John',
-    'age' => 30,
-    'city' => 'New York'
-);
-list($name, $age, $city) = array_values($people);
+echo "\n\n";
 
-echo $name . " "; // output: John
-echo $age . " "; // output: 30
-echo $city . " "; // output: New York
+//04:
+$nums = range(0, 50, 7);
+foreach ($nums as $value) {
+    if ($value > 0) {
+        echo "$value, ";
+    }
+}
