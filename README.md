@@ -175,3 +175,5 @@
 59 - [array_filter() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/blob/32331ce704fd8086f37a8a7ae56065570f554f2f/index.php)
 
 60 - [array_map() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+
+61 - [array_reduce() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)

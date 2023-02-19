@@ -1,83 +1,57 @@
 <?php
-/* array_map() - Array Utility Functions - Very Important */
+/* array_reduce() - Array Utility Functions - Very Important */
 
-/* ************** array_map($callback, $array, ...$arrays) ************
+/* ************** array_reduce(array, myfunction, initial) ************
 
-The array_map() is an inbuilt function in PHP and it helps to modify all elements one or more arrays according to some user-defined condition in an easy manner. It basically, sends each of the elements of an array to a user-defined function and returns an array with new values as modified by that function.
+This inbuilt function of PHP is used to reduce the elements of an array into a single value that can be of float, integer or string value. The function uses a user-defined callback function to reduce the input array.
 
-Parameters used:
-This function takes 2 compulsory parameter functionName and arr1 and the rest are optional.
+Parameters:
+The function takes three arguments and are described below:
 
-01: functionName(mandatory): This parameter defines the name of the user-defined function according to which the values in the array will be modified.
-02: arr1(mandatory): This parameter specifies the array to be modified.
-03: arr2(mandatory): This parameter specifies the array to be modified.
+01: $array (mandatory): This is a mandatory parameter and refers to the original array from which we need to reduce.
+02: own_function (mandatory): This parameter is also mandatory and refers to the user-defined function that is used to hold the value of the $array
+03: $initial (optional): This parameter is optional and refers to the value to be sent to the function.
 
-The functionName parameter is compulsory and we can pass any number of arrays to this function named arr1, arr2.. arrn and so on.
+Return Value: This function returns the reduced result. It can be of any type int, float or string.
 
- * https://www.php.net/manual/en/function.array-map.php
- * https://www.geeksforgeeks.org/php-array_map-function/
- * https://www.w3schools.com/php/func_array_map.asp
- * https://www.javatpoint.com/post/php-array_map-function
+ * https://www.w3schools.com/php/func_array_reduce.asp
+ * https://www.php.net/manual/en/function.array-reduce.php
+ * https://www.geeksforgeeks.org/php-array_reduce-function/
+ * https://www.javatpoint.com/post/php-array_reduce-function
  */
 
-// 01:
-$names = array( "Alice", "Bob", "Charlie" );
-$upper_names = array_map( "strtoupper", $names );
-print_r( $upper_names );
+//01
+$num = [1, 2, 3, 4, 5];
+$red = array_reduce( $num, fn( $acc, $cur ) => $acc += $cur );
+echo $red . "\n";
 
-// //02:
-// $arr = array( 1, 2, 3, 4, 5 );
-// function fun1( $v ) {
-//     return ( $v + 7 ); // add 7
-// }
-// print_r( array_map( "fun1", $arr ) );
+//02
+$num = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function oddNum( $total, $currect ) {
+    if ( $currect % 2 == 1 ) {
+        $total[] = $currect;
+    }
+    return $total;
 
-// // 03:
-// $arr1 = array(1, 2, 3, 4, 5);
-// $arr2 = array(1, 3, 3, 4, 8);
-// function fun2($v1, $v2)
-// {
-//     if ($v1 == $v2) return 1;
-//     else return 0;
-// }
-// print_r(array_map("fun2", $arr1, $arr2));
+}
+$oddNumPrint = array_reduce( $num, 'oddNum', [] );
+print_r( $oddNumPrint );
 
-// // 04
-// function userfunction($a1, $a2)
-// {
-//     if ($a1 === $a2) {
-//         return "like";
-//     }
-//     return "unlike";
-// }
-// $x1 = array("sachin", "virat", "rahul");
-// $x2 = array("pujara", "virat", "hardik");
-// print_r(array_map("userfunction", $x1, $x2));
+// 03:
+$names = array( "Alice", "Bob", "Charlie", "asif" );
+function filterByA( $acc, $cur ) {
+    $str = strtoupper( $cur );
+    if ( substr( $str, 0, 1 ) == "A" ) {
+        $acc[] = $cur;
+    }
+    return $acc;
+}
+$fillterByA = array_reduce( $names, 'filterByA', [] );
+print_r( $fillterByA );
 
-// // 05
-// function show_Spanish( int $n, string $m ): string {
-//     return "The number {$n} is called {$m} in Spanish";
-// }
-// $a = [1, 2, 3, 4, 5];
-// $b = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
-
-// $c = array_map( 'show_Spanish', $a, $b );
-// print_r( $c );
-
-// // 06
-// $x = [1, 2, 3, 4, 5];
-// $y = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
-// function map_Spanish( int $n, string $m ): array
-// {
-//     return [$n => $m];
-// }
-// $d = array_map( 'map_Spanish', $x, $y );
-// print_r( $d );
-
-//07
-// $a = [1, 2, 3, 4, 5];
-// $b = ['one', 'two', 'three', 'four', 'five'];
-// $c = ['uno', 'dos', 'tres', 'cuatro', 'cinco'];
-
-// $d = array_map( null, $a, $b, $c );
-// print_r( $d );
+//04
+function userfunction( $x1, $x2 ) {
+    return $x1 . "-" . $x2;
+}
+$a = array( "PHP", "java", "python" );
+print_r( array_reduce( $a, "userfunction", 6 ) );
