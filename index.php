@@ -1,34 +1,26 @@
 <?php
-/* Reversing strings */
+/* strpos() - checking right way -- */
 
-$name = "Tufik Hasan";
+//strpos($haystack, $needle, ? $offset)
 
-$len = strlen( $name );
 //01:
-for ( $i = 1; $i <= $len; $i++ ) {
-    echo $name[$i * -1];
+$name = "Tufik Hasan";
+echo strpos( $name, 'T' ) . PHP_EOL;
+echo strpos( $name, 'a', 8 ) . PHP_EOL;
+//strpos() - important things
+$str = "hello world";
+$needle = "h";
+$pos = strpos( $str, $needle );
+
+if ( $pos ) {
+    echo "'{$needle}' is present {$pos}\n";
+} else {
+    echo "'{$needle}' is not present\n";
 }
 
-echo "\n";
-
-//02:
-for ( $i = $len - 1; $i >= 0; $i-- ) {
-    echo $name[$i];
-}
-
-echo "\n";
-
-//03:
-echo strrev( $name );
-
-echo "\n";
-
-//word reverse
-$strArr = explode( " ", $name );
-foreach ( $strArr as $value ) {
-    $wLen = strlen( $value );
-    for ( $i = $wLen - 1; $i >= 0; $i-- ) {
-        echo $value[$i];
-    }
-    echo " ";
+// this is the right way to check
+if ( $pos !== false ) {
+    echo "'{$needle}' is present {$pos}\n";
+} else {
+    echo "'{$needle}' is not present\n";
 }

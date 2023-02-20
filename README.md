@@ -40,7 +40,7 @@
 
 12.6 - [strpos() - checking right way](https://github.com/tufikhasan/php_learning/blob/baf8a9bfa0c6e24d3907115cee9ba214c51329c3/index.php)
 
-12.7 - [Reversing strings](https://github.com/tufikhasan/)
+12.7 - [Reversing strings](https://github.com/tufikhasan/php_learning/blob/55ed220caaa71be32a56c7495fadd24bbb10a6d0/index.php)
 
 12.8 - [chr(), ord() - Converting to & from ASCII](https://github.com/tufikhasan/php_learning/blob/main/index.php)
 
