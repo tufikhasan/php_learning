@@ -28,13 +28,15 @@
 
 12.0 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
 
-12.1- [Commonly used string functions / methods](https://github.com/tufikhasan)
+12.1- [Commonly used string functions / methods](https://github.com/tufikhasan/php_learning/blob/27c1bf0e03e88ca1a85d85a3b1a3db048e029930/index.php)
 
 12.2- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
 
 12.3- [String functions](https://github.com/tufikhasan/php_learning/blob/872054aeda03ebdfe89f8833416e8468efb8de81/index.php)
 
 12.4- [String functions - explode,implode,join,str_split](https://github.com/tufikhasan/php_learning/blob/1e79f116e56ce2cab3356a75d058b548dba1b578/index.php)
+
+12.5- [strpos() - checking right way](https://github.com/tufikhasan/php_learning)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
