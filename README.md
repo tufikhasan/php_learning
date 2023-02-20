@@ -36,7 +36,9 @@
 
 12.4- [String functions - explode,implode,join,str_split](https://github.com/tufikhasan/php_learning/blob/1e79f116e56ce2cab3356a75d058b548dba1b578/index.php)
 
-12.5- [strpos() - checking right way](https://github.com/tufikhasan/php_learning)
+12.5- [strpos() - checking right way](https://github.com/tufikhasan/php_learning/blob/baf8a9bfa0c6e24d3907115cee9ba214c51329c3/index.php)
+
+12.6- [chr(), ord() - Converting to & from ASCII](https://github.com/tufikhasan/php_learning/blob)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
