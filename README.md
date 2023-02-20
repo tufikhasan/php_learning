@@ -26,7 +26,7 @@
 
 12 - [How to Write Strings Differently in PHP](https://github.com/tufikhasan/php_learning/)
 
-12 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
+12.0 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
 
 12.1- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
 
@@ -158,7 +158,7 @@
 
 49 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
 
-50 - [Commonly used array functions / methods](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
+50 - [Commonly used array functions / methods](https://github.com/tufikhasan/php_learning/blob/037f61cd53cac5e2b831126b9899b1fc5d2e34e8/index.php)
 
 51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/blob/cdcec33e2c68f8ebac8d0328982868cc1b7bc8d2/index.php)
 
