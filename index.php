@@ -1,17 +1,34 @@
 <?php
-/* Accessing characters within a string */
+/* Reversing strings */
 
 $name = "Tufik Hasan";
-echo $name . PHP_EOL;
 
-echo $name[0] . PHP_EOL; //output = T
+$len = strlen( $name );
+//01:
+for ( $i = 1; $i <= $len; $i++ ) {
+    echo $name[$i * -1];
+}
 
-echo $name[6] . PHP_EOL; //output = H
+echo "\n";
 
-echo $name[-4] . PHP_EOL; //output = a
+//02:
+for ( $i = $len - 1; $i >= 0; $i-- ) {
+    echo $name[$i];
+}
 
-echo $name[-1] . PHP_EOL; //output = n
+echo "\n";
 
-//update string character
-$name[5] = "_";
-echo $name . PHP_EOL;
+//03:
+echo strrev( $name );
+
+echo "\n";
+
+//word reverse
+$strArr = explode( " ", $name );
+foreach ( $strArr as $value ) {
+    $wLen = strlen( $value );
+    for ( $i = $wLen - 1; $i >= 0; $i-- ) {
+        echo $value[$i];
+    }
+    echo " ";
+}

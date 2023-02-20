@@ -28,7 +28,7 @@
 
 12.0 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
 
-12.1 - [Accessing characters within a string](https://github.com/tufikhasan/php_learning)
+12.1 - [Accessing characters within a string](https://github.com/tufikhasan/php_learning/blob/871b2b046b406a98fb27a025dcd4d53a7e662963/index.php)
 
 12.2 - [Commonly used string functions / methods](https://github.com/tufikhasan/php_learning/blob/27c1bf0e03e88ca1a85d85a3b1a3db048e029930/index.php)
 
@@ -40,7 +40,9 @@
 
 12.6 - [strpos() - checking right way](https://github.com/tufikhasan/php_learning/blob/baf8a9bfa0c6e24d3907115cee9ba214c51329c3/index.php)
 
-12.7 - [chr(), ord() - Converting to & from ASCII](https://github.com/tufikhasan/php_learning/blob/main/index.php)
+12.7 - [Reversing strings](https://github.com/tufikhasan/)
+
+12.8 - [chr(), ord() - Converting to & from ASCII](https://github.com/tufikhasan/php_learning/blob/main/index.php)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
