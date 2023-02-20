@@ -1,48 +1,93 @@
 <?php
-/* shuffle(), array_rand() - Array function */
+/* Commonly used array functions --- 
+https://www.w3schools.com/php/php_ref_array.asp
+https://www.php.net/manual/en/ref.array.php
+https://www.geeksforgeeks.org/php-array-functions-complete-reference/
+
+ -> array_push() - Adds one or more elements to the end of an array
+
+ -> array_pop() - Removes the last element from an array
+
+ -> array_shift() - Removes the first element from an array
+
+ -> array_unshift() - Adds one or more elements to the beginning of an array
+
+ -> array_slice() - Returns selected parts of an array
+
+ -> array_splice() - Removes and replaces specified elements of an array
+
+ -> array_merge() - Merges one or more arrays into one array
+
+ -> array_combine()	Creates an array by using the elements from one "keys" array and one "values" array
+ 
+ -> array_reverse()	- Returns an array in the reverse order
+
+ -> array_replace() - Replaces the values of the first array with the values from following arrays
+
+ -> array_sum()	- Returns the sum of the values in an array
+
+ -> count() - Returns the number of elements in an array
+
+ -> sizeof() - Alias of count()
+
+ -> array_count_values() - Counts all the values of an array
+
+ -> array_values() - Returns all the values of an array
+
+ -> array_search() - Searches an array for a given value and returns the key
+
+ -> in_array() - Checks if a specified value exists in an array
+
+ -> key() - Fetches a key from an array
+
+ -> array_keys() - Returns all the keys of an array
+
+ -> array_key_exists() - Checks if the specified key exists in the array
+
+ -> array_unique() - Removes duplicate values from an array
+
+ -> array_rand() - Returns one or more random keys from an array
+
+ -> array_intersect() - Compare arrays, and returns the matches (compare values only)
+
+ -> array_intersect_assoc()	- Compare arrays and returns the matches (compare keys and values)
+
+ -> array_intersect_key() - Compare arrays, and returns the matches (compare keys only)
+
+ -> array_diff() - Compare arrays, and returns the differences (compare values only)
+
+ -> array_diff_assoc() - Compare arrays, and returns the differences (compare keys and values)
+
+ -> array_walk() - Applies a user function to every member of an array
+
+ -> array_filter() - Filters the values of an array using a callback function
+
+ -> array_map() - Sends each value of an array to a user-made function, which returns new values
+
+ -> array_reduce() - Returns an array as a string, using a user-defined function
+
+ -> list() - Assigns variables as if they were an array
+
+ -> range() - Creates an array containing a range of elements
+
+ -> shuffle() - Shuffles an array
+
+ -> array_change_key_case()	Changes all keys in an array to lowercase or uppercase
+
+ -> array_chunk()	Splits an array into chunks of arrays
 
 
-/* -------------- shuffle($array) -----------------------
-The shuffle() Function is a builtin function in PHP and is used to shuffle or randomize the order of the elements in an array. This function assigns new keys for the elements in the array. It will also remove any existing keys, rather than just reordering the keys and assigns numeric keys starting from zero.
-
- * https://www.w3schools.com/php/func_array_shuffle.asp
- * https://www.php.net/manual/en/function.shuffle.php
- * https://www.geeksforgeeks.org/php-shuffle-function/
  */
 
-//01:
-$num = [1, 2, 3, 4, 5];
-shuffle($num);
-print_r($num);
-// echo "Random number $num[2]\n";
+//array_combine()
+$fname = array("Peter", "Ben", "Joe");
+$age = array("35", "37", "43");
+print_r(array_combine($fname, $age));
 
+//array_merge()
+$fname = array("Peter", "Ben", "Joe");
+$age = array("35", "37", "43");
+print_r(array_merge($fname, $age));
 
-/* -------------- array_rand(array, number) -----------------------
-
-The array_rand() function returns a random key from an array, or it returns an array of random keys if you specify that the function should return more than one key.
-
- * https://www.w3schools.com/php/func_array_rand.asp
- * https://www.php.net/manual/en/function.array-rand.php
- * https://www.javatpoint.com/post/php-array_rand-function
- */
-
-//03: Associative array shuffling problems
-$fruits = array("a" => "apple", "b" => "banana", "c" => "orange", "d" => "grape");
-shuffle($fruits);
-print_r($fruits);
-
-
-// //03: 
-// $n = range(1, 5);
-// $k = array_rand($n);
-// echo "Random number is " . $num[$k] . PHP_EOL;
-
-// //04: 
-// $fruits = array("a" => "apple", "b" => "banana", "c" => "orange", "d" => "grape");
-// $key = array_rand($fruits);
-// echo "Random fruits is " . $fruits[$key] . PHP_EOL;
-
-// //05:
-// $a = array("a" => "red", "b" => "green", "c" => "blue", "d" => "yellow");
-// // print_r(array_rand($a, 1));
-// print_r(array_rand($a, 2));
+//array_chunk()
+print_r(array_chunk(array("Peter", "Ben", "Joe"), 2, true));

@@ -24,6 +24,10 @@
 
 11- [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
 
+12 - [How to Write Strings Differently in PHP](https://github.com/tufikhasan/php_learning/)
+
+12 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
+
 12.1- [PHP String functions](https://github.com/tufikhasan/php_learning/blob/35b2f3434d59bfe37d0397c1e77fd2f7a6793af5/index.php)
 
 12.2- [String functions](https://github.com/tufikhasan/php_learning/blob/872054aeda03ebdfe89f8833416e8468efb8de81/index.php)
@@ -134,27 +138,27 @@
 
 43 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
 
-44 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
+44 - [PHP Array](https://github.com/tufikhasan/php_learning/blob/abcd460f8021c89a679e92a067154c3e8a2958c3/index.php)
 
-45 - [PHP Array](https://github.com/tufikhasan/php_learning/blob/abcd460f8021c89a679e92a067154c3e8a2958c3/index.php)
+44.1 - [Indexed Arrays](https://github.com/tufikhasan/php_learning/blob/6984555dabd4ef6e5bed6b557802f1970c9a7343/index.php)
 
-45.1 - [Indexed Arrays](https://github.com/tufikhasan/php_learning/blob/6984555dabd4ef6e5bed6b557802f1970c9a7343/index.php)
+44.2 - [Associative Arrays](https://github.com/tufikhasan/php_learning/blob/52538f75902ec67174e98446fdeda50c9bc61b65/index.php)
 
-45.2 - [Associative Arrays](https://github.com/tufikhasan/php_learning/blob/52538f75902ec67174e98446fdeda50c9bc61b65/index.php)
+44.2.2 - [Associative Arrays - Importance](https://github.com/tufikhasan/php_learning/blob/33814018cf10f17770ed62f216da20b6680d322f/index.php)
 
-45.2.2 - [Associative Arrays - Importance](https://github.com/tufikhasan/php_learning/blob/33814018cf10f17770ed62f216da20b6680d322f/index.php)
+44.3 - [Multidimensional or nested arrays](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
 
-45.3 - [Multidimensional or nested arrays](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
+45 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan/php_learning/blob/ee9f65340fda5009326b47441de595cfc5bd9bde/index.php)
 
-46 - [String to Array and Array to String, Multiple Delimiters](https://github.com/tufikhasan/php_learning/blob/ee9f65340fda5009326b47441de595cfc5bd9bde/index.php)
+46 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
 
-47 - [Associative Array to String Conversion - Serialize, json](https://github.com/tufikhasan/php_learning/blob/e567aad8939e0d1265598b90a44e337d6d1979bf/index.php)
+47 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning/blob/64aaee958b34db00bd31312f21f71d4c121f5907/index.php)
 
-48 - [Copy by Value & Copy by Reference](https://github.com/tufikhasan/php_learning/blob/64aaee958b34db00bd31312f21f71d4c121f5907/index.php)
+48 - [Removing data from associative arrays](https://github.com/tufikhasan/php_learning/blob/8bf4f7cb4cf555ba308d35ef08380cd64a3da9aa/index.php)
 
-49 - [Removing data from associative arrays](https://github.com/tufikhasan/php_learning/blob/8bf4f7cb4cf555ba308d35ef08380cd64a3da9aa/index.php)
+49 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
 
-50 - [Discussion of Empty Values - isset(),empty()](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
+50 - [Commonly used array functions / methods](https://github.com/tufikhasan/php_learning/blob/a3b3c7056979f658d5b6fb0cc83ec8f2e86c89b1/index.php)
 
 51 - [array_slice() - Array function/method](https://github.com/tufikhasan/php_learning/blob/cdcec33e2c68f8ebac8d0328982868cc1b7bc8d2/index.php)
 
@@ -174,16 +178,16 @@
 
 59 - [array_filter() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/blob/32331ce704fd8086f37a8a7ae56065570f554f2f/index.php)
 
-60 - [array_map() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+60 - [array_map() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/blob/f15ba0d597a8a17c6123716ea9bad5d849c6b300/index.php)
 
-61 - [array_reduce() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/)
+61 - [array_reduce() - Array Utility Functions - Very Important](https://github.com/tufikhasan/php_learning/blob/1bfe91ebf4d4862200078ff35d46f5491cc5a241/index.php)
 
-61 - [count() - sizeof() - array_count_values() - array_unique()](https://github.com/tufikhasan/php_learning/)
+61 - [count() - sizeof() - array_count_values() - array_unique()](https://github.com/tufikhasan/php_learning/blob/3347e3c6af248d90e22cef0d4c449008a94e69bd/index.php)
 
-62 - [list() - Array function](https://github.com/tufikhasan/php_learning/)
+62 - [list() - Array function](https://github.com/tufikhasan/php_learning/blob/2aab33b520b609465410b39be358d0ecc2ec87e5/index.php)
 
-63 - [range(start, end, step) - Array function](https://github.com/tufikhasan/php_learning/)
+63 - [range(start, end, step) - Array function](https://github.com/tufikhasan/php_learning/blob/f6474fac43838d0bbeff739affe7311108933376/index.php)
 
-64 - [mt_rand(min,max) , rand(min,max) - Array function](https://github.com/tufikhasan/php_learning/)
+64 - [mt_rand(min,max) , rand(min,max) - Array function](https://github.com/tufikhasan/php_learning/blob/3e914003f4a13dcb6d3f0d5436cd26af7f98f04e/index.php)
 
-65 - [shuffle(), array_rand() - Array function](https://github.com/tufikhasan/php_learning/)
+65 - [shuffle(), array_rand() - Array function](https://github.com/tufikhasan/php_learning/blob/28debd903bd6693e845a6521d1b48f5efc9ee5aa/index.php)
