@@ -54,6 +54,8 @@
 
 12.13 - [nl2br() - Convert newline character to HTML line break](https://github.com/tufikhasan/php_learning/)
 
+12.14 - [sscanf() - parse a string according to a specified format.](https://github.com/tufikhasan/php_learning/)
+
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
 14- [PHP Numbers - integers](https://github.com/tufikhasan/php_learning/blob/ab18ae29d1248f3c7105433f603302d145e5e523/index.php)

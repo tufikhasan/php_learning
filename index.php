@@ -1,33 +1,32 @@
 <?php
-/* nl2br($string,xhtml) - Convert newline character to HTML line break
+/* sscanf() - parse a string according to a specified format.
  *
-In PHP, the "nl2br()" function is used to convert newline characters "(\n)" to HTML line breaks "(<br>)". This is often used to display text that has been entered by a user with line breaks in a web page.
+The "sscanf()" function parses input from a string according to a specified format. The sscanf() function parses a string into variables based on the format string.
 
-In normal text editors, the new line is generally denoted by using any of the following.
-\n\r
-\r\n
-\n
-\r
+If only two parameters are passed to this function, the data will be returned as an array. Otherwise, if optional parameters are passed, the data parsed are stored in them. If there are more specifiers than variables to contain them, an error occurs. However, if there are less specifiers than variables, the extra variables contain NULL.
 
- 01: string: Required. Specifies the string to check
- 02: xhtml: Optional. A boolean value that indicates whether or not to use XHTML compatible line breaks:
-    -> TRUE- Default. Inserts <br />
-    -> FALSE - Inserts <br>
+SYNTAX: sscanf(string,format,arg1,arg2,arg++)
+
  *
- * https://www.php.net/manual/en/function.nl2br.php
- * https://www.w3schools.com/php/func_string_nl2br.asp
- * https://www.geeksforgeeks.org/php-nl2br-function/
+ * https://www.php.net/manual/en/function.sscanf.php
+ * https://www.w3schools.com/php/func_string_sscanf.asp
+ * https://www.javatpoint.com/php-string-sscanf-function
  */
 
 //01:
-echo nl2br("One line.\nAnother line.");
-
-echo "\n\n";
+$string = "Tufik Hasan 01521489753 tufikhasan05@gmail.com";
+$info = sscanf($string, "%s %s %11s %s");
+print_r($info);
 
 //02:
-echo nl2br("One line.\nAnother line.", false);
+$string = "Tufik Hasan 01521489753 tufikhasan05@gmail.com";
+sscanf($string, "%s %s %11s %s", $fName, $lName, $mobile, $gmail);
+echo "Firstname = $fName, Lastname = $lName\n";
+echo $gmail;
 
-echo "\n\n";
+echo "\n";
 
-//03:
-echo nl2br("One line.\nAnother line.", true);
+//03: hexa to decimal code
+$hexColor = "#FF36Fc";
+sscanf($hexColor, "#%2x %2x %2x", $red, $green, $blue);
+echo $red . $green . $blue;
