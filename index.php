@@ -1,43 +1,51 @@
 <?php
-/* strtok( $string,$delimiters )
+/* str_replace($search, $replace, $string, $count)
  *
-"strtok()" is a string function in PHP that is used to tokenize a string. The function takes two arguments: the first argument is the input string to be tokenized, and the second argument is a string containing a list of delimiter characters.
-
-The "strtok()" function returns a string token from the input string, where each token is defined as a sequence of characters delimited by one of the characters in the delimiter string. The function keeps track of the position within the input string where the last token ended, so that subsequent calls to "strtok()" can continue tokenizing the input string from where the previous call left off.
+"str_replace()" is a built-in PHP function used to replace all occurrences of a search string with a replacement string within a given string. The function takes three mandatory arguments and an optional fourth argument:
  *
- * https://www.w3schools.com/php/func_string_strtok.asp
- * https://www.php.net/manual/en/function.strtok.php
- * https://www.geeksforgeeks.org/php-strtok-for-tokening-string/
+ * https://www.php.net/manual/en/function.str-replace.php
+ * https://www.w3schools.com/php/func_string_str_replace.asp
+ * https://www.geeksforgeeks.org/php-str_replace-function/
+ * https://www.javatpoint.com/php-string-str_replace-function
  */
 
 //01:
-// $name = "My name is Tufik Hasan";
-// $token = strtok( $name, " " );
-// while ( $token !== false ) {
-//     echo $token . PHP_EOL;
-//     $token = strtok( " ," );
-// }
+$string = "The quick brown fox jumped over the lazy dog";
+$replace = str_replace( "dog", "cat", $string );
+echo $replace . PHP_EOL;
 
 //02:
-// $string = "The quick brown fox,jumped over the lazy-dog";
-// $token = strtok( $string, " " );
-// while ( $token !== false ) {
-//     echo $token . PHP_EOL;
-//     $token = strtok( " " );
-// }
+// $string = "The quick brown fox jumped over the lazy dog";
+// $replace = str_replace( "dog", "cat", $string, $count );
+// echo $replace . PHP_EOL;
+// echo "Total replace : $count\n";
 
 //03:
-// $string = "The quick brown fox,jumped over the lazy-dog";
-// $token = strtok( $string, " ," );
-// while ( $token !== false ) {
-//     echo $token . PHP_EOL;
-//     $token = strtok( " ," );
-// }
+// $string = "The brown brown fox jumped over the lazy dog dog";
+// $replace = str_replace( array( "brown", "dog" ), array( "red", "cat" ), $string, $count );
+// echo $replace . PHP_EOL;
+// echo "Total replace : $count\n";
 
-//03:
-$string = "The quick-brown fox,jumped over the lazy-dog";
-$token = strtok( $string, " ,-" );
-while ( $token !== false ) {
-    echo $token . PHP_EOL;
-    $token = strtok( " ,-" );
-}
+//04:
+// $string = "The brown brown fox jumped over the lazy dog dog";
+// $replace = str_replace( ["brown", "dog"], ["red", "cat"], $string, $count );
+// echo $replace . PHP_EOL;
+// echo "Total replace : $count\n";
+
+//05:
+// $string = "fox dog";
+// $replace = str_replace( ["fox", "dog"], "cat", $string, $count );
+// echo $replace . PHP_EOL;
+// echo "Total replace : $count\n";
+
+//06:
+// $string = "fox Fox Dog dog";
+// $replace = str_replace( ["fox", "dog"], "cat", $string, $count );
+// echo $replace . PHP_EOL;
+// echo "Total replace : $count\n";
+
+//07: case insensitive
+$string = "fox Fox Dog dog";
+$replace = str_ireplace( ["fox", "dog"], "cat", $string, $count );
+echo $replace . PHP_EOL;
+echo "Total replace : $count\n";
