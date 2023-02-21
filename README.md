@@ -50,6 +50,8 @@
 
 12.11 - [trim($string, $characters) - ltrim() - rtrim()](https://github.com/tufikhasan/)
 
+12.12 - [wordwrap ($str, $width, $break, $cut )](https://github.com/tufikhasan/)
+
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
 14- [PHP Numbers - integers](https://github.com/tufikhasan/php_learning/blob/ab18ae29d1248f3c7105433f603302d145e5e523/index.php)

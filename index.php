@@ -1,62 +1,42 @@
 <?php
-/* trim($string, $characters) - ltrim() - rtrim()
+/* wordwrap ($str, $width, $break, $cut )
  *
-"trim()" is a built-in function that is used to remove whitespace (or other characters) from the beginning and end of a string.
+Wraps a string to a given number of characters using a string break character.
 
-01: The first parameter "$string" is the input string that you want to trim.
+Here's what each parameter means:
+-> "$str" (required): The input string to wrap.
+-> "$width" (required): The number of characters at which to wrap the string.
+-> "$break" (optional): The character or string to use for line breaks. The default value is "\n" (newline).
+-> "$cut" (optional): A boolean flag indicating whether to cut words that are longer than the specified width. The default value is false.
 
-02: The second parameter "$characters" is optional and specifies the characters you want to remove from the string. By default, trim() removes the following characters:
--> space
--> tab
--> newline
--> carriage return
--> null character
--> vertical tab
-
-You can specify any other characters that you want to remove by passing them as a string to the "$characters" parameter.
-
-The "trim()" function returns the trimmed string. Note that the original string is not modified by the function; a new trimmed string is returned.
+Note: This function may leave white spaces at the beginning of a line.
 
  *
- * https://www.php.net/manual/en/function.trim.php
- * https://www.w3schools.com/php/func_string_trim.asp
- * https://www.geeksforgeeks.org/php-trim-function/
+ * https://www.php.net/manual/en/function.wordwrap.php
+ * https://www.geeksforgeeks.org/php-wordwrap-function/
+ * https://www.w3schools.com/php/func_string_wordwrap.asp
  */
 
 //01:
-$string = "  Tufik Hasan  ";
-echo trim( $string );
+$str = "The function returns a string wrapped upto specified length";
+$wrap = wordwrap( $str, 30 );
+echo $wrap;
+
+echo "\n\n";
 
 //02:
-// $string = "  Tufik \n";
-// echo trim( $string );
-// echo "Hasan";
+$str = "readerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr";
+$wrap = wordwrap( $str, 30 );
+echo $wrap;
+
+echo "\n\n";
 
 //03:
-// $string = "  Tufik \n";
-// echo trim( $string, " " );
-// echo "Hasan";
+$str = "readerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr";
+$wrap = wordwrap( $str, 30, "\n", true );
+echo $wrap;
 
-//04:
-// $string = "  Tufik \n";
-// echo trim( $string, "\n" );
-// echo "Hasan";
-
-//05:
-// $string = "  Tufik \n";
-// echo trim( $string, " \n" );
-// echo "Hasan";
-
-//06:
-// $string = "  .Tufik, \n";
-// // echo trim( $string, " \n," );
-// echo trim( $string, "., \n" );
-// echo "Hasan";
-
-//08: right trim
-// $string = "  Tufik Hasan  ";
-// echo rtrim( $string );
-
-//07: left trim
-// $string = "  Tufik Hasan  ";
-// echo ltrim( $string );
+//04: Use <br/> for browser
+// $str = "It is a long established fact that a readerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr will be distracted by the readable content of a page when looking at its layout";
+// $wrap = wordwrap( $str, 30, "<br />", true );
+// echo $wrap;
