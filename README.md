@@ -22,7 +22,7 @@
 
 10.2- [printf some magic](https://github.com/tufikhasan/php_learning/blob/9c6c978e37e1df24196553949b7d2aaa17f5479b/index.php).
 
-11- [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
+11 - [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
 
 12 - [How to Write Strings Differently in PHP](https://github.com/tufikhasan/php_learning/blob/942256e1eca275f22ac78376c210c7a665428ef0/index.php)
 
@@ -38,11 +38,13 @@
 
 12.5 - [String functions - explode,implode,join,str_split](https://github.com/tufikhasan/php_learning/blob/1e79f116e56ce2cab3356a75d058b548dba1b578/index.php)
 
-12.6 - [strpos() - checking right way](https://github.com/tufikhasan/php_learning/blob/baf8a9bfa0c6e24d3907115cee9ba214c51329c3/index.php)
+12.6 - [strpos() - checking right way](https://github.com/tufikhasan/php_learning/blob/5fb964fa51e0fd29213a32edd4d1162353040cef/index.php)
 
 12.7 - [Reversing strings](https://github.com/tufikhasan/php_learning/blob/55ed220caaa71be32a56c7495fadd24bbb10a6d0/index.php)
 
 12.8 - [chr(), ord() - Converting to & from ASCII](https://github.com/tufikhasan/php_learning/blob/main/index.php)
+
+12.9 - [strtok() for tokening string](https://github.com/tufikhasan/)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
