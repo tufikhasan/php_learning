@@ -1,42 +1,33 @@
 <?php
-/* wordwrap ($str, $width, $break, $cut )
+/* nl2br($string,xhtml) - Convert newline character to HTML line break
  *
-Wraps a string to a given number of characters using a string break character.
+In PHP, the "nl2br()" function is used to convert newline characters "(\n)" to HTML line breaks "(<br>)". This is often used to display text that has been entered by a user with line breaks in a web page.
 
-Here's what each parameter means:
--> "$str" (required): The input string to wrap.
--> "$width" (required): The number of characters at which to wrap the string.
--> "$break" (optional): The character or string to use for line breaks. The default value is "\n" (newline).
--> "$cut" (optional): A boolean flag indicating whether to cut words that are longer than the specified width. The default value is false.
+In normal text editors, the new line is generally denoted by using any of the following.
+\n\r
+\r\n
+\n
+\r
 
-Note: This function may leave white spaces at the beginning of a line.
-
+ 01: string: Required. Specifies the string to check
+ 02: xhtml: Optional. A boolean value that indicates whether or not to use XHTML compatible line breaks:
+    -> TRUE- Default. Inserts <br />
+    -> FALSE - Inserts <br>
  *
- * https://www.php.net/manual/en/function.wordwrap.php
- * https://www.geeksforgeeks.org/php-wordwrap-function/
- * https://www.w3schools.com/php/func_string_wordwrap.asp
+ * https://www.php.net/manual/en/function.nl2br.php
+ * https://www.w3schools.com/php/func_string_nl2br.asp
+ * https://www.geeksforgeeks.org/php-nl2br-function/
  */
 
 //01:
-$str = "The function returns a string wrapped upto specified length";
-$wrap = wordwrap( $str, 30 );
-echo $wrap;
+echo nl2br("One line.\nAnother line.");
 
 echo "\n\n";
 
 //02:
-$str = "readerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr";
-$wrap = wordwrap( $str, 30 );
-echo $wrap;
+echo nl2br("One line.\nAnother line.", false);
 
 echo "\n\n";
 
 //03:
-$str = "readerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr";
-$wrap = wordwrap( $str, 30, "\n", true );
-echo $wrap;
-
-//04: Use <br/> for browser
-// $str = "It is a long established fact that a readerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr will be distracted by the readable content of a page when looking at its layout";
-// $wrap = wordwrap( $str, 30, "<br />", true );
-// echo $wrap;
+echo nl2br("One line.\nAnother line.", true);

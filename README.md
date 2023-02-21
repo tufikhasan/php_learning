@@ -44,13 +44,15 @@
 
 12.8 - [chr(), ord() - Converting to & from ASCII](https://github.com/tufikhasan/php_learning/blob/main/index.php)
 
-12.9 - [strtok() for tokening string](https://github.com/tufikhasan/)
+12.9 - [strtok() for tokening string](https://github.com/tufikhasan/php_learning/blob/44a045e78f6d31808c51a788652e2b3200361708/index.php)
 
-12.10 - [str_replace() - str_ireplace()](https://github.com/tufikhasan/)
+12.10 - [str_replace() - str_ireplace()](https://github.com/tufikhasan/php_learning/blob/13cd4631718cf5db0ec6ae581b87c3dbd5a05f31/index.php)
 
-12.11 - [trim($string, $characters) - ltrim() - rtrim()](https://github.com/tufikhasan/)
+12.11 - [trim($string, $characters) - ltrim() - rtrim()](https://github.com/tufikhasan/php_learning/blob/4460d7315b9b8d8919e1adf5cd9cc50daed83e96/index.php)
 
-12.12 - [wordwrap ($str, $width, $break, $cut )](https://github.com/tufikhasan/)
+12.12 - [wordwrap ($str, $width, $break, $cut )](https://github.com/tufikhasan/php_learning/blob/edb2e3e121616f3e70ca65c34d46da812f3be840/index.php)
+
+12.13 - [nl2br() - Convert newline character to HTML line break](https://github.com/tufikhasan/php_learning/)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
