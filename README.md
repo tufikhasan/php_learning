@@ -52,9 +52,9 @@
 
 12.12 - [wordwrap ($str, $width, $break, $cut )](https://github.com/tufikhasan/php_learning/blob/edb2e3e121616f3e70ca65c34d46da812f3be840/index.php)
 
-12.13 - [nl2br() - Convert newline character to HTML line break](https://github.com/tufikhasan/php_learning/)
+12.13 - [nl2br() - Convert newline character to HTML line break](https://github.com/tufikhasan/php_learning/blob/d632de317a103c46e89755c0f074bf1def486e64/index.php)
 
-12.14 - [sscanf() - parse a string according to a specified format.](https://github.com/tufikhasan/php_learning/)
+12.14 - [sscanf() - parse a string according to a specified format.](https://github.com/tufikhasan/php_learning/blob/bc38e415a83478f4078ea6533ca835ef05157eed/index.php)
 
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
