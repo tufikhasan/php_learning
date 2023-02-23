@@ -1,47 +1,52 @@
 <?php
-/* __construct Function
-"__construct()" is a special method in PHP that is used to define constructors for classes. A constructor is a special method that is automatically called when an object is created from a class. It is used to initialize the object's properties and perform any other setup tasks that are required.
+/* __destruct() Function
+"__destruct()" is a magic method in PHP that is automatically called when an object is destroyed, either by the end of the script or by using the unset() function on the object. This method can be used to perform any necessary cleanup tasks, such as releasing resources, closing database connections, or saving data to a file.
+
+The "__destruct()" method is useful when working with objects that hold resources that need to be released when the object is no longer needed, such as files, network connections, and database connections. By implementing the "__destruct()" method, you can ensure that these resources are properly cleaned up, even if the script is terminated unexpectedly.
 
  *
- * https://www.w3schools.com/php/php_oop_constructor.asp
+ * https://www.w3schools.com/php/php_oop_destructor.asp
+ * https://www.javatpoint.com/php-oops-destructor
  * https://www.php.net/manual/en/language.oop5.decon.php
- * https://www.javatpoint.com/php-oops-constructor
  */
 
 //01:
-//constructor is automatically called when an object is created
-class Person {
-    public function __construct() {
-        echo "I am a construct\n";
+class MyClass {
+    public function __destruct() {
+        // perform cleanup tasks here
     }
 }
-$tufik = new Person();
-$rakib = new Person();
 
 //02:
-class Human {
-    public function __construct( $name ) {
-        echo "My name is $name\n";
-    }
-}
+// class Fruit {
+//     public $name;
+//     public $color;
+//     function __construct( $name ) {
+//         $this->name = $name;
+//     }
+//     function __destruct() {
+//         echo "The fruit is {$this->name}.";
+//     }
+// }
 
-$rony = new Human( "Rony" );
+// $apple = new Fruit( "Apple" );
 
 //03:
-class Fruits {
-    public $name;
-    public $color;
-    public function __construct( $fruitsName, $fruitsColor ) {
-        $this->name = $fruitsName;
-        $this->color = $fruitsColor;
+class Demo {
+    public function demo() {
+        echo "constructor1...\n";
     }
-    public function info() {
-        echo "{$this->name} color is {$this->color}\n";
+    public function __destruct() {
+        echo "destroy1.....\n";
     }
 }
-
-$mango = new Fruits( "Mango", "green" );
-$mango->info();
-
-$apple = new Fruits( "Apple", "red" );
-$apple->info();
+class Demo1 extends Demo {
+    public function __construct() {
+        echo parent::demo();
+        echo "constructor2...\n";
+    }
+    public function __destruct() {
+        echo "destroy2.....\n";
+    }
+}
+$obj = new Demo1();

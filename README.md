@@ -24,6 +24,8 @@
 
 11 - [sprintf() — Return a formatted string](https://github.com/tufikhasan/php_learning/blob/ae58e5a9a71de246df475a6f2a87dd8d5514e23b/index.php)
 
+# PHP - Strings, Strings functions/methods
+
 12 - [How to Write Strings Differently in PHP](https://github.com/tufikhasan/php_learning/blob/942256e1eca275f22ac78376c210c7a665428ef0/index.php)
 
 12.0 - [Heredoc - PHP text block syntax](https://github.com/tufikhasan/php_learning/blob/85ec6adddb497c42d7df1e48c29d3bab98745d7b/index.php)
@@ -56,6 +58,8 @@
 
 12.14 - [sscanf() - parse a string according to a specified format.](https://github.com/tufikhasan/php_learning/blob/bc38e415a83478f4078ea6533ca835ef05157eed/index.php)
 
+# PHP - Numbers system and Math
+
 13- [Decimal,Binary Octal, & Hexadecimal](https://github.com/tufikhasan/php_learning/blob/277e1de993ffcbccbf90d97e6435bce014a9fd53/index.php)
 
 14- [PHP Numbers - integers](https://github.com/tufikhasan/php_learning/blob/ab18ae29d1248f3c7105433f603302d145e5e523/index.php)
@@ -63,6 +67,8 @@
 15- [PHP Numbers - Float](https://github.com/tufikhasan/php_learning/blob/010ce21d0a0c6e0bf453c690cf63a4a6f1992b4e/index.php)
 
 16- [PHP Math Functions](https://github.com/tufikhasan/php_learning/blob/09901a9372eb220f2b22aec7d8b4f50e60d7bd56/index.php)
+
+# PHP - Operators
 
 17.0- [PHP Operators Overview](https://github.com/tufikhasan/php_learning/blob/25e7fa53ea315400e9fbced249e8a8c99f456b91/index.php)
 
@@ -81,6 +87,8 @@
 17.7- [Array Operators](https://github.com/tufikhasan/php_learning/blob/a912e0f8ec06d56444de5cfeb6ce33cf35fedef5/index.php)
 
 17.8- [Conditional assignment Operators](https://github.com/tufikhasan/php_learning/blob/facf3a7f25c0f3a220bdffa96a9331eec45daccd/index.php)
+
+# PHP - Conditions (if..elseif..else,switch,ternary)
 
 18.1 - [if...else...elseif Statements](https://github.com/tufikhasan/php_learning/blob/4143e0fd964ddd873dfbf90f18a33b4e21cb9912/index.php)
 
@@ -106,6 +114,8 @@
 
 22 - [Operator Precedence in PHP](https://github.com/tufikhasan/php_learning/blob/8b6dc7809baf69a23087e7a59cc90fc192298d36/index.php)
 
+# PHP - Loops (for,foreach,while,do-while)
+
 23 - [Introduction PHP all loops](https://github.com/tufikhasan/php_learning/blob/d33436dd95963f71ff2c6e43020a552f7767ea0c/index.php)
 
 23.1.1 - [for loop - understanding](https://github.com/tufikhasan/php_learning/tree/229d16ce4796e540578e99d94f26ccea3310f3d3)
@@ -125,6 +135,8 @@
 25 - [Pattern php using for loop](https://github.com/tufikhasan/php_learning/blob/6a62ca2bf6842ec3b049d0dcc35018d386dd8271/index.php)
 
 26 - [Fibonacci Series using for Loops](https://github.com/tufikhasan/php_learning/blob/e896e38f3bcd3423fc29fa7a7ea9885d6c0f751f/index.php)
+
+# PHP - functions
 
 27 - [Functions and how to write them](https://github.com/tufikhasan/php_learning/blob/28e4672cf72bb24d67ceb44561594e8557a42b7e/index.php)
 
@@ -159,6 +171,8 @@
 42 - [Anonymous, Closure, callback, Functions In PHP](https://github.com/tufikhasan/php_learning/blob/59bf819d831a69f36b5acef5294a72b1fd5d9350/index.php)
 
 43 - [Arrow Functions In PHP](https://github.com/tufikhasan/php_learning/blob/058409c549a27434c0a611ef26a4a36f9924df2c/index.php)
+
+# PHP - Arrays, Arrays functions/method
 
 44 - [PHP Array](https://github.com/tufikhasan/php_learning/blob/abcd460f8021c89a679e92a067154c3e8a2958c3/index.php)
 
@@ -221,3 +235,5 @@
 02 - [Class, Objects, Methods, Properties & $this keyword](fdf)
 
 03 - [\_\_construct Function](fdf)
+
+04 - [\_\_destruct() Function](fdf)
