@@ -237,3 +237,5 @@
 03 - [\_\_construct Function](fdf)
 
 04 - [\_\_destruct() Function](fdf)
+
+05 - [Access Modifiers - Public, Private, Protected](fdf)
