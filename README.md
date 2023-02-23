@@ -216,4 +216,6 @@
 
 #OOP - (Object Oriented programming) - PHP
 
-65 - [What is OOP ?](fdf)
+66 - [What is OOP ?](fdf)
+
+67 - [Class, Objects, Methods, Properties & $this keyword](fdf)
