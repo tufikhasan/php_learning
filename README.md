@@ -214,8 +214,10 @@
 
 65 - [shuffle(), array_rand() - Array function](https://github.com/tufikhasan/php_learning/blob/28debd903bd6693e845a6521d1b48f5efc9ee5aa/index.php)
 
-#OOP - (Object Oriented programming) - PHP
+# OOP - (Object Oriented programming) - PHP
 
-66 - [What is OOP ?](fdf)
+01 - [What is OOP ?](fdf)
 
-67 - [Class, Objects, Methods, Properties & $this keyword](fdf)
+02 - [Class, Objects, Methods, Properties & $this keyword](fdf)
+
+03 - [\_\_construct Function](fdf)
