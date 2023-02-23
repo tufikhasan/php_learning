@@ -213,3 +213,7 @@
 64 - [mt_rand(min,max) , rand(min,max) - Array function](https://github.com/tufikhasan/php_learning/blob/3e914003f4a13dcb6d3f0d5436cd26af7f98f04e/index.php)
 
 65 - [shuffle(), array_rand() - Array function](https://github.com/tufikhasan/php_learning/blob/28debd903bd6693e845a6521d1b48f5efc9ee5aa/index.php)
+
+#OOP - (Object Oriented programming) - PHP
+
+65 - [What is OOP ?](fdf)
