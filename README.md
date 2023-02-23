@@ -239,3 +239,5 @@
 04 - [\_\_destruct() Function](fdf)
 
 05 - [Access Modifiers - Public, Private, Protected](fdf)
+
+06 - [Hex to RGB & RGBA - Color converter](fdf)
