@@ -249,3 +249,5 @@
 09 - [Abstract Classes and Abstract Methods](fdf)
 
 10 - [final Keyword - PHP ](fdf)
+
+11 - [write better code with OOP by forcing](fdf)
