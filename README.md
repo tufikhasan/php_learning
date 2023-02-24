@@ -243,3 +243,5 @@
 06 - [Hex to RGB & RGBA - Color converter](fdf)
 
 07 - [Inheritance - extends class (part-01) ](fdf)
+
+08 - [Inheritance - Examples rectangle,triangle (part-02) ](fdf)

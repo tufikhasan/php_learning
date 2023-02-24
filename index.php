@@ -1,83 +1,53 @@
 <?php
-/* OOP - Inheritance - extends class
- *
-In PHP, object-oriented programming (OOP) allows you to use inheritance to create new classes based on existing classes, allowing you to reuse code and build complex object hierarchies. Inheritance is the mechanism by which one class is able to inherit properties and methods from another class.
+/* Inheritance - Examples rectangle,triangle */
 
-To create an inherited class, you use the "extends" keyword, followed by the name of the class you want to inherit from.
- *
- * https://www.w3schools.com/php/php_oop_inheritance.asp
- * https://www.php.net/manual/en/language.oop5.inheritance.php
- * https://www.javatpoint.com/php-oops-inheritance
- *
- */
+class Shape {
+    protected $name;
+    protected $area;
+    public function __construct( $name ) {
+        $this->name = $name;
+        $this->calculateArea();
+    }
+    public function calculateArea() {
 
-// 01:
-class ParenClass {
-    public function sayHi() {
-        echo "I am from ParentClass\n";
+    }
+    public function getArea() {
+        echo "This {$this->name}'s area is {$this->area}\n";
     }
 }
 
-class SubClass extends ParenClass {
-    #code here
+class Triangle extends Shape {
+    private $a, $b, $c;
+    public function __construct( $a, $b, $c ) {
+        $this->a = $a;
+        $this->b = $b;
+        $this->c = $c;
+        parent::__construct( "Triangle" );
+    }
+    public function calculateArea() {
+        $perimeter = ( $this->a + $this->b + $this->c ) / 2;
+        $this->area = sqrt(  ( $perimeter * ( $perimeter - $this->a ) ) * ( $perimeter * ( $perimeter - $this->b ) ) * ( $perimeter * ( $perimeter - $this->c ) ) );
+    }
+
 }
-$obj = new SubClass();
-$obj->sayHi();
 
-// // 02:
-// class ParenClass {
-//     public function __construct() {
-//         $this->sayHi();
-//     }
-//     public function sayHi() {
-//         echo "I am from ParentClass\n";
-//     }
-// }
+class Rectangle extends Shape {
+    private $a, $b;
+    public function __construct( $a, $b ) {
+        $this->a = $a;
+        $this->b = $b;
+        parent::__construct( "Rectangle" );
+    }
+    public function calculateArea() {
+        $this->area = $this->a * $this->b;
+    }
 
-// class SubClass extends ParenClass {
-//     public function sayHi() {
-//         echo "I am from SubClass\n";
-//     }
-// }
-// $obj = new SubClass();
+}
 
-// //03:
-// class ParenClass {
-//     protected $name;
-//     public function __construct( $name ) {
-//         $this->name = $name;
-//         $this->sayHi();
-//     }
-//     public function sayHi() {
-//         echo "I am {$this->name} from ParentClass\n";
-//     }
-// }
+//Rectangle area get
+$rectangle = new Rectangle( 3, 4 );
+$rectangle->getArea();
 
-// class SubClass extends ParenClass {
-//     public function sayHi() {
-//         parent::sayHi(); //call parent method like this
-//         echo "I am {$this->name} from SubClass\n";
-//     }
-// }
-// $obj = new SubClass( "Tufik Hasan" );
-
-// // 04:
-// class ParenClass {
-//     protected function sayHi() {
-//         echo "I am from ParentClass\n";
-//     }
-//     private function greeting() {
-//         echo "Greeting\n";
-//     }
-// }
-
-// class SubClass extends ParenClass {
-//     public function subFun() {
-//         parent::sayHi(); //protected method accessed from sum class
-//         $this->sayHi(); //protected method accessed from sum class
-//         // $this->greeting(); //private method can't accessed from sum class
-//     }
-// }
-
-// $obj = new SubClass();
-// $obj->subFun();
+//Triangle area get
+$triangle = new Triangle( 3, 4, 5 );
+$triangle->getArea();
