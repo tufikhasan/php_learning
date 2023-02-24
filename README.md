@@ -247,3 +247,5 @@
 08 - [Inheritance - Examples rectangle,triangle (part-02)](https://github.com/tufikhasan/php_learning/tree/ab9ab464a89b9f111a381b2fdc26cce1cacc8d37)
 
 09 - [Abstract Classes and Abstract Methods](fdf)
+
+10 - [final Keyword - PHP ](fdf)
