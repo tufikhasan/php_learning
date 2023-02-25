@@ -257,3 +257,5 @@
 12 - [IteratorAggregate interface - practical example](fdf)
 
 13 - [Countable interface](fdf)
+
+14 - [Static Methods - Static Properties](fdf)
