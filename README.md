@@ -264,4 +264,6 @@
 
 16 - [Static Scope](https://github.com/tufikhasan/php_learning/blob/e7ade00f5521535be7dc8c0ba42fa0557ebe047f/index.php)
 
-16 - [Class Constants - const keyword](fdf)
+17 - [Class Constants - const keyword](fdf)
+
+18 - [\_\_set() & \_\_get() - PHP Magic Methods](fdf)

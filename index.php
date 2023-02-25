@@ -1,48 +1,62 @@
 <?php
-/* Class Constants
-In Object-Oriented Programming (OOP) in PHP, constants are defined using the "const" keyword inside a class. A constant is a value that cannot be changed during the execution of a program. It is similar to a variable, but once its value is set, it cannot be modified.
+/*  __set() & __get() - PHP Magic Methods
+In PHP, "__get()" and "__set()" are magic methods that allow you to define custom behavior when getting or setting object properties that are inaccessible or do not exist.
 
-A class constant is declared inside a class with the "const" keyword.
+"__get($property)" method is called when an undefined or inaccessible property is accessed using the object instance, or when a property is accessed with protected or private visibility. It accepts a single parameter, "$property", which is the name of the property being accessed, and should return the value of the property.
 
-Class constants are case-sensitive. However, it is recommended to name the constants in all uppercase letters:
-
-We can access a constant from (outside) the class by using the class name followed by the scope resolution operator (::) followed by the constant name:
-
-we can access a constant from (inside) the class by using the "self" keyword followed by the scope resolution operator (::) followed by the constant name:
+"__set($property", $value) method is called when an undefined or inaccessible property is set using the object instance, or when a property is set with protected or private visibility. It accepts two parameters, "$property", which is the name of the property being set, and "$value", which is the value to be assigned to the property.
 
  *
- * https://www.w3schools.com/Php/php_oop_constants.asp
- * https://www.php.net/manual/en/language.oop5.constants.php
+ * https://www.php.net/manual/en/language.oop5.overloading.php#object.set
+ * https://www.php.net/manual/en/language.oop5.magic.php
+ * https://www.geeksforgeeks.org/what-are-magic-methods-and-how-to-use-them-in-php/
  *
  */
 
-//------------------ Static Properties overrides ------------------------
-//01:
-class X {
-    const CONSTANT = "Hello World!\n";
-}
-echo X::CONSTANT;
+// //Manually getter setter
+// class Student {
+//     private $name;
+//     private $age;
+//     public function __construct( $name, $age ) {
+//         $this->name = $name;
+//         $this->age = $age;
+//     }
+//     public function getName() {
+//         return $this->name;
+//     }
+//     public function setName( $name ) {
+//         $this->name = $name;
+//     }
+//     public function getAge() {
+//         return $this->age;
+//     }
+//     public function setAge( $age ) {
+//         $this->name = $age;
+//     }
+// }
 
-//02:
-class A {
-    const WEL = "Welcome\n";
-    public function greeting() {
-        echo self::WEL;
-        echo $this::WEL;
+// $rakib = new Student( "Rakib", 25 );
+// echo $rakib->getName() . PHP_EOL;
+// $rakib->setName( "Rakib Update" );
+// echo $rakib->getName();
+
+//********** Magic method __set() & __get() **********
+class Student {
+    private $name;
+    private $age;
+    public function __construct( $name = "", $age = "" ) {
+        $this->name = $name;
+        $this->age = $age;
+    }
+    public function __get( $property ) {
+        return $this->$property;
+    }
+    public function __set( $property, $value ) {
+        $this->$property = $value;
     }
 }
-$obj = new A();
-$obj->greeting();
 
-//03:
-class ParentClass {
-    const PAR = "I am a constant\n";
-}
-class ChildClass extends ParentClass {
-    public function __construct() {
-        echo parent::PAR;
-        echo self::PAR;
-        echo $this::PAR;
-    }
-}
-new ChildClass();
+$rakib = new Student( "Rakib", 25 );
+echo $rakib->name . PHP_EOL;
+$rakib->name = "Tufik";
+echo $rakib->name;
