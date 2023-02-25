@@ -253,3 +253,5 @@
 11 - [write better code with OOP by forcing](fdf)
 
 11 - [OOP - Interfaces](fdf)
+
+11 - [IteratorAggregate interface - practical example](fdf)
