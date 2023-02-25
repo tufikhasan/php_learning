@@ -246,20 +246,22 @@
 
 08 - [Inheritance - Examples rectangle,triangle (part-02)](https://github.com/tufikhasan/php_learning/tree/ab9ab464a89b9f111a381b2fdc26cce1cacc8d37)
 
-09 - [Abstract Classes and Abstract Methods](fdf)
+09 - [Abstract Classes and Abstract Methods](https://github.com/tufikhasan/php_learning/blob/d9d8e8c07bfdbdfbfcadcd9ba9d152dad5ea79d4/index.php)
 
-10 - [final Keyword - PHP ](fdf)
+10 - [final Keyword - PHP ](https://github.com/tufikhasan/php_learning/blob/07274275a0464747e698bc9dca220c3e0a56409b/index.php)
 
-11 - [write better code with OOP by forcing](fdf)
+11 - [write better code with OOP by forcing](https://github.com/tufikhasan/php_learning/blob/a9d1b5ffb18ef6afd6287ad067cb916b54e28625/index.php)
 
-11 - [OOP - Interfaces](fdf)
+11 - [OOP - Interfaces](https://github.com/tufikhasan/php_learning/blob/bf5459ca0b358abf5668008d23e852e51acef31d/index.php)
 
-12 - [IteratorAggregate interface - practical example](fdf)
+12 - [IteratorAggregate interface - practical example](https://github.com/tufikhasan/php_learning/blob/e8b8730ff25d1e315393289ea55e9c1c758e92a4/index.php)
 
-13 - [Countable interface](fdf)
+13 - [Countable interface](https://github.com/tufikhasan/php_learning/blob/149723efebf91d075fc2b520f8d8b0ec52668505/index.php)
 
-14 - [Static Methods - Static Properties](fdf)
+14 - [Static Methods - Static Properties](https://github.com/tufikhasan/php_learning/blob/7838e8ef35b9d12536dab9ca56ff036c7209a0b4/index.php)
 
-15 - [Static Methods & Property overrides](fdf)
+15 - [Static Methods & Property overrides](https://github.com/tufikhasan/php_learning/blob/592062487efda1819438d0761837715093cb29ac/index.php)
 
-16 - [Static Scope](fdf)
+16 - [Static Scope](https://github.com/tufikhasan/php_learning/blob/e7ade00f5521535be7dc8c0ba42fa0557ebe047f/index.php)
+
+16 - [Class Constants - const keyword](fdf)
