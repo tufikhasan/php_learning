@@ -254,4 +254,6 @@
 
 11 - [OOP - Interfaces](fdf)
 
-11 - [IteratorAggregate interface - practical example](fdf)
+12 - [IteratorAggregate interface - practical example](fdf)
+
+13 - [Countable interface](fdf)
