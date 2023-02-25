@@ -1,62 +1,96 @@
 <?php
-/*  __set() & __get() - PHP Magic Methods
-In PHP, "__get()" and "__set()" are magic methods that allow you to define custom behavior when getting or setting object properties that are inaccessible or do not exist.
+/*  Object Cloning "__clone()" - Magic Methods
 
-"__get($property)" method is called when an undefined or inaccessible property is accessed using the object instance, or when a property is accessed with protected or private visibility. It accepts a single parameter, "$property", which is the name of the property being accessed, and should return the value of the property.
+If any of the properties was a reference to another variable or object, then only the reference is copied. Objects are always passed by reference, so if the original object has another object in its properties, the copy will point to the same object. This behavior can be changed by creating a "__clone()" method in the class.
 
-"__set($property", $value) method is called when an undefined or inaccessible property is set using the object instance, or when a property is set with protected or private visibility. It accepts two parameters, "$property", which is the name of the property being set, and "$value", which is the value to be assigned to the property.
-
+The "clone" keyword is used to create a copy of an object.
  *
- * https://www.php.net/manual/en/language.oop5.overloading.php#object.set
- * https://www.php.net/manual/en/language.oop5.magic.php
- * https://www.geeksforgeeks.org/what-are-magic-methods-and-how-to-use-them-in-php/
+ * https://www.php.net/manual/en/language.oop5.cloning.php
+ * https://www.w3schools.com/php/keyword_clone.asp
  *
  */
 
-// //Manually getter setter
-// class Student {
-//     private $name;
-//     private $age;
-//     public function __construct( $name, $age ) {
-//         $this->name = $name;
-//         $this->age = $age;
+// --------------- Shallow Copy / Copy by Reference ---------------
+// //01:
+// class Fruits {
+//     public $data;
+//     public function __construct( $data ) {
+//         $this->data = $data;
 //     }
-//     public function getName() {
-//         return $this->name;
+//     public function setFruit( $data ) {
+//         $this->data = $data;
 //     }
-//     public function setName( $name ) {
-//         $this->name = $name;
+// }
+// $o1 = new Fruits( "Mango" );
+// print_r( $o1 );
+
+// $o2 = clone $o1;
+// print_r( $o1 );
+// print_r( $o2 );
+
+// $o2->setFruit( "Apple" );
+// print_r( $o2 );
+
+// //02:
+// class Color {
+//     public $color;
+//     public function __construct( $color ) {
+//         $this->color = $color;
 //     }
-//     public function getAge() {
-//         return $this->age;
+//     public function setColor( $color ) {
+//         $this->color = $color;
 //     }
-//     public function setAge( $age ) {
-//         $this->name = $age;
+// }
+// class FavColor {
+//     public $color;
+//     public function __construct( $color ) {
+//         $this->color = new Color( $color );
+//     }
+//     public function updateColor( $color ) {
+//         $this->color->setColor( $color );
 //     }
 // }
 
-// $rakib = new Student( "Rakib", 25 );
-// echo $rakib->getName() . PHP_EOL;
-// $rakib->setName( "Rakib Update" );
-// echo $rakib->getName();
+// $obj1 = new FavColor( "red" );
+// print_r( $obj1 );
 
-//********** Magic method __set() & __get() **********
-class Student {
-    private $name;
-    private $age;
-    public function __construct( $name = "", $age = "" ) {
-        $this->name = $name;
-        $this->age = $age;
+// $obj2 = clone $obj1;
+// print_r( $obj2 );
+
+// $obj2->updateColor( "Green" );
+// print_r( $obj1 );
+// print_r( $obj2 );
+
+// //----------------     Deep Copy / Copy by value [using __clone() magic method] --------------
+class Color {
+    public $color;
+    public function __construct( $color ) {
+        $this->color = $color;
     }
-    public function __get( $property ) {
-        return $this->$property;
+    public function setColor( $color ) {
+        $this->color = $color;
     }
-    public function __set( $property, $value ) {
-        $this->$property = $value;
+}
+class FavColor {
+    public $color;
+    public function __construct( $color ) {
+        $this->color = new Color( $color );
+    }
+    public function updateColor( $color ) {
+        $this->color->setColor( $color );
+    }
+
+    public function __clone() {
+        $this->color = clone $this->color;
     }
 }
 
-$rakib = new Student( "Rakib", 25 );
-echo $rakib->name . PHP_EOL;
-$rakib->name = "Tufik";
-echo $rakib->name;
+$obj1 = new FavColor( "red" );
+print_r( $obj1 );
+
+$obj2 = clone $obj1;
+print_r( $obj2 );
+
+$obj2->updateColor( "Green" );
+print_r( $obj1 );
+print_r( $obj2 );

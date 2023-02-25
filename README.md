@@ -267,3 +267,5 @@
 17 - [Class Constants - const keyword](fdf)
 
 18 - [\_\_set() & \_\_get() - PHP Magic Methods](fdf)
+
+18 - [Object Cloning \_\_clone() - Magic Methods](fdf)
