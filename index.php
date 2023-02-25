@@ -1,51 +1,56 @@
 <?php
-/* Static Methods & Property overrides */
+/* Static Scope */
 
-//------------------ Static Method overrides ------------------------
-//01:
+//01: public scope
 class A {
+    public static $name;
     static function say() {
-        echo "Hi from A\n";
+        self::$name = "Hello\n";
     }
 }
 class B extends A {
-    //can't overrides static method like this
-    // function say(){
-    //     echo "Hi from A\n";
-    // }
-
     static function say() {
-        echo "Hi from B\n";
-        parent::say();
-    }
-}
-B::say();
-
-//------------------ Static Properties overrides ------------------------
-//01
-class Superclass {
-    public static $myStaticProperty = "Hello, World!\n";
-}
-
-class Subclass extends Superclass {
-    public static $myStaticProperty = "Goodbye, World!\n";
-}
-
-echo Superclass::$myStaticProperty; // Outputs "Hello, World!"
-echo Subclass::$myStaticProperty; // Outputs "Goodbye, World!"
-
-//02:
-class X {
-    static $name = "x";
-}
-class Y extends X {
-    static $name = "y";
-    public function __construct() {
-        echo self::$name;
-        echo "\n";
+        echo parent::say();
         echo parent::$name;
-        echo "\n";
-        echo parent::$name = "Z";
+        echo "Hi from B\n";
     }
 }
-new Y();
+echo A::$name;
+echo B::say();
+echo B::$name;
+
+// //02: protected
+// class A {
+//     protected static $name;
+//     static function say() {
+//         self::$name = "Hello\n";
+//     }
+// }
+// class B extends A {
+//     static function say() {
+//         echo parent::say();
+//         echo parent::$name;
+//         echo "Hi from B\n";
+//     }
+// }
+// echo B::say();
+// // echo A::$name; //error
+// // echo B::$name; //error
+
+// //03: private
+// class A {
+//     private static $name;
+//     static function say() {
+//         self::$name = "Hello\n";
+//     }
+// }
+// class B extends A {
+//     static function say() {
+//         echo parent::say();
+//         // echo parent::$name; //error
+//         echo "Hi from B\n";
+//     }
+// }
+// echo B::say();
+// // echo B::$name; //error
+// // echo A::$name; //error
