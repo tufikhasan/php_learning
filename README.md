@@ -275,3 +275,5 @@
 21 - [Comparing Objects](fdf)
 
 22 - [Early and Late binding](fdf)
+
+22 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
