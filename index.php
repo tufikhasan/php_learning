@@ -1,32 +1,60 @@
 <?php
-/*  Conversion from object to string  - "__toString()" Magic Methods
-
-The __toString() method allows a class to decide how it will react when it is treated like a string.
-
+/* Comparing Objects
  *
- * https://www.php.net/manual/en/language.oop5.magic.php#object.tostring
+ * https://www.php.net/manual/en/language.oop5.object-comparison.php
  *
  */
 
-//Error - Object of class Fruits could not be converted to string
-// class Fruits {
-//     public $fruit;
-//     public function __construct( $fruit ) {
-//         $this->fruit = $fruit;
-//     }
-// }
-// $mango = new Fruits( "Mango" );
-// echo $mango;
-
-//Object to String conversion
+//01
 class Fruits {
     public $fruit;
     public function __construct( $fruit ) {
         $this->fruit = $fruit;
     }
-    public function __toString() {
-        return "This is an {$this->fruit}";
-    }
 }
 $mango = new Fruits( "Mango" );
-echo $mango;
+$mango2 = new Fruits( "Mango" );
+$orange = new Fruits( "Orange" );
+$orange2 = $orange;
+//01:
+if ( $mango == $mango2 ) {
+    echo "Similar Object\n";
+} else {
+    echo "Not Similar Object\n";
+}
+//02:
+if ( $mango === $mango2 ) {
+    echo "Similar Object\n";
+} else {
+    echo "Not Similar Object\n";
+}
+
+echo "\n";
+
+//03:
+if ( $mango == $orange ) {
+    echo "Similar Object\n";
+} else {
+    echo "Not Similar Object\n";
+}
+//04:
+if ( $mango === $orange ) {
+    echo "Similar Object\n";
+} else {
+    echo "Not Similar Object\n";
+}
+
+echo "\n";
+
+//05:
+if ( $orange == $orange2 ) {
+    echo "Similar Object\n";
+} else {
+    echo "Not Similar Object\n";
+}
+//06:
+if ( $orange === $orange2 ) {
+    echo "Similar Object\n";
+} else {
+    echo "Not Similar Object\n";
+}

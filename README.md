@@ -264,10 +264,12 @@
 
 16 - [Static Scope](https://github.com/tufikhasan/php_learning/blob/e7ade00f5521535be7dc8c0ba42fa0557ebe047f/index.php)
 
-17 - [Class Constants - const keyword](fdf)
+17 - [Class Constants - const keyword](https://github.com/tufikhasan/php_learning/blob/e0692ba84ad8157d84463b83ac2b01aa2135c23d/index.php)
 
-18 - [\_\_set() & \_\_get() - PHP Magic Methods](fdf)
+18 - [\_\_set() & \_\_get() - PHP Magic Methods](https://github.com/tufikhasan/php_learning/blob/0fac7389abc48651311ac963ecaf4052ca3a609b/index.php)
 
-18 - [Object Cloning \_\_clone() - Magic Methods](fdf)
+19 - [Object Cloning \_\_clone() - Magic Methods](https://github.com/tufikhasan/php_learning/blob/8c2d56d7af8e6956bd9ee77ba92099c9308ffce6/index.php)
 
-19 - [Conversion from object to string - \_\_toString() Magic Methods](fdf)
+20 - [Conversion from object to string - \_\_toString() Magic Methods](https://github.com/tufikhasan/php_learning/blob/299e23c408ae0f2020a8aa9c34d5ba88f1dd7072/index.php)
+
+21 - [Comparing Objects](fdf)
