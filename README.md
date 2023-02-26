@@ -279,3 +279,5 @@
 23 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
 
 24 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](fdf)
+
+24 - [Class file autoloading - spl_autoload_register()](fdf)

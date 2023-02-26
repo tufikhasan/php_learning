@@ -1,40 +1,25 @@
 <?php
-/* Method Overloading __call() & __callStatic() Magic Methods
-In PHP, "__call()" and "__callStatic()" are magic methods that are used to handle method calls on an object or a class respectively when the method being called is not accessible or does not exist.
+/* Class file autoloading
 
-"__call()" is invoked when an inaccessible or undefined method is called on an object instance. It takes two parameters: the method name that was called, and an array of arguments that were passed to the method. It can be used to provide dynamic method invocation, as well as to implement "getters" and "setters" for object properties.
-
-"__callStatic()" is invoked when an inaccessible or undefined static method is called on a class. It takes two parameters: the method name that was called, and an array of arguments that were passed to the method. It can be used to provide dynamic static method invocation.
+In order to use a class defined in another PHP script, we can incorporate it with include or require statements. However, PHP’s autoloading feature does not need such explicit inclusion. Instead, when a class is used (for declaring its object etc.) PHP parser loads it automatically, if it is registered with spl_autoload_register() function. Any number of classes can thus be registered. This way PHP parser gets a last chance to load the class/interface before emitting an error.
  *
- * https://www.php.net/manual/en/language.oop5.magic.php
+ * https://www.php.net/manual/en/language.oop5.autoload.php
+ * https://www.geeksforgeeks.org/what-is-autoloading-classes-in-php/
  *
  */
 
-//**************  __call()  ***************/
-class Bike {
-    public function __call( $method, $args ) {
-        if ( "run" == $method ) {
-            if ( $args ) {
-                foreach ( $args as $arg ) {
-                    static $count;
-                    $count++;
-                    echo "running Argument($count) = {$arg},";
-                }
-                echo "\n";
-            } else {
-                echo "I am running\n";
-            }
-        }
-    }
+function autoLoading( $name ) {
+    // include $name . '.php';
+    // include './autoload/' . strtolower( $name ) . '.php';
+    include './autoload/' . $name . '.php';
 }
-$suzuki = new Bike();
-$suzuki->run();
-$suzuki->run( "name", "price" );
+spl_autoload_register( 'autoLoading' );
 
-//************** __unset() ***********/
-class Vehicle {
-    static function __callStatic( $method, $args ) {
-        echo "\nStatic CAll";
-    }
-}
-Vehicle::wash();
+// ( new Bike )->launch();
+$bike = new Bike();
+
+// ( new Car )->launch();
+$car = new Car();
+
+// ( new Vehicle )->launch();
+$vehicle = new Vehicle();
