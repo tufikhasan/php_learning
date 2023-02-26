@@ -273,3 +273,5 @@
 20 - [Conversion from object to string - \_\_toString() Magic Methods](https://github.com/tufikhasan/php_learning/blob/299e23c408ae0f2020a8aa9c34d5ba88f1dd7072/index.php)
 
 21 - [Comparing Objects](fdf)
+
+22 - [Early and Late binding](fdf)
