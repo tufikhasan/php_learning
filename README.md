@@ -276,4 +276,6 @@
 
 22 - [Early and Late binding](fdf)
 
-22 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
+23 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
+
+24 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](fdf)
