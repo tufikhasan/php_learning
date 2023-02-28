@@ -266,18 +266,20 @@
 
 17 - [Class Constants - const keyword](https://github.com/tufikhasan/php_learning/blob/e0692ba84ad8157d84463b83ac2b01aa2135c23d/index.php)
 
-18 - [\_\_set() & \_\_get() - PHP Magic Methods](https://github.com/tufikhasan/php_learning/blob/0fac7389abc48651311ac963ecaf4052ca3a609b/index.php)
+18 - [Traits - OOP PHP](gfg)
 
-19 - [Object Cloning \_\_clone() - Magic Methods](https://github.com/tufikhasan/php_learning/blob/8c2d56d7af8e6956bd9ee77ba92099c9308ffce6/index.php)
+19 - [\_\_set() & \_\_get() - PHP Magic Methods](https://github.com/tufikhasan/php_learning/blob/0fac7389abc48651311ac963ecaf4052ca3a609b/index.php)
 
-20 - [Conversion from object to string - \_\_toString() Magic Methods](https://github.com/tufikhasan/php_learning/blob/299e23c408ae0f2020a8aa9c34d5ba88f1dd7072/index.php)
+20 - [Object Cloning \_\_clone() - Magic Methods](https://github.com/tufikhasan/php_learning/blob/8c2d56d7af8e6956bd9ee77ba92099c9308ffce6/index.php)
 
-21 - [Comparing Objects](fdf)
+21 - [Conversion from object to string - \_\_toString() Magic Methods](https://github.com/tufikhasan/php_learning/blob/299e23c408ae0f2020a8aa9c34d5ba88f1dd7072/index.php)
 
-22 - [Early and Late binding](fdf)
+22 - [Comparing Objects](fdf)
 
-23 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
+23 - [Early and Late binding](fdf)
 
-24 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](fdf)
+24 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
 
-24 - [Class file autoloading - spl_autoload_register()](fdf)
+25 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](fdf)
+
+26 - [Class file autoloading - spl_autoload_register()](fdf)
