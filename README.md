@@ -285,3 +285,5 @@
 26 - [Class file autoloading - spl_autoload_register()](fdf)
 
 26 - [namespace - OOP PHP](fdf)
+
+27 - [Sorting and autoloading the file structure of large projects by namespace](fdf)
