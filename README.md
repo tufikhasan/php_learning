@@ -283,3 +283,5 @@
 25 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](fdf)
 
 26 - [Class file autoloading - spl_autoload_register()](fdf)
+
+26 - [namespace - OOP PHP](fdf)
