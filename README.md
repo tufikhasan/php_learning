@@ -266,7 +266,7 @@
 
 17 - [Class Constants - const keyword](https://github.com/tufikhasan/php_learning/blob/e0692ba84ad8157d84463b83ac2b01aa2135c23d/index.php)
 
-18 - [Traits - OOP PHP](gfg)
+18 - [Traits - OOP PHP](https://github.com/tufikhasan/php_learning/blob/841e32575c0f4ddaacd9c66997391870d17c5899/index.php)
 
 19 - [\_\_set() & \_\_get() - PHP Magic Methods](https://github.com/tufikhasan/php_learning/blob/0fac7389abc48651311ac963ecaf4052ca3a609b/index.php)
 
@@ -274,16 +274,16 @@
 
 21 - [Conversion from object to string - \_\_toString() Magic Methods](https://github.com/tufikhasan/php_learning/blob/299e23c408ae0f2020a8aa9c34d5ba88f1dd7072/index.php)
 
-22 - [Comparing Objects](fdf)
+22 - [Comparing Objects](https://github.com/tufikhasan/php_learning/blob/3dc5a85dc23914d1fb2796db50cbfd0bdeb9be04/index.php)
 
-23 - [Early and Late binding](fdf)
+23 - [Early and Late binding](https://github.com/tufikhasan/php_learning/blob/8e3fe8bb5383cf42d2bef8e5ad095425ebc168b6/index.php)
 
-24 - [property overloading & the \_\_isset() & \_\_unset() magic methods](fdf)
+24 - [property overloading & the \_\_isset() & \_\_unset() magic methods](https://github.com/tufikhasan/php_learning/blob/16e25d369dd065b70791f3ae2086bd23f3763559/index.php)
 
-25 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](fdf)
+25 - [Method Overloading \_\_call() & \_\_callStatic() Magic Methods](https://github.com/tufikhasan/php_learning/blob/8acb374a5cef2ae852101379a9f6e201ae1602c6/index.php)
 
-26 - [Class file autoloading - spl_autoload_register()](fdf)
+26 - [Class file autoloading - spl_autoload_register()](https://github.com/tufikhasan/php_learning/tree/111422ed37f31c1a03535961580a297780f37e10)
 
-26 - [namespace - OOP PHP](fdf)
+26 - [namespace - OOP PHP](https://github.com/tufikhasan/php_learning/tree/14891811793c7da2bbc9f3bce7568e976dd2866b)
 
-27 - [Sorting and autoloading the file structure of large projects by namespace](fdf)
+27 - [Sorting and autoloading the file structure of large projects by namespace](https://github.com/tufikhasan/php_learning/tree/5b178eec615850d85b1e76416c3537e42e61e27f)
