@@ -302,6 +302,8 @@
 
 06 - [$\_REQUEST — contains the contents of $\_GET, $\_POST and $\_COOKIE.](fdf)
 
+07 - [$\_FILES - File upload & Delete](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
