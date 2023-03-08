@@ -294,6 +294,8 @@
 
 02 - [$GLOBALS — References all variables available in global scope](fdf)
 
+03 - [$\_SERVER — Server and execution environment information](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
