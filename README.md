@@ -306,6 +306,8 @@
 
 08 - [$\_COOKIE - A cookie is often used to identify a user](fdf)
 
+09 - [$\_SESSION - $\_ENV - $http_response_header](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
