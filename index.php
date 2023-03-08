@@ -1,9 +1,9 @@
 <?php
-/* $_GET: This variable contains the values of the variables passed to the current script via the URL parameters.
+/* $_POST: This variable contains the values of variables submitted to the current script via an HTTP POST request.
 
-* https://www.php.net/manual/en/reserved.variables.get.php
-* https://www.w3schools.com/php/php_superglobals_get.asp
-* https://www.geeksforgeeks.org/php-superglobals/
+ * https://www.php.net/manual/en/reserved.variables.post.php
+ * https://www.w3schools.com/php/php_superglobals_post.asp
+ * https://www.geeksforgeeks.org/php-superglobals/
 */
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>$_GET - Method</title><!-- Milligram Mini css framework setup -->
+    <title>$_POST - Method</title><!-- Milligram Mini css framework setup -->
     <!-- Google Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
 
@@ -29,11 +29,11 @@
         <div class="row">
             <div class="column column-50 column-offset-25">
                 <?php
-                if (isset($_GET['fname']) && $_GET['fname'] != "") {
-                    echo "FirstName: {$_GET['fname']}<br>";
+                if (isset($_POST['fname']) && $_POST['fname'] != "") {
+                    echo "FirstName: {$_POST['fname']}<br>";
                 }
-                if (isset($_GET['lname']) && !empty($_GET['lname'])) {
-                    echo "LastName: {$_GET['lname']}";
+                if (isset($_POST['lname']) && !empty($_POST['lname'])) {
+                    echo "LastName: {$_POST['lname']}";
                 }
 
                 ?>
@@ -42,7 +42,7 @@
         <div class="row">
             <div class="column column-50 column-offset-25">
                 <!-- Form default method $_GET  & Default action same file-->
-                <form action="" method="GET">
+                <form method="POST">
                     <input type="text" name="fname" placeholder="First name...">
                     <input type="text" name="lname" placeholder="Last name...">
                     <input type="submit" value="Submit">

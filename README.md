@@ -296,7 +296,9 @@
 
 03 - [$\_SERVER — Server and execution environment information](fdf)
 
-03 - [$\_GET — HTTP GET variables](fdf)
+04 - [$\_GET — HTTP GET variables](fdf)
+
+05 - [$\_POST — HTTP POST variables](fdf)
 
 # PHP HTML Webpage working with form
 
