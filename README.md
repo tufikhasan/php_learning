@@ -300,6 +300,8 @@
 
 05 - [$\_POST — HTTP POST variables](fdf)
 
+06 - [$\_REQUEST — contains the contents of $\_GET, $\_POST and $\_COOKIE.](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
