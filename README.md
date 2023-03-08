@@ -288,6 +288,10 @@
 
 27 - [Sorting and autoloading the file structure of large projects by namespace](https://github.com/tufikhasan/php_learning/tree/5b178eec615850d85b1e76416c3537e42e61e27f)
 
+# PHP Super Global variables — Built-in variables that are always available in all scopes
+
+01 - [Introduction to PHP Super Global variables](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
