@@ -304,6 +304,8 @@
 
 07 - [$\_FILES - File upload & Delete](fdf)
 
+08 - [$\_COOKIE - A cookie is often used to identify a user](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
