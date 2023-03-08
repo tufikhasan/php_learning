@@ -296,6 +296,8 @@
 
 03 - [$\_SERVER — Server and execution environment information](fdf)
 
+03 - [$\_GET — HTTP GET variables](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)

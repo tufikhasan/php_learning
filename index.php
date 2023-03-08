@@ -1,35 +1,55 @@
 <?php
-/* $_SERVER - This variable contains information about the server environment and execution of the current script, such as the current page name, the IP address of the client, and the request method used to access the page.
+/* $_GET: This variable contains the values of the variables passed to the current script via the URL parameters.
 
- * https://www.php.net/manual/en/reserved.variables.server.php
- * https://www.w3schools.com/php/php_superglobals_server.asp
- * https://www.geeksforgeeks.org/php-superglobals/
- */
+* https://www.php.net/manual/en/reserved.variables.get.php
+* https://www.w3schools.com/php/php_superglobals_get.asp
+* https://www.geeksforgeeks.org/php-superglobals/
+*/
+?>
+<!DOCTYPE html>
+<html lang="en">
 
-echo "PHP_SELF = " . $_SERVER['PHP_SELF'] . "<br><br>";
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>$_GET - Method</title><!-- Milligram Mini css framework setup -->
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" />
 
-echo "REQUEST_METHOD = " . $_SERVER['REQUEST_METHOD'] . "<br><br>";
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" />
 
-echo "SERVER_NAME = " . $_SERVER['SERVER_NAME'] . "<br><br>";
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css" />
+</head>
 
-echo "SERVER_PORT = " . $_SERVER['SERVER_PORT'] . "<br><br>";
+<body>
+    <div class="container" style="margin-top: 3rem;">
+        <div class="row">
+            <div class="column column-50 column-offset-25">
+                <?php
+                if (isset($_GET['fname']) && $_GET['fname'] != "") {
+                    echo "FirstName: {$_GET['fname']}<br>";
+                }
+                if (isset($_GET['lname']) && !empty($_GET['lname'])) {
+                    echo "LastName: {$_GET['lname']}";
+                }
 
-echo "HTTP_HOST = " . $_SERVER['HTTP_HOST'] . "<br><br>";
+                ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column column-50 column-offset-25">
+                <!-- Form default method $_GET  & Default action same file-->
+                <form action="" method="GET">
+                    <input type="text" name="fname" placeholder="First name...">
+                    <input type="text" name="lname" placeholder="Last name...">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
 
-echo "SCRIPT_NAME = " . $_SERVER['SCRIPT_NAME'] . "<br><br>";
-
-echo "SCRIPT_FILENAME = " . $_SERVER['SCRIPT_FILENAME'] . "<br><br>";
-
-echo "SERVER_SOFTWARE = " . $_SERVER['SERVER_SOFTWARE'] . "<br><br>";
-
-echo "HTTP_USER_AGENT = " . $_SERVER['HTTP_USER_AGENT'] . "<br><br>";
-
-echo "SERVER_PROTOCOL = " . $_SERVER['SERVER_PROTOCOL'] . "<br><br>";
-
-echo "REQUEST_TIME = " . $_SERVER['REQUEST_TIME'] . "<br><br>";
-
-echo "HTTP_ACCEPT = " . $_SERVER['HTTP_ACCEPT'] . "<br><br>";
-
-echo "REMOTE_ADDR = " . $_SERVER['REMOTE_ADDR'] . "<br><br>";
-
-echo "REMOTE_PORT = " . $_SERVER['REMOTE_PORT'] . "<br><br>";
+</html>
