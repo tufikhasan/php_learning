@@ -292,6 +292,8 @@
 
 01 - [Introduction to PHP Super Global variables](fdf)
 
+02 - [$GLOBALS — References all variables available in global scope](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
