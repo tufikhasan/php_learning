@@ -308,6 +308,10 @@
 
 09 - [$\_SESSION - $\_ENV - $http_response_header](fdf)
 
+# PHP directory and file-system
+
+01 - [PHP Some commonly used directory and file functions](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
