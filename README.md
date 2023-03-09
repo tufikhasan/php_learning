@@ -312,6 +312,8 @@
 
 01 - [PHP Some commonly used directory and file functions](fdf)
 
+02 - [File Open and Read only](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](fdf)
