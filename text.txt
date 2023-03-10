@@ -1,5 +1,2 @@
-mango
-orange
-pineapple
 apple
-grape
+mango

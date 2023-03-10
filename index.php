@@ -2,11 +2,12 @@
 /* 
 ------ Some commonly used PHP filesystem functions: -----
 
- * basename — Returns trailing name component of path
+ * getcwd() — Gets the current working directory
+ * basename() — Returns trailing name component of path
  * is_dir() - Checks if a given path is a directory.
  * mkdir() - Creates a directory.
  * rmdir() - Deletes a directory.
- * dirname — Returns a parent directory's path
+ * dirname() — Returns a parent directory's path
  * scandir() - Reads the contents of a directory into an array.
  * glob() - Finds pathnames that match a pattern.
  * realpath() - Returns the canonicalized absolute pathname of a file or directory.
@@ -18,6 +19,7 @@
  * fopen() - Opens a file or URL for reading or writing.
  * fclose() - Closes an open file pointer.
  * fgets() - Reads a line from an open file pointer.
+ * fgetcsv — Gets line from file pointer and parse for CSV fields
  * fread() - Reads a specified number of bytes from an open file pointer.
  * fwrite() - Writes a string to an open file pointer.
  * rewind — Rewind the position of a file pointer
@@ -33,10 +35,10 @@
  * filetype — Gets file type
  * file_exists() - Checks if a file or directory exists.
  * is_file() - Checks if a given path is a regular file.
- * is_readable — Tells whether a file exists and is readable
- * is_writable — Tells whether the filename is writable
- * is_writeable — Alias of is_writable
- * is_uploaded_file — Tells whether the file was uploaded via HTTP POST
+ * is_readable() — Tells whether a file exists and is readable
+ * is_writable() — Tells whether the filename is writable
+ * is_writeable() — Alias of is_writable
+ * is_uploaded_file() — Tells whether the file was uploaded via HTTP POST
 
  * 
  * https://www.php.net/manual/en/book.filesystem.php

@@ -290,30 +290,32 @@
 
 # PHP Super Global variables — Built-in variables that are always available in all scopes
 
-01 - [Introduction to PHP Super Global variables](fdf)
+01 - [Introduction to PHP Super Global variables](https://github.com/tufikhasan/php_learning/blob/a9cac1ab6f5781973593fd3881b73ff6181a7e76/index.php)
 
-02 - [$GLOBALS — References all variables available in global scope](fdf)
+02 - [$GLOBALS — References all variables available in global scope](https://github.com/tufikhasan/php_learning/blob/4fb9bd34f699b9994d81d9f77aa45e41d635eec4/index.php)
 
-03 - [$\_SERVER — Server and execution environment information](fdf)
+03 - [$\_SERVER — Server and execution environment information](https://github.com/tufikhasan/php_learning/blob/e901fcbc1f0cbfb07ff1f88b9fdbae9ee36db6a1/index.php)
 
-04 - [$\_GET — HTTP GET variables](fdf)
+04 - [$\_GET — HTTP GET variables](https://github.com/tufikhasan/php_learning/blob/ebc5499bda22530239e416e710b80058f5b6b546/index.php)
 
-05 - [$\_POST — HTTP POST variables](fdf)
+05 - [$\_POST — HTTP POST variables](https://github.com/tufikhasan/php_learning/blob/d3fa96b2f37c6ff3b95a585b013136e51267c0b8/index.php)
 
-06 - [$\_REQUEST — contains the contents of $\_GET, $\_POST and $\_COOKIE.](fdf)
+06 - [$\_REQUEST — contains the contents of $\_GET, $\_POST and $\_COOKIE.](https://github.com/tufikhasan/php_learning/blob/427bbc1c16336fe6eb16e3f2cf83262eadb71295/index.php)
 
-07 - [$\_FILES - File upload & Delete](fdf)
+07 - [$\_FILES - File upload & Delete](https://github.com/tufikhasan/php_learning/blob/750a73e12252ba731936ec2f6d16de1451c33122/index.php)
 
-08 - [$\_COOKIE - A cookie is often used to identify a user](fdf)
+08 - [$\_COOKIE - A cookie is often used to identify a user](https://github.com/tufikhasan/php_learning/blob/d99d62e6290225b690d109970e1d22466a1c3970/index.php)
 
-09 - [$\_SESSION - $\_ENV - $http_response_header](fdf)
+09 - [$\_SESSION - $\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
 
 # PHP directory and file-system
 
 01 - [PHP Some commonly used directory and file functions](fdf)
 
-02 - [File Open and Read only](fdf)
+02 - [File Open and Read only](https://github.com/tufikhasan/php_learning/tree/c5b2a3a03a6aa40d21cc2335bcd5c7a57e9b01c4)
+
+03 - [fopen() - A list of possible modes](FDF)
 
 # PHP HTML Webpage working with form
 
-01 - [Milligram Mini css framework setup](fdf)
+01 - [Milligram Mini css framework setup](https://github.com/tufikhasan/php_learning/blob/18b36c1eb55798d00547a2d23f8a48d3d0fc46c5/index.html)
