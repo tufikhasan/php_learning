@@ -1,48 +1,38 @@
 <?php
-/* 
------- Some commonly used PHP filesystem functions: -----
+/* file_put_contents(filename, data, mode, context) - writes data to a file.
 
- * getcwd() — Gets the current working directory
- * basename() — Returns trailing name component of path
- * is_dir() - Checks if a given path is a directory.
- * mkdir() - Creates a directory.
- * rmdir() - Deletes a directory.
- * dirname() — Returns a parent directory's path
- * scandir() - Reads the contents of a directory into an array.
- * glob() - Finds pathnames that match a pattern.
- * realpath() - Returns the canonicalized absolute pathname of a file or directory.
- * filesize() - Returns the size of a file.
- * filemtime() - Returns the last modified time of a file.
+This function follows these rules when accessing a file:
 
------ Some commonly used PHP file read, open, and write functions: -----
- * readfile() - Outputs the contents of a file to the output buffer.
- * fopen() - Opens a file or URL for reading or writing.
- * fclose() - Closes an open file pointer.
- * fgets() - Reads a line from an open file pointer.
- * fgetcsv — Gets line from file pointer and parse for CSV fields
- * fread() - Reads a specified number of bytes from an open file pointer.
- * fwrite() - Writes a string to an open file pointer.
- * rewind — Rewind the position of a file pointer
- * fseek — Seeks on a file pointer
- * file() - Reads a file into an array, with each line of the file as an array element.
- * file_get_contents() - Reads the entire contents of a file into a string.
- * file_put_contents() - Writes a string to a file.
- * copy() - Copies a file.
- * rename() - Renames a file or directory.
- * delete — See unlink or unset
- * unlink() - Deletes a file.
- * filesize — Gets file size
- * filetype — Gets file type
- * file_exists() - Checks if a file or directory exists.
- * is_file() - Checks if a given path is a regular file.
- * is_readable() — Tells whether a file exists and is readable
- * is_writable() — Tells whether the filename is writable
- * is_writeable() — Alias of is_writable
- * is_uploaded_file() — Tells whether the file was uploaded via HTTP POST
+ -> If FILE_USE_INCLUDE_PATH is set, check the include path for a copy of filename
+ -> Create the file if it does not exist
+ -> Open the file
+ -> Lock the file if LOCK_EX is set
+ -> If FILE_APPEND is set, move to the end of the file. Otherwise, clear the file content
+ -> Write the data into the file
+ -> Close the file and release any locks
+
+NOTE: Use FILE_APPEND to avoid deleting the existing content of the file.
 
  * 
- * https://www.php.net/manual/en/book.filesystem.php
- * https://www.w3schools.com/php/php_file_open.asp
- * https://www.geeksforgeeks.org/php-filesystem-functions-complete-reference/
+ * https://www.w3schools.com/php/func_filesystem_file_put_contents.asp
+ * https://www.geeksforgeeks.org/php-file_put_contents-function/
+ * https://www.php.net/manual/en/function.file-put-contents
 
 */
+// //01: clear the file content and write new
+// $file = 'text.txt';
+// file_put_contents($file, 'mango');
+// file_put_contents($file, 'orange');
+// echo file_get_contents($file);
+
+// //02: move to the end of the file and write new
+// $file = 'text.txt';
+// file_put_contents($file, "mango\n", FILE_APPEND);
+// file_put_contents($file, "orange\n", FILE_APPEND);
+// echo file_get_contents($file);
+
+//02: Acquire an exclusive lock on the file while proceeding to the writing.
+$file = 'text.txt';
+file_put_contents($file, "mango\n", FILE_APPEND | LOCK_EX);
+file_put_contents($file, "orange\n", FILE_APPEND | LOCK_EX);
+echo file_get_contents($file);

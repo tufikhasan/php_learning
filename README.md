@@ -310,11 +310,13 @@
 
 # PHP directory and file-system
 
-01 - [PHP Some commonly used directory and file functions](fdf)
+01 - [PHP Some commonly used directory and file functions](https://github.com/tufikhasan/php_learning/blob/7f40c7e7452ca00f0693d899d007bd51b337d510/index.php)
 
 02 - [File Open and Read only](https://github.com/tufikhasan/php_learning/tree/c5b2a3a03a6aa40d21cc2335bcd5c7a57e9b01c4)
 
-03 - [fopen() - A list of possible modes](FDF)
+03 - [fopen() - A list of possible modes](https://github.com/tufikhasan/php_learning/blob/7f40c7e7452ca00f0693d899d007bd51b337d510/fileOpenAllMode.php)
+
+04 - [file_put_contents() - writes data to a file](fdf)
 
 # PHP HTML Webpage working with form
 
