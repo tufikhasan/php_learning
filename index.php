@@ -1,5 +1,5 @@
 <?php
-/* File data processing - Manually */
+/* File data processing using fputcsv(),fgetcsv() */
 
 //---------- associative array item write into file ------
 $students = [
@@ -24,20 +24,28 @@ $students = [
 ];
 $fOpen = fopen('students.csv', 'w');
 foreach ($students as $student) {
-    $data = sprintf("%s,%s,%s,%s\n", $student['name'], $student['age'], $student['roll'], $student['class']);
-    fwrite($fOpen, $data);
+    fputcsv($fOpen, $student);
 }
 fclose($fOpen);
 
 // //-------- csv file read by line -----------
 // $fOpen = fopen('students.csv', 'r');
-// while ($line = fgets($fOpen)) {
-//     $student = explode(',', $line);
+// while ($student = fgetcsv($fOpen)) {
 //     printf("Name = %s\nAge = %s\nRoll = %s\nClass = %s\n\n", $student[0], $student[1], $student[2], $student[3]);
 // }
 // fclose($fOpen);
 
-// //------------- delete line from file ------------
+// //------------- add new student ------------
+// $student = [
+//     "name"  => "Rocky",
+//     "age"   => 19,
+//     "roll"  => 45,
+//     "class" => "Ten",
+// ];
+// $fOpen = fopen('students.csv', 'a');
+// fputcsv($fOpen, $student);
+
+// //------------- delete specific line from file ------------
 // $students = file('students.csv');
 // unset($students[2]);
 // print_r($students);
