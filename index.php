@@ -1,59 +1,19 @@
 <?php
-/* File data processing using json_encode(),json_decode() */
+/* $_SESSION
+This variable contains data that is preserved across multiple requests, typically used for user authentication and tracking.
+ * 
+ -> https://www.php.net/manual/en/reserved.variables.session.php
+ -> https://www.w3schools.com/php/php_sessions.asp
+*/
+session_start();
+$_SESSION['name'] = "Tufik Hasan";
+echo $_SESSION['name'];
 
-//---------- associative array serialize into file ------
-$students = [
-    [
-        "name" => "Tufik",
-        "age" => 25,
-        "roll" => 01,
-        "class" => "BBA",
-    ],
-    [
-        "name" => "Rakib",
-        "age" => 42,
-        "roll" => 17,
-        "class" => "CSE",
-    ],
-    [
-        "name" => "Sabbir",
-        "age" => 32,
-        "roll" => 4,
-        "class" => "MSC",
-    ],
-];
-$data = json_encode($students);
-file_put_contents('students.csv', $data, LOCK_EX);
+//echo $_SESSION['class']; // this can't not access because session_1.php file session name not match
+echo nl2br("\n");
 
-// //-------- csv file read by line - (json to object) -----------
-// $data = file_get_contents('students.csv');
-// $students = json_decode($data);
-// print_r($students);
-// echo $students[0]->name;
+$_SESSION['counter'] = $_SESSION['counter'] ?? 0;
+$_SESSION['counter']++;
+echo $_SESSION['counter'];
 
-// //-------- csv file read by line - json to array -----------
-// $data = file_get_contents('students.csv');
-// $students = json_decode($data, true);
-// print_r($students);
-// echo $students[0]['name'];
-
-// //------------- add new student ------------
-// $data = file_get_contents('students.csv');
-// $students = json_decode($data, true);
-// $student = [
-//     "name"  => "Rocky",
-//     "age"   => 19,
-//     "roll"  => 45,
-//     "class" => "Ten",
-// ];
-// array_push($students, $student);
-// $data = json_encode($students);
-// file_put_contents('students.csv', $data, LOCK_EX);
-
-// //------------- delete specific line from file ------------
-// $data = file_get_contents('students.csv');
-// $students = json_decode($data, true);
-// unset($students[1]);
-// print_r($students);
-// $data = json_encode($students);
-// file_put_contents('students.csv', $data, LOCK_EX);
+// session_destroy();
