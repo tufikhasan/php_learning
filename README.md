@@ -306,7 +306,9 @@
 
 08 - [$\_COOKIE - A cookie is often used to identify a user](https://github.com/tufikhasan/php_learning/blob/d99d62e6290225b690d109970e1d22466a1c3970/index.php)
 
-09 - [$\_SESSION - $\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+09 - [$\_SESSION - set,session name,timeout,destroy](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+
+10 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
 
 # PHP directory and file-system
 
