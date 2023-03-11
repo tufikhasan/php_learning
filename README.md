@@ -306,9 +306,11 @@
 
 08 - [$\_COOKIE - A cookie is often used to identify a user](https://github.com/tufikhasan/php_learning/blob/d99d62e6290225b690d109970e1d22466a1c3970/index.php)
 
-09 - [$\_SESSION - set,session name,timeout,destroy](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+09 - [$\_SESSION - set,session name,timeout,destroy](https://github.com/tufikhasan/php_learning/tree/572041ef5c4040b6413247279786da8868df73b4)
 
-10 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+10 - [$\_SESSION - login system](gfg)
+
+11 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
 
 # PHP directory and file-system
 
@@ -318,17 +320,17 @@
 
 03 - [fopen() - A list of possible modes](https://github.com/tufikhasan/php_learning/blob/7f40c7e7452ca00f0693d899d007bd51b337d510/fileOpenAllMode.php)
 
-04 - [file_put_contents() - writes data to a file](fdf)
+04 - [file_put_contents() - writes data to a file](https://github.com/tufikhasan/php_learning/blob/043accbb913810e5100ed5daa771d855d7ae8bf4/index.php)
 
-05 - [fputcsv() - fgetcsv()](fdf)
+05 - [fputcsv() - fgetcsv()](https://github.com/tufikhasan/php_learning/blob/1821bd3e2cf30e2de47e6e9de0dfca0bf1b69bf8/index.php)
 
-06 - [File data processing - Manually](fdf)
+06 - [File data processing - Manually](https://github.com/tufikhasan/php_learning/blob/fd38cd9422775fa32b43b1135f4907dc5192cd47/index.php)
 
-07 - [File data processing using fputcsv(),fgetcsv()](fdf)
+07 - [File data processing using fputcsv(),fgetcsv()](https://github.com/tufikhasan/php_learning/blob/39dde6cba3acdeef09d1cb69d7b5c3526e5fd130/index.php)
 
-08 - [File data processing using serialize(),unserialize()](fdf)
+08 - [File data processing using serialize(),unserialize()](https://github.com/tufikhasan/php_learning/blob/8c80f9eb297b2a1b7332c83db6cfca3d7ddabe0f/index.php)
 
-09 - [File data processing using json_encode(),json_decode()](fdf)
+09 - [File data processing using json_encode(),json_decode()](https://github.com/tufikhasan/php_learning/blob/abfb734723b404dece903d2e2d812dfca710c86e/index.php)
 
 # PHP HTML Webpage working with form
 
