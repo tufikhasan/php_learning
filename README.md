@@ -318,6 +318,8 @@
 
 04 - [file_put_contents() - writes data to a file](fdf)
 
+05 - [fputcsv() - fgetcsv()](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](https://github.com/tufikhasan/php_learning/blob/18b36c1eb55798d00547a2d23f8a48d3d0fc46c5/index.html)
