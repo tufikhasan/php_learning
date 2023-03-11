@@ -1,1 +1,1 @@
-a:3:{i:0;a:4:{s:4:"name";s:5:"Tufik";s:3:"age";i:25;s:4:"roll";i:1;s:5:"class";s:3:"BBA";}i:1;a:4:{s:4:"name";s:5:"Rakib";s:3:"age";i:42;s:4:"roll";i:17;s:5:"class";s:3:"CSE";}i:2;a:4:{s:4:"name";s:6:"Sabbir";s:3:"age";i:32;s:4:"roll";i:4;s:5:"class";s:3:"MSC";}}
+[{"name":"Tufik","age":25,"roll":1,"class":"BBA"},{"name":"Rakib","age":42,"roll":17,"class":"CSE"},{"name":"Sabbir","age":32,"roll":4,"class":"MSC"}]

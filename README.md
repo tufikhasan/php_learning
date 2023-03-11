@@ -326,6 +326,8 @@
 
 08 - [File data processing using serialize(),unserialize()](fdf)
 
+09 - [File data processing using json_encode(),json_decode()](fdf)
+
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](https://github.com/tufikhasan/php_learning/blob/18b36c1eb55798d00547a2d23f8a48d3d0fc46c5/index.html)
