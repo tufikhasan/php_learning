@@ -1,7 +1,7 @@
 <?php
-/* File data processing using fputcsv(),fgetcsv() */
+/* File data processing using serialize(),unserialize() */
 
-//---------- associative array item write into file ------
+//---------- associative array serialize into file ------
 $students = [
     [
         "name" => "Tufik",
@@ -22,37 +22,30 @@ $students = [
         "class" => "MSC",
     ],
 ];
-$fOpen = fopen('students.csv', 'w');
-foreach ($students as $student) {
-    fputcsv($fOpen, $student);
-}
-fclose($fOpen);
+$data = serialize($students);
+file_put_contents('students.csv', $data, LOCK_EX);
 
-// //-------- csv file read by line -----------
-// $fOpen = fopen('students.csv', 'r');
-// while ($student = fgetcsv($fOpen)) {
-//     printf("Name = %s\nAge = %s\nRoll = %s\nClass = %s\n\n", $student[0], $student[1], $student[2], $student[3]);
-// }
-// fclose($fOpen);
+// // //-------- csv file read by line -----------
+// $data = file_get_contents('students.csv');
+// $students = unserialize($data);
+// print_r($students);
 
 // //------------- add new student ------------
+// $data = file_get_contents('students.csv');
+// $students = unserialize($data);
 // $student = [
 //     "name"  => "Rocky",
 //     "age"   => 19,
 //     "roll"  => 45,
 //     "class" => "Ten",
 // ];
-// $fOpen = fopen('students.csv', 'a');
-// fputcsv($fOpen, $student);
+// array_push($students, $student);
+// $data = serialize($students);
+// file_put_contents('students.csv', $data, LOCK_EX);
 
 // //------------- delete specific line from file ------------
-// $students = file('students.csv');
+// $data = file_get_contents('students.csv');
+// $students = unserialize($data);
 // unset($students[2]);
-// print_r($students);
-// $fOpen = fopen('students.csv', 'w');
-// foreach ($students as $student) {
-//     if ($student != '') {
-//         fwrite($fOpen, $student);
-//     }
-// }
-// fclose($fOpen);
+// $data = serialize($students);
+// file_put_contents('students.csv', $data, LOCK_EX);
