@@ -1,18 +1,41 @@
 <?php
-// // 01: Cookies Set PHP and Showing using javaScript 
-// setcookie('name', 'tufik', time() + 30);
-// echo <<<EOD
-//     <script src="
-//     https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js
-//     "></script>
-//     <script>
-//         alert(Cookies.get('name'));
-//     </script>
-// EOD;
+/* time() - microtime($boolean)
+In PHP, the time() function returns the current Unix timestamp, which represents the number of seconds that have elapsed since January 1, 1970, at 00:00:00 UTC.
 
-// 02: cookie array set like this
-setcookie("array[id]", 1, time() + 30);
-setcookie("array[name]", 'Tufik Hasan', time() + 30);
-foreach ($_COOKIE['array'] as $key => $value) {
-    echo "$key: $value<br>";
+//unix approach to unix timestamps
+
+ * https://www.w3schools.com/php/func_date_time.asp
+ * https://www.php.net/manual/en/function.time.php
+ */
+
+//01:
+echo time() . PHP_EOL;
+//02:
+echo 'Now: ' . time() . PHP_EOL;
+//03:
+$timestamp = time();
+echo date( "d/m/Y", $timestamp ) . PHP_EOL;
+
+//04:
+echo "Unix timestamps with micro seconds = " . microtime( true ) . PHP_EOL;
+echo "Unix timestamps with micro seconds = " . microtime( false ) . PHP_EOL;
+//05:
+$mt = microtime( true );
+printf( "%10.5f", $mt );
+echo PHP_EOL;
+
+//06:
+$startTime = microtime( true );
+factorial( 100 );
+$endTime = microtime( true );
+
+$executionTime = $endTime - $startTime;
+printf( "%10.8f", $executionTime );
+
+function factorial( $num ) {
+    $result = 1;
+    for ( $i = 1; $i <= $num; $i++ ) {
+        $result *= $i;
+    }
+    return $result;
 }

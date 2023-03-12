@@ -288,6 +288,10 @@
 
 27 - [Sorting and autoloading the file structure of large projects by namespace](https://github.com/tufikhasan/php_learning/tree/5b178eec615850d85b1e76416c3537e42e61e27f)
 
+# PHP DATE AND TIME
+
+01 - [time() - microtime($boolean)](GF)
+
 # PHP directory and file-system
 
 01 - [PHP Some commonly used directory and file functions](https://github.com/tufikhasan/php_learning/blob/7f40c7e7452ca00f0693d899d007bd51b337d510/index.php)
@@ -307,10 +311,6 @@
 08 - [File data processing using serialize(),unserialize()](https://github.com/tufikhasan/php_learning/blob/8c80f9eb297b2a1b7332c83db6cfca3d7ddabe0f/index.php)
 
 09 - [File data processing using json_encode(),json_decode()](https://github.com/tufikhasan/php_learning/blob/abfb734723b404dece903d2e2d812dfca710c86e/index.php)
-
-# PHP HTML Webpage working with form
-
-01 - [Milligram Mini css framework setup](https://github.com/tufikhasan/php_learning/blob/18b36c1eb55798d00547a2d23f8a48d3d0fc46c5/index.html)
 
 # PHP Super Global variables — Built-in variables that are always available in all scopes
 
@@ -340,6 +340,10 @@
 
 13 - [$\_COOKIE - A cookie is often used to identify a user](https://github.com/tufikhasan/php_learning/blob/d99d62e6290225b690d109970e1d22466a1c3970/index.php)
 
-14 - [$\_COOKIE - show cookie using js, cookies loop]()
+14 - [$\_COOKIE - show cookie using js, cookies loop](https://github.com/tufikhasan/php_learning/blob/7158ff593f25981488c136b42883f076e380799e/index.php)
 
-14 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+15 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+
+# PHP HTML Webpage working with form
+
+01 - [Milligram Mini css framework setup](https://github.com/tufikhasan/php_learning/blob/18b36c1eb55798d00547a2d23f8a48d3d0fc46c5/index.html)
