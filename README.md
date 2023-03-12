@@ -288,36 +288,6 @@
 
 27 - [Sorting and autoloading the file structure of large projects by namespace](https://github.com/tufikhasan/php_learning/tree/5b178eec615850d85b1e76416c3537e42e61e27f)
 
-# PHP Super Global variables — Built-in variables that are always available in all scopes
-
-01 - [Introduction to PHP Super Global variables](https://github.com/tufikhasan/php_learning/blob/a9cac1ab6f5781973593fd3881b73ff6181a7e76/index.php)
-
-02 - [$GLOBALS — References all variables available in global scope](https://github.com/tufikhasan/php_learning/blob/4fb9bd34f699b9994d81d9f77aa45e41d635eec4/index.php)
-
-03 - [$\_SERVER — Server and execution environment information](https://github.com/tufikhasan/php_learning/blob/e901fcbc1f0cbfb07ff1f88b9fdbae9ee36db6a1/index.php)
-
-04 - [$\_GET — HTTP GET variables](https://github.com/tufikhasan/php_learning/blob/ebc5499bda22530239e416e710b80058f5b6b546/index.php)
-
-05 - [$\_POST — HTTP POST variables](https://github.com/tufikhasan/php_learning/blob/d3fa96b2f37c6ff3b95a585b013136e51267c0b8/index.php)
-
-06 - [$\_REQUEST — contains the contents of $\_GET, $\_POST and $\_COOKIE.](https://github.com/tufikhasan/php_learning/blob/427bbc1c16336fe6eb16e3f2cf83262eadb71295/index.php)
-
-07 - [$\_FILES - File upload & Delete](https://github.com/tufikhasan/php_learning/blob/750a73e12252ba731936ec2f6d16de1451c33122/index.php)
-
-08 - [$\_COOKIE - A cookie is often used to identify a user](https://github.com/tufikhasan/php_learning/blob/d99d62e6290225b690d109970e1d22466a1c3970/index.php)
-
-09 - [$\_SESSION - set,session name,timeout,destroy](https://github.com/tufikhasan/php_learning/tree/572041ef5c4040b6413247279786da8868df73b4)
-
-10 - [$\_SESSION - login system](https://github.com/tufikhasan/php_learning/blob/020d696eb620183aee96ca2680afc41dc423511f/index.php)
-
-11 - [$\_SESSION - crud project login system](https://github.com/tufikhasan/php_projects/tree/1d728fdd7804a2aebd32abb131e6baf00a2a52f7)
-
-12 - [$\_SESSION - role management system](https://github.com/tufikhasan/php_projects/tree/025cae622bd8537caf272ee6a13f9078bdf4655d)
-
-13 - [$\_SESSION - scope multiple subdomains or pages on the same domain](fdf)
-
-14 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
-
 # PHP directory and file-system
 
 01 - [PHP Some commonly used directory and file functions](https://github.com/tufikhasan/php_learning/blob/7f40c7e7452ca00f0693d899d007bd51b337d510/index.php)
@@ -341,3 +311,35 @@
 # PHP HTML Webpage working with form
 
 01 - [Milligram Mini css framework setup](https://github.com/tufikhasan/php_learning/blob/18b36c1eb55798d00547a2d23f8a48d3d0fc46c5/index.html)
+
+# PHP Super Global variables — Built-in variables that are always available in all scopes
+
+01 - [Introduction to PHP Super Global variables](https://github.com/tufikhasan/php_learning/blob/a9cac1ab6f5781973593fd3881b73ff6181a7e76/index.php)
+
+02 - [$GLOBALS — References all variables available in global scope](https://github.com/tufikhasan/php_learning/blob/4fb9bd34f699b9994d81d9f77aa45e41d635eec4/index.php)
+
+03 - [$\_SERVER — Server and execution environment information](https://github.com/tufikhasan/php_learning/blob/e901fcbc1f0cbfb07ff1f88b9fdbae9ee36db6a1/index.php)
+
+04 - [$\_GET — HTTP GET variables](https://github.com/tufikhasan/php_learning/blob/ebc5499bda22530239e416e710b80058f5b6b546/index.php)
+
+05 - [$\_POST — HTTP POST variables](https://github.com/tufikhasan/php_learning/blob/d3fa96b2f37c6ff3b95a585b013136e51267c0b8/index.php)
+
+06 - [$\_REQUEST — contains the contents of $\_GET, $\_POST and $\_COOKIE.](https://github.com/tufikhasan/php_learning/blob/427bbc1c16336fe6eb16e3f2cf83262eadb71295/index.php)
+
+07 - [$\_FILES - File upload & Delete](https://github.com/tufikhasan/php_learning/blob/750a73e12252ba731936ec2f6d16de1451c33122/index.php)
+
+08 - [$\_SESSION - set,session name,timeout,destroy](https://github.com/tufikhasan/php_learning/tree/572041ef5c4040b6413247279786da8868df73b4)
+
+09 - [$\_SESSION - login system](https://github.com/tufikhasan/php_learning/blob/020d696eb620183aee96ca2680afc41dc423511f/index.php)
+
+10 - [$\_SESSION - crud project login system](https://github.com/tufikhasan/php_projects/tree/1d728fdd7804a2aebd32abb131e6baf00a2a52f7)
+
+11 - [$\_SESSION - role management system](https://github.com/tufikhasan/php_projects/tree/025cae622bd8537caf272ee6a13f9078bdf4655d)
+
+12 - [$\_SESSION - scope multiple subdomains or pages on the same domain](https://github.com/tufikhasan/php_learning/blob/db271495473da9acc6bab096ceacc64741b634e9/index.php)
+
+13 - [$\_COOKIE - A cookie is often used to identify a user](https://github.com/tufikhasan/php_learning/blob/d99d62e6290225b690d109970e1d22466a1c3970/index.php)
+
+14 - [$\_COOKIE - show cookie using js, cookies loop]()
+
+14 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
