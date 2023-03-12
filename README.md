@@ -308,9 +308,15 @@
 
 09 - [$\_SESSION - set,session name,timeout,destroy](https://github.com/tufikhasan/php_learning/tree/572041ef5c4040b6413247279786da8868df73b4)
 
-10 - [$\_SESSION - login system](gfg)
+10 - [$\_SESSION - login system](https://github.com/tufikhasan/php_learning/blob/020d696eb620183aee96ca2680afc41dc423511f/index.php)
 
-11 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
+11 - [$\_SESSION - crud project login system](https://github.com/tufikhasan/php_projects/tree/1d728fdd7804a2aebd32abb131e6baf00a2a52f7)
+
+12 - [$\_SESSION - role management system](https://github.com/tufikhasan/php_projects/tree/025cae622bd8537caf272ee6a13f9078bdf4655d)
+
+13 - [$\_SESSION - scope multiple subdomains or pages on the same domain](fdf)
+
+14 - [$\_ENV - $http_response_header](https://github.com/tufikhasan/php_learning/blob/0b8335a90a84cc46200ef4a6b11b891fe489acd9/index.php)
 
 # PHP directory and file-system
 
