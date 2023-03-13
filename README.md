@@ -296,7 +296,9 @@
 
 03 - [date($format,$timeStamp) - Some example](https://github.com/tufikhasan/php_learning/blob/d15b1dc7187c4f49feff081f519f2242c93bdc50/index.php)
 
-04 - [mktime(hour, minute, second, month, day, year)](GF)
+04 - [date time - some common function](GF)
+
+05 - [mktime(hour, minute, second, month, day, year)](GF)
 
 # PHP directory and file-system
 
