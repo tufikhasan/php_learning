@@ -1,82 +1,19 @@
 <?php
-date_default_timezone_set( 'Asia/Dhaka' );
-/* date() - Commonly use all date formats
+/* date($format,$timeStamp) - Some example
 
- * https://www.php.net/manual/en/dateinterval.format
- * https://www.w3schools.com/php/func_date_date_format.asp
+ * https://www.php.net/manual/en/function.date.php
+ * https://www.geeksforgeeks.org/php-date-time/
+ * https://www.w3schools.com/php/php_date.asp
  */
 
-//--------- Hour -----------
-//12-hour format - (1 to 12)
-echo date( 'g' ) . "\n"; //9
-//24-hour format - (00 to 23)
-echo date( 'G' ) . "\n"; //9
-//12-hour format - (01 to 12)
-echo date( 'h' ) . "\n"; //09
-//24-hour format - (00 to 23)
-echo date( 'H' ) . "\n\n"; //09
+//----- week - day - month - year - Hour - Minute - second - AM/PM - Timezone ---
+echo date( 'D-d-m-y g:i:s a e' ) . "\n"; //Mon-13-03-23 4:26:44 am UTC
 
-//--------- Minutes -----------
-//Leading zeros (00 to 59)
-echo date( 'i' ) . "\n\n"; //08
+echo date( 'N-jS-n-Y h:i:s A e' ) . "\n"; //1-13th-3-2023 04:29:46 AM UTC
 
-//--------- Seconds -----------
-//Leading zeros (00 to 59)
-echo date( 's' ) . "\n\n"; //36
+echo date( 'l-j-M-Y G:i:s A e' ) . "\n"; //Monday-13-Mar-2023 4:26:19 AM UTC
 
-//--------- AM & PM -----------
-//Lowercase
-echo date( 'a' ) . "\n"; //am
-echo date( 'A' ) . "\n\n"; //AM
+echo date( 'w-dS-F-Y H:i:s A e' ) . "\n"; //1-13th-March-2023 04:30:51 AM UTC
 
-//--------- Timezone identifier  -----------
-echo date( 'e', ) . "\n"; //UTC
-
-//--------- Week -----------
-//Three letters
-echo date( 'D' ) . "\n"; //sun
-//Full textual
-echo date( 'l' ) . "\n"; //Sunday
-//Monday is represented by 1 and Sunday is represented by 7
-echo date( 'N' ) . "\n"; //7
-//A numeric representation of the day (0 for Sunday, 6 for Saturday)
-echo date( 'w' ) . "\n"; //0
-//The current week number of year
-echo date( 'W' ) . "\n\n"; //10
-
-//--------- Days -----------
-//From 01 to 31 - leading 0
-echo date( 'd' ) . "\n"; //12
-//From 1 to 31 - without leading 0
-echo date( 'j' ) . "\n\n"; //12
-
-//----------- Month ----------
-//Three letters
-echo date( 'M' ) . "\n"; //Mar
-//From 01 to 12 - leading 0
-echo date( 'm' ) . "\n"; //03
-//From 1 to 12 - without leading 0
-echo date( 'n' ) . "\n"; //3
-//Full textual
-echo date( 'F' ) . "\n"; //March
-//days in the given month
-echo date( 't' ) . "\n\n"; //31
-
-//--------- Year -----------
-//Two digit
-echo date( 'y' ) . "\n"; //23
-//Four digit
-echo date( 'Y' ) . "\n"; //2023
-
-//---------- leap year return 1, otherwise 0 -------
-echo date( 'L', strtotime( '2024-01-01' ) ) . "\n"; //1
-//The day of the year (from 0 through 365)
-echo date( 'z' ) . "\n"; //70
-//ISO-8601 year number
-echo date( 'o' ) . "\n\n"; //203
-
-//--------- S ---------
-//S - The English ordinal suffix for the day of the month (2 characters st, nd, rd or th. Works well with j)
-echo date( "S" ) . "\n"; //th
-echo "days " . date( 'jS' ) . "\n"; //12th
-echo "days " . date( 'dS' ) . "\n\n"; //12th
+//Current date +1 days
+echo date( 'D-d-m-y g:i:s a e', time() + 24 * 60 * 60 ) . "\n"; //Tue-14-03-23 4:36:27 am UTC
