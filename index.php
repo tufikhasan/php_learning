@@ -1,5 +1,5 @@
 <?php
-/* date time - some common function
+/* date time - commonly used function
 
  * https://www.w3schools.com/php/php_ref_date.asp
  * https://www.php.net/manual/en/function.date.php
@@ -8,6 +8,10 @@
  * time() - Return the current Unix timestamp
  * 
  * microtime(bool) - Return the current Unix timestamp with microseconds
+ * 
+ * mktime() - returns the Unix timestamp for a date
+ * 
+ * gmmktime() - returns the GMT Unix timestamp for a date
  * 
  * date(format,timestamp) - Return date and time
  * 
@@ -19,17 +23,17 @@
  * 
  * date_diff(datetime1, datetime2) - returns the difference between two DateTime objects
  * 
- * mktime() - returns the Unix timestamp for a date
- * 
  * strtotime(time, now); - parses an English textual datetime into a Unix timestamp
  * 
  * date_add(object, interval) - adds some days, months, years, hours, minutes, and seconds to a date
  * 
+ * date_sub(object, interval) - subtracts some days, months, years, hours, minutes, and seconds from a date
+ * 
  * date_create(time, timezone) - returns a new DateTime object
  * 
- * checkdate(month, day, year) - is used to validate a Gregorian date
+ * date_create_from_format(format, time, timezone) -  returns a new DateTime object formatted according to the specified format
  * 
- * date_sub(object, interval) - subtracts some days, months, years, hours, minutes, and seconds from a date
+ * checkdate(month, day, year) - is used to validate a Gregorian date
  * 
  * getdate(timestamp) - returns date/time information of a timestamp or the current local date/time
  * 
