@@ -292,6 +292,8 @@
 
 01 - [time() - microtime($boolean)](GF)
 
+02 - [date() - Commonly use all date formats](GF)
+
 # PHP directory and file-system
 
 01 - [PHP Some commonly used directory and file functions](https://github.com/tufikhasan/php_learning/blob/7f40c7e7452ca00f0693d899d007bd51b337d510/index.php)
