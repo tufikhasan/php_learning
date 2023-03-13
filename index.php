@@ -1,46 +1,34 @@
 <?php
-/* date time - commonly used function
+/* Generating Unix timestamps of any date, month, year, and GMT timestamp
 
  * https://www.w3schools.com/php/php_ref_date.asp
  * https://www.php.net/manual/en/function.date.php
- * 
+ *
 
- * time() - Return the current Unix timestamp
- * 
- * microtime(bool) - Return the current Unix timestamp with microseconds
- * 
- * mktime() - returns the Unix timestamp for a date
- * 
- * gmmktime() - returns the GMT Unix timestamp for a date
- * 
- * date(format,timestamp) - Return date and time
- * 
- * DateTime() - Object Representation of date and time.
- * 
- * date_default_timezone_set(timezone) - sets the default timezone
- * 
- * date_default_timezone_get() - returns the default timezone
- * 
- * date_diff(datetime1, datetime2) - returns the difference between two DateTime objects
- * 
- * strtotime(time, now); - parses an English textual datetime into a Unix timestamp
- * 
- * date_add(object, interval) - adds some days, months, years, hours, minutes, and seconds to a date
- * 
- * date_sub(object, interval) - subtracts some days, months, years, hours, minutes, and seconds from a date
- * 
- * date_create(time, timezone) - returns a new DateTime object
- * 
- * date_create_from_format(format, time, timezone) -  returns a new DateTime object formatted according to the specified format
- * 
- * checkdate(month, day, year) - is used to validate a Gregorian date
- * 
- * getdate(timestamp) - returns date/time information of a timestamp or the current local date/time
- * 
- * date_date_set(object, year, month, day) - sets a new date
- * 
- * date_interval_create_from_date_string(datetime) - sets up a DateInterval from the relative parts of the string
- * 
- * date_format(object, format) - Return a new DateTime object, and then format the date
- * 
- * date_timestamp_get() - Return the timezone of the given DateTime object
+ */
+//---------- 01 --------
+//Default Unix timestamps from (1 January) to current time
+echo time() . "\n";
+
+//Generating Unix timestamps from (1 January) to (1 January 2000)
+echo mktime( 0, 0, 0, 1, 2000 ) . "\n\n";
+
+//---------- 02 --------
+//Set timezone
+date_default_timezone_set( 'Asia/Dhaka' );
+
+//Generating Unix timestamps from (1 January) to (1 January 2000)
+$timeStamp = mktime( 0, 0, 0, 1, 2000 );
+echo $timeStamp . "\n";
+
+//GMT Unix timestamps from (1 January) to (1 January 2000)
+$gmtTimeStamp = gmmktime( 0, 0, 0, 1, 2000 );
+echo $gmtTimeStamp . "\n\n";
+
+echo "Difference GMT time to Bangladesh time = " . (  ( $gmtTimeStamp - $timeStamp ) / ( 60 * 60 ) ) . " hours\n\n";
+
+//---------- 03 --------
+$date1 = mktime( 0, 0, 0, 12, 31, 2022 );
+$date2 = mktime( 0, 0, 0, 1, 31, 2023 );
+
+echo "From Dec 31 2022 to jan 31 2023 Days = " . (  ( $date2 - $date1 ) / ( 60 * 60 * 24 ) );
