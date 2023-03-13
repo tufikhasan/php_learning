@@ -290,11 +290,13 @@
 
 # PHP DATE AND TIME
 
-01 - [time() - microtime($boolean)](GF)
+01 - [time() - microtime($boolean)](https://github.com/tufikhasan/php_learning/blob/0d40538ce7ce45b49a536154865db03e7e20c361/index.php)
 
-02 - [date() - Commonly use all date formats](GF)
+02 - [date() - Commonly use all date formats](https://github.com/tufikhasan/php_learning/blob/be98b8cb23acf57ec30818cbed2a2a465fa850e5/index.php)
 
-03 - [date($format,$timeStamp) - Some example](GF)
+03 - [date($format,$timeStamp) - Some example](https://github.com/tufikhasan/php_learning/blob/d15b1dc7187c4f49feff081f519f2242c93bdc50/index.php)
+
+04 - [mktime(hour, minute, second, month, day, year)](GF)
 
 # PHP directory and file-system
 
