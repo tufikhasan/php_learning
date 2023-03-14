@@ -1,34 +1,76 @@
 <?php
-/* Generating Unix timestamps of any date, month, year, and GMT timestamp
+/* strtotime() - Parse about any English textual datetime
+"strtotime()" is a built-in PHP function that converts a human-readable date/time string into a Unix timestamp (i.e., the number of seconds since January 1, 1970, 00:00:00 UTC).
 
- * https://www.w3schools.com/php/php_ref_date.asp
- * https://www.php.net/manual/en/function.date.php
+The "strtotime()" function accepts a string representing the date/time in various formats (such as "now", "tomorrow", "next Monday", "February 15th, 2022", "2022-02-15", etc.), and returns the corresponding Unix timestamp.
+
+Here are some examples of the possible formats that you can use as the parameter of:
+
+'2022-03-14'
+'2022/03/14'
+'14 Mar 2022'
+'March 14, 2022'
+'2022-03-14 14:30:00 America/New_York'
+'2022-03-14T14:30:00+02:00'
+'2022-03-14 to 2022-03-20'
+
+'14:30:00'
+'2:30pm'
+'14h30m00s'
+'14:30'
+'2pm to 4pm'
+
+'now'
+'today'
+'yesterday'
+'last Month'
+'tomorrow'
+'next Monday'
+'noon'
+'midnight'
+'last Monday to next Friday'
+
+'+1 day'
+'-1 week'
+'+1 month'
+'+1 year'
+'+2 weeks'
+'+2 hours'
+'-30 minutes'
+'first day of +1 month'
+'last day of -1 month'
+'first day of next month'
+
+ * https://www.php.net/manual/en/function.strtotime.php
+ * https://www.w3schools.com/php/func_date_strtotime.asp
  *
-
  */
-//---------- 01 --------
-//Default Unix timestamps from (1 January) to current time
-echo time() . "\n";
+date_default_timezone_set('Asia/Dhaka');
 
-//Generating Unix timestamps from (1 January) to (1 January 2000)
-echo mktime( 0, 0, 0, 1, 2000 ) . "\n\n";
+echo strtotime("now") . "\n";
 
-//---------- 02 --------
-//Set timezone
-date_default_timezone_set( 'Asia/Dhaka' );
+echo strtotime("last Month") . "\n";
 
-//Generating Unix timestamps from (1 January) to (1 January 2000)
-$timeStamp = mktime( 0, 0, 0, 1, 2000 );
-echo $timeStamp . "\n";
+echo strtotime("next month") . "\n";
 
-//GMT Unix timestamps from (1 January) to (1 January 2000)
-$gmtTimeStamp = gmmktime( 0, 0, 0, 1, 2000 );
-echo $gmtTimeStamp . "\n\n";
+echo (strtotime("+1 week -2 days +72 hours") - strtotime("now")) / (86400), "\n";
 
-echo "Difference GMT time to Bangladesh time = " . (  ( $gmtTimeStamp - $timeStamp ) / ( 60 * 60 ) ) . " hours\n\n";
+echo date('jS-F-Y h:i:s a', strtotime('+3 days 2hours 5 minutes 23 seconds')) . "\n";
 
-//---------- 03 --------
-$date1 = mktime( 0, 0, 0, 12, 31, 2022 );
-$date2 = mktime( 0, 0, 0, 1, 31, 2023 );
+echo date('dS/M/Y h:i:s a', strtotime("midnight")) . "\n";
 
-echo "From Dec 31 2022 to jan 31 2023 Days = " . (  ( $date2 - $date1 ) / ( 60 * 60 * 24 ) );
+echo date('h:i:s a', strtotime("noon")) . "\n";
+
+echo date('h:i:s a', strtotime("today 8pm")) . "\n";
+
+echo date('dS.M.Y h:i:s a', strtotime("first day of -1 month")) . "\n";
+
+echo date('dS.M.Y', strtotime("first friday dec 2022")) . "\n";
+
+echo date('dS.M.Y', strtotime(" +7 day")) . "\n";
+
+echo date('D-dS.M.Y h:i:s a', strtotime("12/5/1997")) . "\n";
+
+echo date('dS.M.Y', strtotime("next friday end month")) . "\n";
+
+echo date('D dS.M.Y h:i:s a', strtotime("now America/New_York")) . "\n";
