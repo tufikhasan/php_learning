@@ -1,67 +1,41 @@
 <?php
-/* DateTime() Class - Date difference
+/* date_diff() - Date difference
 
-In PHP, the DateTime class is used to represent date and time values. This class allows you to create, manipulate, and format dates and times.
-
-To create a DateTime object, you can use the new keyword and pass a string representing the date and time as the first argument to the constructor. The format of the string should match the desired output format.
-
- * https://www.php.net/manual/en/class.datetime.php
+ * https://www.geeksforgeeks.org/php-date_diff-function/
+ * https://www.php.net/manual/en/datetime.diff.php
+ * https://www.w3schools.com/php/func_date_date_diff.asp
  *
  */
 
-//Date difference using strtotime() function
-$date1 = strtotime('1 jan 2023 12pm');
-$date2 = strtotime('31 january 2023 12AM');
-$defference = $date2 - $date1;
-echo ($date2 - $date1) / (86400) . PHP_EOL;
+$date1 = new DateTime( '1 jan 2023' );
+$date2 = new DateTime( '31 january 2023' );
 
+//01:
+$diff = date_diff( $date1, $date2 );
+echo $diff->format( "%d" ) . PHP_EOL;
 
-//01: DateTime() - Date difference
-$date1 = new DateTime('1 jan 2022 3pm');
-$date2 = new DateTime('31 jan 2023 3pm');
-
-$diff = $date1->diff($date2);
+//02:
+$diff = date_diff( $date1, $date2 );
 echo $diff->d . PHP_EOL;
 
+//03:
+$diff = date_diff( $date1, $date2 );
 
-//02: DateTime() - Date difference
-$date1 = new DateTime('1 jan 2023 3pm');
-$date2 = new DateTime('31 jan 2023 3pm');
+echo isPluralOrSingle( $diff->d, "day" ) . isPluralOrSingle( $diff->m, "month" ) . isPluralOrSingle( $diff->y, "year" ) . PHP_EOL;
 
-$diff = $date1->diff($date2);
-echo $diff->y > 0 ? $diff->y . PHP_EOL : "Zero\n";
-
-
-//03: DateTime() - Date difference
-$date1 = new DateTime('1 jan 2022');
-$date2 = new DateTime('25 july 2023');
-
-$diff = $date1->diff($date2);
-echo $diff->d . " day " . $diff->m . " month " . $diff->y . " year " . PHP_EOL;
-
-
-//04: DateTime() - Date difference
-$date1 = new DateTime('1 jan 2022');
-$date2 = new DateTime('25 july 2023');
-
-$diff = $date1->diff($date2);
-echo isPluralOrSingle($diff->d, "day") . isPluralOrSingle($diff->m, "month") . isPluralOrSingle($diff->y, "year") . PHP_EOL;
-
-
-function isPluralOrSingle($number, $type)
-{
-    if ($number == 0) {
+function isPluralOrSingle( $number, $type ) {
+    if ( $number == 0 ) {
         return "";
-    } elseif ($number > 1) {
+    } elseif ( $number > 1 ) {
         return "{$number} {$type}s ";
     } else {
         return "{$number} {$type} ";
     }
 }
 
+//04:
+$date1 = date_create( '1 jan 2023' );
+$date2 = date_create( '31 january 2023' );
 
-//----------
-$date = new DateTime('2023-03-14 12:00:00');
-$date->add(new DateInterval('P1D')); //1day plus
-$formatted_date = $date->format('Y-m-d H:i:s');
-echo $formatted_date;
+$diff = date_diff( $date1, $date2 );
+echo $diff->d . PHP_EOL;
