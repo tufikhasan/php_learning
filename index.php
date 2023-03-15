@@ -1,77 +1,75 @@
 <?php
-/* PHP Exception error handler - introduction
+/* PHP Exception - Custom Exceptions
+A custom exception is an exception class that you define yourself in your code. It allows you to create specific error conditions that are unique to your application, and can be used to handle errors in a more granular way.
 
- * https://www.php.net/manual/en/language.exceptions.php
- * https://www.w3schools.com/php/php_exceptions.asp
- * https://www.javatpoint.com/exception-handling-in-php
+ * https://www.php.net/manual/en/language.exceptions.extending.php
  *
  */
 
 //01:
-function ageCounter( $age ) {
-    if ( $age <= 15 ) {
-        return throw new Exception( "You are not Adult" );
+Class MyException extends Exception {}
+Class NetworkException extends Exception {}
 
-    } elseif ( $age > 40 ) {
-        return throw new Exception( 'You are old' );
-    }
+function testException() {
+    return throw new MyException();
 }
+
 try {
-    ageCounter( 4 );
-} catch ( Exception $e ) {
-    echo $e->getMessage();
-} finally {
-    echo "\nFinally run all time\n";
+    testException();
+} catch ( MyException $e ) {
+    echo "MyException caught";
+} catch ( NetworkException $e ) {
+    echo "NetworkException caught";
 }
 
 // //02:
-// function inverse( $x ) {
-//     if ( !$x ) {
-//         throw new Exception( 'Division durch Null.' );
-//     }
-//     return 2 * $x;
+// Class MyException extends Exception {}
+// Class NetworkException extends Exception {}
+
+// function testException() {
+//     return throw new NetworkException();
 // }
 
 // try {
-//     echo inverse( 5 ) . "\n";
-//     echo inverse( 0 ) . "\n";
-// } catch ( Exception $e ) {
-//     echo 'Exception: ', $e->getMessage(), "\n";
+//     testException();
+// } catch ( MyException $e ) {
+//     echo "MyException caught";
+// } catch ( NetworkException $e ) {
+//     echo "NetworkException caught";
 // }
 
-// //03:
-// function ageCounter( $age ) {
-//     if ( $age <= 15 ) {
-//         return throw new Exception( "You are not Adult", 401 );
+// //03: do not use exception in first catch
+// Class MyException extends Exception {}
+// Class NetworkException extends Exception {}
 
-//     } elseif ( $age > 40 ) {
-//         return throw new Exception( 'You are old', 401 );
-//     }
+// function testException() {
+//     return throw new NetworkException();
 // }
+
 // try {
-//     ageCounter( 4 );
+//     testException();
 // } catch ( Exception $e ) {
-//     echo $e->getMessage() . PHP_EOL;
-//     echo $e->getCode() . PHP_EOL;
-//     echo $e->getLine() . PHP_EOL;
+//     echo "Exception caught";
+// } catch ( MyException $e ) {
+//     echo "MyException caught";
+// } catch ( NetworkException $e ) {
+//     echo "NetworkException caught";
 // }
 
-// //04:
-// function ageCounter( $age ) {
-//     if ( $age <= 15 ) {
-//         return throw new Exception( "You are not Adult", 401 );
+// //04: Always try to use Exception in last catch
+// Class MyException extends Exception {}
+// Class NetworkException extends Exception {}
 
-//     } elseif ( $age > 40 ) {
-//         return throw new Exception( 'You are old', 401 );
-//     }
+// function testException() {
+//     return throw new MyException();
 // }
+
 // try {
-//     ageCounter( 4 );
+//     testException();
+// } catch ( MyException $e ) {
+//     echo "MyException caught";
+// } catch ( NetworkException $e ) {
+//     echo "NetworkException caught";
 // } catch ( Exception $e ) {
-//     echo $e->getMessage() . PHP_EOL;
-//     echo $e->getCode() . PHP_EOL;
-//     echo $e->getLine() . PHP_EOL;
-//     echo $e->getFile() . PHP_EOL;
-//     print_r( $e->getTrace() );
-//     print_r( $e );
+//     echo "Exception caught";
 // }

@@ -334,6 +334,8 @@
 
 01 - [PHP Exception error handler - introduction](GFG)
 
+02 - [PHP Exception - Custom Exceptions](GFG)
+
 # PHP Super Global variables — Built-in variables that are always available in all scopes
 
 01 - [Introduction to PHP Super Global variables](https://github.com/tufikhasan/php_learning/blob/a9cac1ab6f5781973593fd3881b73ff6181a7e76/index.php)
