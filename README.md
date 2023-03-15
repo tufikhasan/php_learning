@@ -300,15 +300,15 @@
 
 05 - [mktime(hour, minute, second, month, day, year)](https://github.com/tufikhasan/php_learning/blob/15879d454b7a838d4d5e9d3bf833afc3bd26758a/index.php)
 
-06 - [mktime(),gmmktime() - Generating Unix timestamps](GF)
+06 - [mktime(),gmmktime() - Generating Unix timestamps](https://github.com/tufikhasan/php_learning/blob/a008bda502c2b1960ad53881ea9a75719664612f/index.php)
 
-07 - [strtotime() - Parse about any English textual datetime](GF)
+07 - [strtotime() - Parse about any English textual datetime](https://github.com/tufikhasan/php_learning/blob/5f57109dbec6307f52da487a6763fe3f98b98a85/index.php)
 
-08 - [DateTime() Class - Date difference](GF)
+08 - [DateTime() Class - Date difference](https://github.com/tufikhasan/php_learning/blob/e844e2c2574c467502c66940c71fbe97ccb317da/index.php)
 
-09 - [date_diff() - Date difference](GF)
+09 - [date_diff() - Date difference](https://github.com/tufikhasan/php_learning/blob/7a49c9504d5d4278a270c6a191d33d218048eb37/index.php)
 
-10 - [date_create(), date_add(), date_sub(), date_format()](GF)
+10 - [date_create(), date_add(), date_sub(), date_format()](https://github.com/tufikhasan/php_learning/blob/8175e3994f17d52fcb90eaa62ee5a6f74dc6182d/index.php)
 
 # PHP directory and file-system
 
@@ -329,6 +329,10 @@
 08 - [File data processing using serialize(),unserialize()](https://github.com/tufikhasan/php_learning/blob/8c80f9eb297b2a1b7332c83db6cfca3d7ddabe0f/index.php)
 
 09 - [File data processing using json_encode(),json_decode()](https://github.com/tufikhasan/php_learning/blob/abfb734723b404dece903d2e2d812dfca710c86e/index.php)
+
+# PHP EXCEPTION ERROR HANDLER
+
+01 - [PHP Exception error handler - introduction](GFG)
 
 # PHP Super Global variables — Built-in variables that are always available in all scopes
 
